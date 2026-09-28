@@ -1,0 +1,64 @@
+{
+  "name": "@lk-design-system/lds-manual",
+  "version": "0.1.0-alpha.1",
+  "private": true,
+  "description": "Compact A4 manual layouts, LDS authoring guidance, and local HTML/PDF export.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": "./src/index.mjs",
+    "./styles.css": "./styles.css",
+    "./tokens/*": "./tokens/*",
+    "./docs/*": "./docs/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "bin",
+    "tokens",
+    "styles.css",
+    "docs",
+    "llms.txt",
+    "examples",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": [
+    "*.css",
+    "tokens/*.css"
+  ],
+  "bin": {
+    "lds-manual": "./bin/lds-manual.mjs"
+  },
+  "scripts": {
+    "example": "node bin/lds-manual.mjs build examples/compact.json --out output/compact.html",
+    "test": "node --test tests/*.test.mjs",
+    "check:template": "node scripts/check-template.mjs",
+    "gallery": "node bin/lds-manual.mjs build examples/gallery.json --out output/gallery.html"
+  },
+  "peerDependencies": {
+    "@lk-design-system/lds-core": "0.2.9",
+    "@lk-design-system/lds-theme": "0.2.9",
+    "react": ">=18 <20",
+    "react-dom": ">=18 <20",
+    "playwright": ">=1.51 <2"
+  },
+  "peerDependenciesMeta": {
+    "playwright": {
+      "optional": true
+    }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LK-Design-System/lk-design-system-manual.git"
+  },
+  "homepage": "https://github.com/LK-Design-System/lk-design-system-manual#readme",
+  "bugs": {
+    "url": "https://github.com/LK-Design-System/lk-design-system-manual/issues"
+  }
+}

@@ -1,0 +1,51 @@
+@import './tokens/manual.css';
+.lds-manual{font-family:var(--font-sans);font-weight:var(--fw-regular);font-size:var(--manual-body-size);line-height:var(--manual-body-line);color:var(--color-semantic-label-normal);word-break:keep-all;color-scheme:light}
+.lds-manual *{box-sizing:border-box}
+.lds-manual-page{width:var(--manual-page-width);height:var(--manual-page-height);padding:var(--manual-page-inset);position:relative;background:var(--color-semantic-background-normal-normal);margin:var(--space-8) auto;break-after:page}
+.lds-manual-page:last-child{break-after:auto}
+.lds-manual-content{height:calc(var(--manual-page-height) - var(--manual-page-inset) - var(--manual-footer-reserve));display:flow-root}
+.lds-manual-page footer{position:absolute;left:var(--manual-page-inset);right:var(--manual-page-inset);bottom:var(--manual-footer-inset);text-align:right;font-size:var(--manual-caption-size);line-height:var(--manual-caption-line);color:var(--color-semantic-label-alternative);font-variant-numeric:tabular-nums}
+.lds-manual-section-title{font-size:var(--headline1-size);line-height:var(--headline1-line);font-weight:var(--fw-bold);letter-spacing:var(--headline1-spacing);color:var(--color-semantic-brand-on-surface);background:var(--color-semantic-brand-surface);border-radius:var(--manual-section-radius);padding:var(--space-2) var(--space-4);margin:0 0 var(--space-4)}
+.lds-manual p{margin:0 0 var(--space-3)}
+.lds-manual-lead{color:var(--color-semantic-label-neutral)}
+.lds-manual-steps{list-style:none;margin:var(--space-3) 0 var(--space-4);padding:0}
+.lds-manual-step+.lds-manual-step{margin-top:var(--space-6)}
+.lds-manual-step-label{display:flex;gap:var(--space-2);align-items:baseline}
+.lds-manual-step-label>span{flex:0 0 auto;min-width:var(--space-4);font-variant-numeric:tabular-nums}
+.lds-manual-step-label>div{flex:1;min-width:0}
+.lds-manual-step-label>span,.lds-manual-step h3{font-size:var(--manual-step-size);line-height:var(--manual-step-line);font-weight:var(--fw-semibold);letter-spacing:var(--headline2-spacing);margin:0}
+.lds-manual-step p{margin:var(--space-1) 0 0;color:var(--color-semantic-label-neutral)}
+.lds-manual-figure{margin:var(--space-3) 0 var(--space-4);max-width:100%}
+.lds-manual-figure--compact{width:var(--manual-figure-width);margin-left:auto;margin-right:auto}
+.lds-manual-step>.lds-manual-figure{margin-top:var(--space-3);margin-bottom:0}
+.lds-manual-figure img{display:block;width:100%;height:auto;border-radius:var(--radius-xs)}
+.lds-manual-figure figcaption{margin-top:var(--space-2);font-size:var(--manual-caption-size);line-height:var(--manual-caption-line);color:var(--color-semantic-label-alternative);text-align:center}
+.lds-manual-figure+.lds-manual-steps{margin-top:var(--space-6)}
+.lds-manual-table-frame{border:1px solid var(--color-semantic-line-solid-normal);border-radius:var(--radius-8);overflow:hidden;margin:var(--space-3) 0 var(--space-4)}
+.lds-manual table{width:100%;border-collapse:separate;border-spacing:0;font:inherit}
+.lds-manual th,.lds-manual td{padding:var(--space-2) var(--space-3);text-align:left;vertical-align:top}
+.lds-manual th{background:var(--color-semantic-background-normal-alternative);color:var(--color-semantic-label-neutral);font-weight:var(--fw-semibold)}
+.lds-manual thead th,.lds-manual tbody tr:not(:last-child)>*{border-bottom:1px solid var(--color-semantic-line-solid-normal)}
+.lds-manual tr>*+*{border-left:1px solid var(--color-semantic-line-solid-normal)}
+.lds-manual td:first-child{width:31%}
+.lds-manual-callout{margin:var(--space-4) 0}
+.lds-manual-meta{font-size:var(--label2-size);line-height:var(--label2-reading-line);margin:var(--space-4) 0 var(--space-5)}
+.lds-manual-meta table{table-layout:fixed}
+.lds-manual-meta th{width:20%}
+.lds-manual-meta td{width:30%}
+.lds-manual-meta th,.lds-manual-meta td{vertical-align:middle}
+.lds-manual-logo{display:block;width:35mm;height:auto;margin:0 0 var(--space-5)}
+.lds-manual-cover h1{font-size:var(--title2-size);line-height:var(--title2-line);letter-spacing:var(--title2-spacing);font-weight:var(--fw-extra);color:var(--color-semantic-brand-ink);margin:0 0 var(--space-3)}
+.lds-manual-cover hr{border:0;border-top:2px solid var(--color-semantic-brand-ink);margin:0 0 var(--space-8)}
+.lds-manual ul{padding-left:var(--space-5);margin:0 0 var(--space-4)}
+.lds-manual-columns{display:grid;grid-template-columns:64mm minmax(0,1fr);gap:var(--space-8);align-items:start}
+.lds-manual-columns>.lds-manual-figure,.lds-manual-columns .lds-manual-steps{margin-top:0}
+.lds-manual-help{margin-top:var(--space-6);padding-top:var(--space-3);border-top:1px solid var(--color-semantic-line-solid-normal)}
+.lds-manual-help h3{font-size:var(--label1-size);line-height:var(--label1-line);margin:0;font-weight:var(--fw-semibold)}
+.lds-manual-help p{font-size:var(--label2-size);line-height:var(--label2-reading-line);color:var(--color-semantic-label-neutral);margin:var(--space-2) 0 0}
+@page{size:A4;margin:0}
+@media print{html,body{margin:0!important;background:var(--color-semantic-background-normal-normal)!important}.lds-manual-page{margin:0;print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+
+.lds-manual-figure--reading{width:var(--manual-reading-figure-width);margin-left:auto;margin-right:auto}
+.lds-manual-address{color:var(--color-semantic-brand-ink);font-size:var(--body1-size);line-height:var(--body1-line)}
+.lds-manual strong{font-weight:var(--fw-bold)}

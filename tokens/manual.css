@@ -1,0 +1,17 @@
+/* Manual owns physical page geometry and role aliases, never upstream values. */
+.lds-manual {
+  --manual-page-width: 210mm;
+  --manual-page-height: 297mm;
+  --manual-page-inset: 13mm;
+  --manual-footer-inset: 9mm;
+  --manual-footer-reserve: 20mm;
+  --manual-step-size: var(--headline2-size);
+  --manual-step-line: var(--headline2-line);
+  --manual-body-size: var(--label1-size);
+  --manual-body-line: var(--label1-reading-line);
+  --manual-caption-size: var(--caption1-size);
+  --manual-caption-line: var(--caption1-line);
+  --manual-section-radius: var(--radius-8);
+  --manual-figure-width: 151mm;
+  --manual-reading-figure-width: 170mm;
+}

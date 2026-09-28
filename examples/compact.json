@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "title": "LDS Manual · 컴팩트 템플릿",
+  "lang": "ko",
+  "cover": {
+    "title": "샘플 앱 사용 매뉴얼",
+    "metadata": [
+      {
+        "label": "문서 버전",
+        "value": "1.0"
+      },
+      {
+        "label": "작성일",
+        "value": "2026-09-28"
+      },
+      {
+        "label": "적용 기기",
+        "value": "샘플 태블릿"
+      },
+      {
+        "label": "적용 환경",
+        "value": "가상 앱 예제"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "list",
+        "items": [
+          {
+            "label": "준비물",
+            "value": "태블릿과 발급받은 계정"
+          },
+          {
+            "label": "접속 주소 예시",
+            "value": "https://example.invalid",
+            "emphasis": true
+          },
+          "이 문서는 가상 화면으로 구성한 작성 예제입니다."
+        ]
+      },
+      {
+        "type": "callout",
+        "title": "시작 전 확인사항",
+        "text": "사용할 계정과 기기를 확인합니다. 실제 매뉴얼에는 제품의 승인된 안내와 화면을 사용합니다."
+      }
+    ],
+    "logo": {
+      "src": "@lk-design-system/lds-theme/assets/brand/lk-logo-inline-navy.svg",
+      "alt": "LK ROBOTICS"
+    }
+  },
+  "pages": [
+    {
+      "title": "계정으로 로그인하기",
+      "lead": "샘플 앱을 열고 발급받은 계정으로 로그인합니다.",
+      "blocks": [
+        {
+          "type": "steps",
+          "items": [
+            {
+              "title": "아이디와 비밀번호 입력",
+              "text": "입력란에 계정 정보를 입력합니다.",
+              "figure": {
+                "src": "assets/login.svg",
+                "alt": "아이디와 비밀번호 입력란이 있는 가상 로그인 화면",
+                "caption": "입력란과 로그인 버튼의 위치를 확인합니다.",
+                "size": "compact"
+              }
+            },
+            {
+              "title": "「로그인」 선택",
+              "text": "입력한 내용을 확인한 뒤 로그인 버튼을 누릅니다.",
+              "figure": {
+                "src": "assets/home.svg",
+                "alt": "로그인 후 표시되는 가상 홈 화면",
+                "caption": "로그인하면 홈 화면이 표시됩니다.",
+                "size": "compact"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "항목을 선택하고 내용 확인하기",
+      "lead": "목록에서 확인할 항목을 선택합니다.",
+      "blocks": [
+        {
+          "type": "figure",
+          "src": "assets/home.svg",
+          "alt": "목록과 상세 보기 버튼이 있는 가상 홈 화면",
+          "caption": "각 행의 상세 보기 버튼으로 내용을 확인합니다.",
+          "size": "reading"
+        },
+        {
+          "type": "table",
+          "label": "목록 사용 방법",
+          "headers": [
+            "기능",
+            "사용 방법"
+          ],
+          "rows": [
+            [
+              "상세 보기",
+              "항목 오른쪽의 「상세 보기」를 선택합니다."
+            ],
+            [
+              "목록으로 돌아가기",
+              "상세 화면에서 「목록」을 선택합니다."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "예제 화면 안내",
+          "text": "화면과 데이터는 구성 예시입니다. 실제 제품의 버튼명과 동작은 해당 제품에서 확인합니다."
+        }
+      ]
+    },
+    {
+      "title": "최근 알림 확인하기",
+      "lead": "알림 목록에서 내용을 확인합니다.",
+      "blocks": [
+        {
+          "type": "columns",
+          "figure": {
+            "src": "assets/notifications.svg",
+            "alt": "읽지 않은 가상 알림 두 개가 표시된 목록",
+            "caption": "가상 알림 목록의 예시입니다."
+          },
+          "blocks": [
+            {
+              "type": "steps",
+              "items": [
+                {
+                  "title": "알림 내용 확인",
+                  "text": "제목과 발생 시각을 확인합니다."
+                },
+                {
+                  "title": "알림 항목 선택",
+                  "text": "선택한 알림의 상세 내용을 확인합니다."
+                }
+              ]
+            },
+            {
+              "type": "help",
+              "title": "보조 안내의 위치",
+              "text": "현재 단계와 관련된 짧은 도움말을 이 영역에 둡니다."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "읽음과 조치 완료",
+          "text": "알림을 읽는 것과 필요한 조치를 마치는 것은 다릅니다. 제품에서 정의한 상태 의미를 안내합니다."
+        }
+      ]
+    }
+  ]
+}

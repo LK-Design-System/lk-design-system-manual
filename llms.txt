@@ -1,0 +1,17 @@
+# LDS Manual
+
+Package: @lk-design-system/lds-manual (alpha; registry unpublished)
+Owner boundary: compact A4 medium; Core/Theme own shared tokens and Callout; products own facts and screenshots.
+Start: README.md
+Document API: docs/document-format.md
+Authoring skill: docs/agent-skills/lds-manual/SKILL.md
+Layout rules: docs/agent-skills/lds-manual/references/layout.md
+Writing rules: docs/agent-skills/lds-manual/references/writing.md
+Example: examples/compact.json
+CLI: bin/lds-manual.mjs --help
+
+Starter: lds-manual init <new-directory>
+Component gallery: examples/gallery.json
+Source records: docs/source-records.md
+Output/release: docs/output-and-release.md
+Regression checks: docs/regression-checks.md
