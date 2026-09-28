@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "title": "기존 매뉴얼을 LDS로 재디자인하기",
+  "cover": {
+    "title": "기존 매뉴얼을 LDS로 재디자인하기",
+    "logo": {
+      "src": "@lk-design-system/lds-theme/assets/brand/lk-logo-inline-navy.svg",
+      "alt": "LK ROBOTICS"
+    },
+    "metadata": [
+      {
+        "label": "문서 버전",
+        "value": "0.4 · 초안"
+      },
+      {
+        "label": "작성일",
+        "value": "2026-09-29"
+      },
+      {
+        "label": "입력 자료",
+        "value": "기존 PDF·PPTX 매뉴얼"
+      },
+      {
+        "label": "예제 결과",
+        "value": "A4 세로 PDF"
+      }
+    ],
+    "sectionTitle": "기존 자료로 시작하기",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "러프하게 만든 매뉴얼을 첨부하고, 내용과 화면을 유지한 채 LDS 스타일로 정리합니다. 시안을 확인한 뒤 전체 문서에 적용합니다."
+      },
+      {
+        "type": "figure",
+        "src": "assets/6d27f168f508.png",
+        "alt": "동일한 로그인 절차를 담은 원본 PDF와 LDS 적용 예시",
+        "caption": "가상 앱 매뉴얼의 같은 쪽을 비교한 예시입니다.",
+        "size": "reading"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "title": "1. 기존 매뉴얼 첨부하기",
+      "lead": "직접 만든 PDF나 PPTX를 준비합니다. 연습할 때는 함께 제공된 rough-manual.pdf를 사용합니다.",
+      "blocks": [
+        {
+          "type": "steps",
+          "start": 1,
+          "items": [
+            {
+              "title": "원본과 기준 자료 첨부",
+              "text": "ChatGPT 입력창의 ＋에서 「사진 및 파일 추가」를 선택합니다. 원본 매뉴얼과 lds-redesign-guide.txt를 첨부합니다."
+            },
+            {
+              "title": "필요한 이미지 함께 첨부",
+              "text": "원본의 화면이 흐리거나 잘려 있다면 선명한 원본 이미지를 함께 넣습니다. 파일 이름에 해당 쪽이나 단계 이름을 적습니다."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "label": "첨부할 자료",
+          "headers": [
+            "항목",
+            "확인할 내용"
+          ],
+          "rows": [
+            [
+              "기존 매뉴얼",
+              "PDF 또는 PPTX. 두 파일이 있으면 기준으로 삼을 버전을 지정합니다."
+            ],
+            [
+              "LDS 기준 자료",
+              "lds-redesign-guide.txt와 LDS 적용 예시 PDF"
+            ],
+            [
+              "추가 이미지",
+              "교체할 화면·로고가 있을 때 해당 원본 파일"
+            ]
+          ]
+        },
+        {
+          "type": "figure",
+          "src": "assets/4bb44e442afc.png",
+          "alt": "연습용 rough-manual.pdf의 로그인 절차",
+          "caption": "연습용 원본 PDF 첫 쪽입니다. 화면과 설명이 이미 들어 있는 자료로 시작합니다.",
+          "size": "compact",
+          "previewTitle": "원본 예시 · rough-manual.pdf"
+        }
+      ]
+    },
+    {
+      "title": "2. 재디자인 요청하고 시안 확인하기",
+      "lead": "아래 요청문을 보내고, 받은 시안을 원본과 비교합니다.",
+      "blocks": [
+        {
+          "type": "quote",
+          "text": "첨부한 rough-manual.pdf를 LDS 기준으로 재디자인해 주세요. 함께 첨부한 lds-redesign-guide.txt와 디자인 예시를 참고하세요.\n내용, 절차 순서, 버튼 이름, 수치와 주의사항은 보존하세요. 원본 화면을 사용하고, 없는 설명이나 화면은 만들지 마세요.\n제목과 단계의 구분, 글자 크기, 간격, 이미지 배치와 페이지 구성을 정리하세요. 문구는 의미를 바꾸지 않는 범위에서 다듬어 주세요.\nA4 세로 PDF로 만들고, 우선 원본 1~2쪽의 시안을 보여 주세요. 읽지 못한 내용이나 빠진 이미지가 있으면 해당 쪽을 알려 주세요."
+        },
+        {
+          "type": "subheading",
+          "text": "받은 시안에서 확인할 것"
+        },
+        {
+          "type": "figure",
+          "src": "assets/e395659bb6ba.png",
+          "alt": "항목 상세 확인 절차의 원본 PDF와 LDS 적용 예시",
+          "caption": "같은 화면과 절차를 유지하고 제목·간격·이미지 크기를 정리한 예시입니다.",
+          "size": "reading"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "내용",
+              "value": "절차·버튼 이름·수치·주의사항이 원본과 같은지 확인합니다.",
+              "labelEmphasis": true
+            },
+            {
+              "label": "화면",
+              "value": "해당 단계의 화면인지, 버튼 글자가 읽히는지 확인합니다.",
+              "labelEmphasis": true
+            },
+            {
+              "label": "배치",
+              "value": "설명과 화면이 함께 있고 잘린 부분이 없는지 확인합니다.",
+              "labelEmphasis": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. 같은 부분을 크게 비교하기",
+      "lead": "전체 구성에서 확인하기 어려운 글자 크기와 간격을 같은 영역의 확대 이미지로 비교합니다.",
+      "blocks": [
+        {
+          "type": "figure",
+          "src": "assets/2ef7773cd92b.png",
+          "alt": "원본의 단계 제목과 설명, 첫 번째 항목 확대",
+          "caption": "원본 · 항목 상세 확인",
+          "size": "full",
+          "previewTitle": "원본 예시 · 상세 확대",
+          "crop": {
+            "x": 70,
+            "y": 245,
+            "width": 740,
+            "height": 240,
+            "sourceWidth": 849,
+            "sourceHeight": 800
+          }
+        },
+        {
+          "type": "figure",
+          "src": "assets/1b55c4ecdc2c.png",
+          "alt": "LDS 적용 예시의 단계 제목과 설명, 첫 번째 항목 확대",
+          "caption": "LDS 적용 예시 · 같은 부분",
+          "size": "full",
+          "previewTitle": "LDS 적용 예시 · 상세 확대",
+          "crop": {
+            "x": 42,
+            "y": 145,
+            "width": 740,
+            "height": 240,
+            "sourceWidth": 849,
+            "sourceHeight": 800
+          }
+        },
+        {
+          "type": "callout",
+          "title": "읽지 못한 부분이 있다면",
+          "text": "내용이 누락되거나 화면이 흐리면 해당 쪽의 원문 또는 선명한 이미지를 첨부해 수정을 요청합니다."
+        }
+      ]
+    },
+    {
+      "title": "4. 수정한 뒤 전체에 적용하기",
+      "lead": "바꿀 쪽과 요소, 원하는 결과를 지정합니다. 시안이 맞으면 같은 구성을 나머지 쪽에 적용합니다.",
+      "blocks": [
+        {
+          "type": "steps",
+          "start": 1,
+          "items": [
+            {
+              "title": "수정 요청 보내기",
+              "quote": "시안의 「로그인하기」 쪽에서 로그인 화면을 더 크게 배치해 주세요. 단계 설명과 화면을 같은 쪽에 두고, 다른 쪽의 제목 크기와 간격도 맞춰 주세요. 원본의 버튼 이름과 절차는 유지하세요.\n이 구성을 나머지 쪽에도 적용하고, 원본에서 빠진 내용이나 이미지가 없는지 확인해 주세요."
+            },
+            {
+              "title": "수정 결과 확인하기",
+              "text": "지정한 화면이 커졌는지, 설명과 함께 있는지 확인합니다. 버튼 이름과 절차가 원본과 같은지도 다시 확인합니다.",
+              "figure": {
+                "src": "assets/9fed93ce3a02.png",
+                "alt": "로그인 단계 설명과 원본 화면",
+                "caption": "LDS 적용 예시: 단계 설명 바로 아래에 원본 화면과 결과 설명을 배치했습니다.",
+                "size": "compact",
+                "previewTitle": "LDS 적용 예시 · 로그인하기",
+                "crop": {
+                  "x": 40,
+                  "y": 10,
+                  "width": 770,
+                  "height": 605,
+                  "sourceWidth": 849,
+                  "sourceHeight": 800
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5. 결과 파일 저장하기",
+      "lead": "전체 문서를 확인한 뒤 배포할 파일을 요청합니다.",
+      "blocks": [
+        {
+          "type": "quote",
+          "text": "확인한 시안대로 전체 매뉴얼을 완성해 주세요. 모든 쪽의 글자와 이미지가 잘리지 않는지, 원본의 내용과 화면이 빠지지 않았는지 확인하세요.\n다운로드할 수 있는 redesigned-manual.pdf를 첨부해 주세요. 원본은 덮어쓰지 마세요."
+        },
+        {
+          "type": "callout",
+          "title": "편집용 PPTX도 필요한 경우",
+          "text": "요청문에 “배포용 PDF와 텍스트를 편집할 수 있는 PPTX를 함께 만들어 주세요.”를 추가합니다. 받은 PPTX에서 글자와 이미지가 실제로 편집되는지 확인합니다."
+        },
+        {
+          "type": "steps",
+          "start": 1,
+          "items": [
+            {
+              "title": "결과 파일 내려받기",
+              "text": "파일 미리보기를 열고 제목과 전체 쪽을 확인한 뒤 다운로드합니다."
+            },
+            {
+              "title": "저장한 파일 확인하기",
+              "text": "첫 쪽부터 마지막 쪽까지 열어 글자와 이미지의 잘림, 빠진 쪽, 흐린 화면을 확인합니다."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "설명만 받고 파일이 없을 때",
+          "text": "“완성한 PDF를 다운로드할 수 있는 파일로 첨부해 주세요.”라고 요청합니다. 파일을 받으면 내려받아 열어 봅니다."
+        }
+      ]
+    }
+  ]
+}

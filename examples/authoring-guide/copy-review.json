@@ -1,0 +1,1154 @@
+{
+  "schemaVersion": 1,
+  "contract": "lds-manual-copy-review/v1",
+  "ruleset": "LDS Manual writing + LDS Core Writing/Voice and Tone; docs/copy-review.md",
+  "reviewKind": "contextual-agent-review",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-09-29",
+  "audience": "기존 PDF/PPTX 매뉴얼을 재디자인하려는 사용자",
+  "documentHash": "3be42e932835568e7d9a0371f726ec5c0d50a1fe4feac18582e5e62b20a442a1",
+  "sourceNote": "HTML 검토 결과를 정본 JSON으로 옮긴 후의 문구 snapshot. 모든 과업을 다시 읽은 자체 검토이며 원본 대비 자동 품질 판정이 아님.",
+  "sets": [
+    {
+      "id": "document",
+      "items": [
+        {
+          "key": "document.title",
+          "text": "기존 매뉴얼을 LDS로 재디자인하기"
+        }
+      ],
+      "candidateHash": "aa71b23365ec1053adc8ef7785f7dcae5b275dd5fb874c01f5b9f2addf5f6153",
+      "sourceItems": [
+        {
+          "key": "document.title",
+          "text": "기존 매뉴얼을 LDS로 재디자인하기"
+        }
+      ],
+      "sourceHash": "aa71b23365ec1053adc8ef7785f7dcae5b275dd5fb874c01f5b9f2addf5f6153",
+      "task": "기존 매뉴얼을 LDS로 재디자인하기",
+      "contextReason": "기존 자료의 재디자인이라는 목적을 제목에 명시한다.",
+      "decisions": [
+        {
+          "key": "document.title",
+          "text": "기존 매뉴얼을 LDS로 재디자인하기",
+          "verdict": "KEEP",
+          "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
+        }
+      ]
+    },
+    {
+      "id": "cover",
+      "items": [
+        {
+          "key": "cover.blocks[0].text",
+          "text": "러프하게 만든 매뉴얼을 첨부하고, 내용과 화면을 유지한 채 LDS 스타일로 정리합니다. 시안을 확인한 뒤 전체 문서에 적용합니다."
+        },
+        {
+          "key": "cover.blocks[1].alt",
+          "text": "동일한 로그인 절차를 담은 원본 PDF와 LDS 적용 예시"
+        },
+        {
+          "key": "cover.blocks[1].caption",
+          "text": "가상 앱 매뉴얼의 같은 쪽을 비교한 예시입니다."
+        },
+        {
+          "key": "cover.logo.alt",
+          "text": "LK ROBOTICS"
+        },
+        {
+          "key": "cover.metadata[0].label",
+          "text": "문서 버전"
+        },
+        {
+          "key": "cover.metadata[0].value",
+          "text": "0.4 · 초안"
+        },
+        {
+          "key": "cover.metadata[1].label",
+          "text": "작성일"
+        },
+        {
+          "key": "cover.metadata[1].value",
+          "text": "2026-09-29"
+        },
+        {
+          "key": "cover.metadata[2].label",
+          "text": "입력 자료"
+        },
+        {
+          "key": "cover.metadata[2].value",
+          "text": "기존 PDF·PPTX 매뉴얼"
+        },
+        {
+          "key": "cover.metadata[3].label",
+          "text": "예제 결과"
+        },
+        {
+          "key": "cover.metadata[3].value",
+          "text": "A4 세로 PDF"
+        },
+        {
+          "key": "cover.sectionTitle",
+          "text": "기존 자료로 시작하기"
+        },
+        {
+          "key": "cover.title",
+          "text": "기존 매뉴얼을 LDS로 재디자인하기"
+        }
+      ],
+      "candidateHash": "ffe7cf2874581feef2f2360ea00650852bae3191cced131d596c9c019957037b",
+      "sourceItems": [
+        {
+          "key": "cover.blocks[0].text",
+          "text": "러프하게 만든 매뉴얼을 첨부하고, 내용과 화면을 유지한 채 LDS 스타일로 정리합니다. 시안을 확인한 뒤 전체 문서에 적용합니다."
+        },
+        {
+          "key": "cover.blocks[1].alt",
+          "text": "동일한 로그인 절차를 담은 원본 PDF와 LDS 적용 예시"
+        },
+        {
+          "key": "cover.blocks[1].caption",
+          "text": "가상 앱 매뉴얼의 같은 쪽을 비교한 예시입니다."
+        },
+        {
+          "key": "cover.logo.alt",
+          "text": "LK ROBOTICS"
+        },
+        {
+          "key": "cover.metadata[0].label",
+          "text": "문서 버전"
+        },
+        {
+          "key": "cover.metadata[0].value",
+          "text": "0.4 · 초안"
+        },
+        {
+          "key": "cover.metadata[1].label",
+          "text": "작성일"
+        },
+        {
+          "key": "cover.metadata[1].value",
+          "text": "2026-09-29"
+        },
+        {
+          "key": "cover.metadata[2].label",
+          "text": "입력 자료"
+        },
+        {
+          "key": "cover.metadata[2].value",
+          "text": "기존 PDF·PPTX 매뉴얼"
+        },
+        {
+          "key": "cover.metadata[3].label",
+          "text": "예제 결과"
+        },
+        {
+          "key": "cover.metadata[3].value",
+          "text": "A4 세로 PDF"
+        },
+        {
+          "key": "cover.sectionTitle",
+          "text": "기존 자료로 시작하기"
+        },
+        {
+          "key": "cover.title",
+          "text": "기존 매뉴얼을 LDS로 재디자인하기"
+        }
+      ],
+      "sourceHash": "ffe7cf2874581feef2f2360ea00650852bae3191cced131d596c9c019957037b",
+      "task": "기존 매뉴얼을 LDS로 재디자인하기",
+      "contextReason": "기존 PDF/PPTX를 내용·화면 보존 조건으로 정리하는 목적을 먼저 설명한다. 표지 로고와 버전·날짜·입력·결과 정보가 있고, 이미지가 가상 예시임을 캡션에서 밝힌다. 중복된 자료 소개는 삭제한 상태다.",
+      "decisions": [
+        {
+          "key": "cover.blocks[0].text",
+          "text": "러프하게 만든 매뉴얼을 첨부하고, 내용과 화면을 유지한 채 LDS 스타일로 정리합니다. 시안을 확인한 뒤 전체 문서에 적용합니다.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "cover.blocks[1].alt",
+          "text": "동일한 로그인 절차를 담은 원본 PDF와 LDS 적용 예시",
+          "verdict": "KEEP",
+          "reason": "가상 예시 또는 확대 영역의 대상을 식별하는 대체 텍스트다."
+        },
+        {
+          "key": "cover.blocks[1].caption",
+          "text": "가상 앱 매뉴얼의 같은 쪽을 비교한 예시입니다.",
+          "verdict": "KEEP",
+          "reason": "바로 위 이미지의 역할과 원본/적용 예시 관계를 설명하며 실제 제품 결과로 주장하지 않는다."
+        },
+        {
+          "key": "cover.logo.alt",
+          "text": "LK ROBOTICS",
+          "verdict": "KEEP",
+          "reason": "가상 예시 또는 확대 영역의 대상을 식별하는 대체 텍스트다."
+        },
+        {
+          "key": "cover.metadata[0].label",
+          "text": "문서 버전",
+          "verdict": "KEEP",
+          "reason": "실제 초안 버전·작성일과 입력/결과 형식을 구분한 문서 정보다."
+        },
+        {
+          "key": "cover.metadata[0].value",
+          "text": "0.4 · 초안",
+          "verdict": "KEEP",
+          "reason": "실제 초안 버전·작성일과 입력/결과 형식을 구분한 문서 정보다."
+        },
+        {
+          "key": "cover.metadata[1].label",
+          "text": "작성일",
+          "verdict": "KEEP",
+          "reason": "실제 초안 버전·작성일과 입력/결과 형식을 구분한 문서 정보다."
+        },
+        {
+          "key": "cover.metadata[1].value",
+          "text": "2026-09-29",
+          "verdict": "KEEP",
+          "reason": "실제 초안 버전·작성일과 입력/결과 형식을 구분한 문서 정보다."
+        },
+        {
+          "key": "cover.metadata[2].label",
+          "text": "입력 자료",
+          "verdict": "KEEP",
+          "reason": "실제 초안 버전·작성일과 입력/결과 형식을 구분한 문서 정보다."
+        },
+        {
+          "key": "cover.metadata[2].value",
+          "text": "기존 PDF·PPTX 매뉴얼",
+          "verdict": "KEEP",
+          "reason": "실제 초안 버전·작성일과 입력/결과 형식을 구분한 문서 정보다."
+        },
+        {
+          "key": "cover.metadata[3].label",
+          "text": "예제 결과",
+          "verdict": "KEEP",
+          "reason": "실제 초안 버전·작성일과 입력/결과 형식을 구분한 문서 정보다."
+        },
+        {
+          "key": "cover.metadata[3].value",
+          "text": "A4 세로 PDF",
+          "verdict": "KEEP",
+          "reason": "실제 초안 버전·작성일과 입력/결과 형식을 구분한 문서 정보다."
+        },
+        {
+          "key": "cover.sectionTitle",
+          "text": "기존 자료로 시작하기",
+          "verdict": "KEEP",
+          "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
+        },
+        {
+          "key": "cover.title",
+          "text": "기존 매뉴얼을 LDS로 재디자인하기",
+          "verdict": "KEEP",
+          "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
+        }
+      ]
+    },
+    {
+      "id": "pages[0]",
+      "items": [
+        {
+          "key": "pages[0].blocks[0].items[0].text",
+          "text": "ChatGPT 입력창의 ＋에서 「사진 및 파일 추가」를 선택합니다. 원본 매뉴얼과 lds-redesign-guide.txt를 첨부합니다."
+        },
+        {
+          "key": "pages[0].blocks[0].items[0].title",
+          "text": "원본과 기준 자료 첨부"
+        },
+        {
+          "key": "pages[0].blocks[0].items[1].text",
+          "text": "원본의 화면이 흐리거나 잘려 있다면 선명한 원본 이미지를 함께 넣습니다. 파일 이름에 해당 쪽이나 단계 이름을 적습니다."
+        },
+        {
+          "key": "pages[0].blocks[0].items[1].title",
+          "text": "필요한 이미지 함께 첨부"
+        },
+        {
+          "key": "pages[0].blocks[1].headers[0]",
+          "text": "항목"
+        },
+        {
+          "key": "pages[0].blocks[1].headers[1]",
+          "text": "확인할 내용"
+        },
+        {
+          "key": "pages[0].blocks[1].label",
+          "text": "첨부할 자료"
+        },
+        {
+          "key": "pages[0].blocks[1].rows[0][0]",
+          "text": "기존 매뉴얼"
+        },
+        {
+          "key": "pages[0].blocks[1].rows[0][1]",
+          "text": "PDF 또는 PPTX. 두 파일이 있으면 기준으로 삼을 버전을 지정합니다."
+        },
+        {
+          "key": "pages[0].blocks[1].rows[1][0]",
+          "text": "LDS 기준 자료"
+        },
+        {
+          "key": "pages[0].blocks[1].rows[1][1]",
+          "text": "lds-redesign-guide.txt와 LDS 적용 예시 PDF"
+        },
+        {
+          "key": "pages[0].blocks[1].rows[2][0]",
+          "text": "추가 이미지"
+        },
+        {
+          "key": "pages[0].blocks[1].rows[2][1]",
+          "text": "교체할 화면·로고가 있을 때 해당 원본 파일"
+        },
+        {
+          "key": "pages[0].blocks[2].alt",
+          "text": "연습용 rough-manual.pdf의 로그인 절차"
+        },
+        {
+          "key": "pages[0].blocks[2].caption",
+          "text": "연습용 원본 PDF 첫 쪽입니다. 화면과 설명이 이미 들어 있는 자료로 시작합니다."
+        },
+        {
+          "key": "pages[0].blocks[2].previewTitle",
+          "text": "원본 예시 · rough-manual.pdf"
+        },
+        {
+          "key": "pages[0].lead",
+          "text": "직접 만든 PDF나 PPTX를 준비합니다. 연습할 때는 함께 제공된 rough-manual.pdf를 사용합니다."
+        },
+        {
+          "key": "pages[0].title",
+          "text": "1. 기존 매뉴얼 첨부하기"
+        }
+      ],
+      "candidateHash": "ef104ba2162b96ff8668710185ba0b27b4910effa89f0dde228255c933a2a2ef",
+      "sourceItems": [
+        {
+          "key": "pages[0].blocks[0].items[0].text",
+          "text": "ChatGPT 입력창의 ＋에서 「사진 및 파일 추가」를 선택합니다. 원본 매뉴얼과 lds-redesign-guide.txt를 첨부합니다."
+        },
+        {
+          "key": "pages[0].blocks[0].items[0].title",
+          "text": "원본과 기준 자료 첨부"
+        },
+        {
+          "key": "pages[0].blocks[0].items[1].text",
+          "text": "원본의 화면이 흐리거나 잘려 있다면 선명한 원본 이미지를 함께 넣습니다. 파일 이름에 해당 쪽이나 단계 이름을 적습니다."
+        },
+        {
+          "key": "pages[0].blocks[0].items[1].title",
+          "text": "필요한 이미지 함께 첨부"
+        },
+        {
+          "key": "pages[0].blocks[1].headers[0]",
+          "text": "항목"
+        },
+        {
+          "key": "pages[0].blocks[1].headers[1]",
+          "text": "확인할 내용"
+        },
+        {
+          "key": "pages[0].blocks[1].label",
+          "text": "첨부할 자료"
+        },
+        {
+          "key": "pages[0].blocks[1].rows[0][0]",
+          "text": "기존 매뉴얼"
+        },
+        {
+          "key": "pages[0].blocks[1].rows[0][1]",
+          "text": "PDF 또는 PPTX. 두 파일이 있으면 기준으로 삼을 버전을 지정합니다."
+        },
+        {
+          "key": "pages[0].blocks[1].rows[1][0]",
+          "text": "LDS 기준 자료"
+        },
+        {
+          "key": "pages[0].blocks[1].rows[1][1]",
+          "text": "lds-redesign-guide.txt와 LDS 적용 예시 PDF"
+        },
+        {
+          "key": "pages[0].blocks[1].rows[2][0]",
+          "text": "추가 이미지"
+        },
+        {
+          "key": "pages[0].blocks[1].rows[2][1]",
+          "text": "교체할 화면·로고가 있을 때 해당 원본 파일"
+        },
+        {
+          "key": "pages[0].blocks[2].alt",
+          "text": "연습용 rough-manual.pdf의 로그인 절차"
+        },
+        {
+          "key": "pages[0].blocks[2].caption",
+          "text": "연습용 원본 PDF 첫 쪽입니다. 화면과 설명이 이미 들어 있는 자료로 시작합니다."
+        },
+        {
+          "key": "pages[0].blocks[2].previewTitle",
+          "text": "원본 예시 · rough-manual.pdf"
+        },
+        {
+          "key": "pages[0].lead",
+          "text": "직접 만든 PDF나 PPTX를 준비합니다. 연습할 때는 함께 제공된 rough-manual.pdf를 사용합니다."
+        },
+        {
+          "key": "pages[0].title",
+          "text": "1. 기존 매뉴얼 첨부하기"
+        }
+      ],
+      "sourceHash": "ef104ba2162b96ff8668710185ba0b27b4910effa89f0dde228255c933a2a2ef",
+      "task": "1. 기존 매뉴얼 첨부하기",
+      "contextReason": "원본과 기준 파일을 첨부한 뒤 필요한 선명한 이미지를 보완한다. 표에서 각 파일의 역할을 구분하고 실제 연습 원본을 프레임 안에 보여 준다. 첨부 UI의 현재 동작은 제품 검증 범위 밖이라는 한계를 예제 README에 명시한다.",
+      "decisions": [
+        {
+          "key": "pages[0].blocks[0].items[0].text",
+          "text": "ChatGPT 입력창의 ＋에서 「사진 및 파일 추가」를 선택합니다. 원본 매뉴얼과 lds-redesign-guide.txt를 첨부합니다.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[0].blocks[0].items[0].title",
+          "text": "원본과 기준 자료 첨부",
+          "verdict": "KEEP",
+          "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
+        },
+        {
+          "key": "pages[0].blocks[0].items[1].text",
+          "text": "원본의 화면이 흐리거나 잘려 있다면 선명한 원본 이미지를 함께 넣습니다. 파일 이름에 해당 쪽이나 단계 이름을 적습니다.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[0].blocks[0].items[1].title",
+          "text": "필요한 이미지 함께 첨부",
+          "verdict": "KEEP",
+          "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
+        },
+        {
+          "key": "pages[0].blocks[1].headers[0]",
+          "text": "항목",
+          "verdict": "KEEP",
+          "reason": "첨부할 자료 종류와 해당 확인 조건이 같은 행에서 대응한다."
+        },
+        {
+          "key": "pages[0].blocks[1].headers[1]",
+          "text": "확인할 내용",
+          "verdict": "KEEP",
+          "reason": "첨부할 자료 종류와 해당 확인 조건이 같은 행에서 대응한다."
+        },
+        {
+          "key": "pages[0].blocks[1].label",
+          "text": "첨부할 자료",
+          "verdict": "KEEP",
+          "reason": "표·목록·문서 정보 항목의 역할을 식별한다."
+        },
+        {
+          "key": "pages[0].blocks[1].rows[0][0]",
+          "text": "기존 매뉴얼",
+          "verdict": "KEEP",
+          "reason": "첨부할 자료 종류와 해당 확인 조건이 같은 행에서 대응한다."
+        },
+        {
+          "key": "pages[0].blocks[1].rows[0][1]",
+          "text": "PDF 또는 PPTX. 두 파일이 있으면 기준으로 삼을 버전을 지정합니다.",
+          "verdict": "KEEP",
+          "reason": "첨부할 자료 종류와 해당 확인 조건이 같은 행에서 대응한다."
+        },
+        {
+          "key": "pages[0].blocks[1].rows[1][0]",
+          "text": "LDS 기준 자료",
+          "verdict": "KEEP",
+          "reason": "첨부할 자료 종류와 해당 확인 조건이 같은 행에서 대응한다."
+        },
+        {
+          "key": "pages[0].blocks[1].rows[1][1]",
+          "text": "lds-redesign-guide.txt와 LDS 적용 예시 PDF",
+          "verdict": "KEEP",
+          "reason": "첨부할 자료 종류와 해당 확인 조건이 같은 행에서 대응한다."
+        },
+        {
+          "key": "pages[0].blocks[1].rows[2][0]",
+          "text": "추가 이미지",
+          "verdict": "KEEP",
+          "reason": "첨부할 자료 종류와 해당 확인 조건이 같은 행에서 대응한다."
+        },
+        {
+          "key": "pages[0].blocks[1].rows[2][1]",
+          "text": "교체할 화면·로고가 있을 때 해당 원본 파일",
+          "verdict": "KEEP",
+          "reason": "첨부할 자료 종류와 해당 확인 조건이 같은 행에서 대응한다."
+        },
+        {
+          "key": "pages[0].blocks[2].alt",
+          "text": "연습용 rough-manual.pdf의 로그인 절차",
+          "verdict": "KEEP",
+          "reason": "가상 예시 또는 확대 영역의 대상을 식별하는 대체 텍스트다."
+        },
+        {
+          "key": "pages[0].blocks[2].caption",
+          "text": "연습용 원본 PDF 첫 쪽입니다. 화면과 설명이 이미 들어 있는 자료로 시작합니다.",
+          "verdict": "KEEP",
+          "reason": "바로 위 이미지의 역할과 원본/적용 예시 관계를 설명하며 실제 제품 결과로 주장하지 않는다."
+        },
+        {
+          "key": "pages[0].blocks[2].previewTitle",
+          "text": "원본 예시 · rough-manual.pdf",
+          "verdict": "KEEP",
+          "reason": "프레임 안 문서의 파일명 또는 원본/적용 예시를 식별한다."
+        },
+        {
+          "key": "pages[0].lead",
+          "text": "직접 만든 PDF나 PPTX를 준비합니다. 연습할 때는 함께 제공된 rough-manual.pdf를 사용합니다.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[0].title",
+          "text": "1. 기존 매뉴얼 첨부하기",
+          "verdict": "KEEP",
+          "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
+        }
+      ]
+    },
+    {
+      "id": "pages[1]",
+      "items": [
+        {
+          "key": "pages[1].blocks[0].text",
+          "text": "첨부한 rough-manual.pdf를 LDS 기준으로 재디자인해 주세요. 함께 첨부한 lds-redesign-guide.txt와 디자인 예시를 참고하세요.\n내용, 절차 순서, 버튼 이름, 수치와 주의사항은 보존하세요. 원본 화면을 사용하고, 없는 설명이나 화면은 만들지 마세요.\n제목과 단계의 구분, 글자 크기, 간격, 이미지 배치와 페이지 구성을 정리하세요. 문구는 의미를 바꾸지 않는 범위에서 다듬어 주세요.\nA4 세로 PDF로 만들고, 우선 원본 1~2쪽의 시안을 보여 주세요. 읽지 못한 내용이나 빠진 이미지가 있으면 해당 쪽을 알려 주세요."
+        },
+        {
+          "key": "pages[1].blocks[1].text",
+          "text": "받은 시안에서 확인할 것"
+        },
+        {
+          "key": "pages[1].blocks[2].alt",
+          "text": "항목 상세 확인 절차의 원본 PDF와 LDS 적용 예시"
+        },
+        {
+          "key": "pages[1].blocks[2].caption",
+          "text": "같은 화면과 절차를 유지하고 제목·간격·이미지 크기를 정리한 예시입니다."
+        },
+        {
+          "key": "pages[1].blocks[3].items[0].label",
+          "text": "내용"
+        },
+        {
+          "key": "pages[1].blocks[3].items[0].value",
+          "text": "절차·버튼 이름·수치·주의사항이 원본과 같은지 확인합니다."
+        },
+        {
+          "key": "pages[1].blocks[3].items[1].label",
+          "text": "화면"
+        },
+        {
+          "key": "pages[1].blocks[3].items[1].value",
+          "text": "해당 단계의 화면인지, 버튼 글자가 읽히는지 확인합니다."
+        },
+        {
+          "key": "pages[1].blocks[3].items[2].label",
+          "text": "배치"
+        },
+        {
+          "key": "pages[1].blocks[3].items[2].value",
+          "text": "설명과 화면이 함께 있고 잘린 부분이 없는지 확인합니다."
+        },
+        {
+          "key": "pages[1].lead",
+          "text": "아래 요청문을 보내고, 받은 시안을 원본과 비교합니다."
+        },
+        {
+          "key": "pages[1].title",
+          "text": "2. 재디자인 요청하고 시안 확인하기"
+        }
+      ],
+      "candidateHash": "0c15c4df1ea731ce24a7243ccf939d3168bd4b7867ce480da1bf665284862074",
+      "sourceItems": [
+        {
+          "key": "pages[1].blocks[0].text",
+          "text": "첨부한 rough-manual.pdf를 LDS 기준으로 재디자인해 주세요. 함께 첨부한 lds-redesign-guide.txt와 디자인 예시를 참고하세요.\n내용, 절차 순서, 버튼 이름, 수치와 주의사항은 보존하세요. 원본 화면을 사용하고, 없는 설명이나 화면은 만들지 마세요.\n제목과 단계의 구분, 글자 크기, 간격, 이미지 배치와 페이지 구성을 정리하세요. 문구는 의미를 바꾸지 않는 범위에서 다듬어 주세요.\nA4 세로 PDF로 만들고, 우선 원본 1~2쪽의 시안을 보여 주세요. 읽지 못한 내용이나 빠진 이미지가 있으면 해당 쪽을 알려 주세요."
+        },
+        {
+          "key": "pages[1].blocks[1].text",
+          "text": "받은 시안에서 확인할 것"
+        },
+        {
+          "key": "pages[1].blocks[2].alt",
+          "text": "항목 상세 확인 절차의 원본 PDF와 LDS 적용 예시"
+        },
+        {
+          "key": "pages[1].blocks[2].caption",
+          "text": "같은 화면과 절차를 유지하고 제목·간격·이미지 크기를 정리한 예시입니다."
+        },
+        {
+          "key": "pages[1].blocks[3].items[0].label",
+          "text": "내용"
+        },
+        {
+          "key": "pages[1].blocks[3].items[0].value",
+          "text": "절차·버튼 이름·수치·주의사항이 원본과 같은지 확인합니다."
+        },
+        {
+          "key": "pages[1].blocks[3].items[1].label",
+          "text": "화면"
+        },
+        {
+          "key": "pages[1].blocks[3].items[1].value",
+          "text": "해당 단계의 화면인지, 버튼 글자가 읽히는지 확인합니다."
+        },
+        {
+          "key": "pages[1].blocks[3].items[2].label",
+          "text": "배치"
+        },
+        {
+          "key": "pages[1].blocks[3].items[2].value",
+          "text": "설명과 화면이 함께 있고 잘린 부분이 없는지 확인합니다."
+        },
+        {
+          "key": "pages[1].lead",
+          "text": "아래 요청문을 보내고, 받은 시안을 원본과 비교합니다."
+        },
+        {
+          "key": "pages[1].title",
+          "text": "2. 재디자인 요청하고 시안 확인하기"
+        }
+      ],
+      "sourceHash": "0c15c4df1ea731ce24a7243ccf939d3168bd4b7867ce480da1bf665284862074",
+      "task": "2. 재디자인 요청하고 시안 확인하기",
+      "contextReason": "요청문은 원본 보존 범위와 재디자인 범위를 명확히 구분한다. 대표 1~2쪽만 먼저 요청하고 원본·결과 비교 뒤 내용·화면·배치를 확인하도록 구성했다. 동일 내용의 전체 비교가 다음 확대 페이지와 연결된다.",
+      "decisions": [
+        {
+          "key": "pages[1].blocks[0].text",
+          "text": "첨부한 rough-manual.pdf를 LDS 기준으로 재디자인해 주세요. 함께 첨부한 lds-redesign-guide.txt와 디자인 예시를 참고하세요.\n내용, 절차 순서, 버튼 이름, 수치와 주의사항은 보존하세요. 원본 화면을 사용하고, 없는 설명이나 화면은 만들지 마세요.\n제목과 단계의 구분, 글자 크기, 간격, 이미지 배치와 페이지 구성을 정리하세요. 문구는 의미를 바꾸지 않는 범위에서 다듬어 주세요.\nA4 세로 PDF로 만들고, 우선 원본 1~2쪽의 시안을 보여 주세요. 읽지 못한 내용이나 빠진 이미지가 있으면 해당 쪽을 알려 주세요.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[1].blocks[1].text",
+          "text": "받은 시안에서 확인할 것",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[1].blocks[2].alt",
+          "text": "항목 상세 확인 절차의 원본 PDF와 LDS 적용 예시",
+          "verdict": "KEEP",
+          "reason": "가상 예시 또는 확대 영역의 대상을 식별하는 대체 텍스트다."
+        },
+        {
+          "key": "pages[1].blocks[2].caption",
+          "text": "같은 화면과 절차를 유지하고 제목·간격·이미지 크기를 정리한 예시입니다.",
+          "verdict": "KEEP",
+          "reason": "바로 위 이미지의 역할과 원본/적용 예시 관계를 설명하며 실제 제품 결과로 주장하지 않는다."
+        },
+        {
+          "key": "pages[1].blocks[3].items[0].label",
+          "text": "내용",
+          "verdict": "KEEP",
+          "reason": "표·목록·문서 정보 항목의 역할을 식별한다."
+        },
+        {
+          "key": "pages[1].blocks[3].items[0].value",
+          "text": "절차·버튼 이름·수치·주의사항이 원본과 같은지 확인합니다.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[1].blocks[3].items[1].label",
+          "text": "화면",
+          "verdict": "KEEP",
+          "reason": "표·목록·문서 정보 항목의 역할을 식별한다."
+        },
+        {
+          "key": "pages[1].blocks[3].items[1].value",
+          "text": "해당 단계의 화면인지, 버튼 글자가 읽히는지 확인합니다.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[1].blocks[3].items[2].label",
+          "text": "배치",
+          "verdict": "KEEP",
+          "reason": "표·목록·문서 정보 항목의 역할을 식별한다."
+        },
+        {
+          "key": "pages[1].blocks[3].items[2].value",
+          "text": "설명과 화면이 함께 있고 잘린 부분이 없는지 확인합니다.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[1].lead",
+          "text": "아래 요청문을 보내고, 받은 시안을 원본과 비교합니다.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[1].title",
+          "text": "2. 재디자인 요청하고 시안 확인하기",
+          "verdict": "KEEP",
+          "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
+        }
+      ]
+    },
+    {
+      "id": "pages[2]",
+      "items": [
+        {
+          "key": "pages[2].blocks[0].alt",
+          "text": "원본의 단계 제목과 설명, 첫 번째 항목 확대"
+        },
+        {
+          "key": "pages[2].blocks[0].caption",
+          "text": "원본 · 항목 상세 확인"
+        },
+        {
+          "key": "pages[2].blocks[0].previewTitle",
+          "text": "원본 예시 · 상세 확대"
+        },
+        {
+          "key": "pages[2].blocks[1].alt",
+          "text": "LDS 적용 예시의 단계 제목과 설명, 첫 번째 항목 확대"
+        },
+        {
+          "key": "pages[2].blocks[1].caption",
+          "text": "LDS 적용 예시 · 같은 부분"
+        },
+        {
+          "key": "pages[2].blocks[1].previewTitle",
+          "text": "LDS 적용 예시 · 상세 확대"
+        },
+        {
+          "key": "pages[2].blocks[2].text",
+          "text": "내용이 누락되거나 화면이 흐리면 해당 쪽의 원문 또는 선명한 이미지를 첨부해 수정을 요청합니다."
+        },
+        {
+          "key": "pages[2].blocks[2].title",
+          "text": "읽지 못한 부분이 있다면"
+        },
+        {
+          "key": "pages[2].lead",
+          "text": "전체 구성에서 확인하기 어려운 글자 크기와 간격을 같은 영역의 확대 이미지로 비교합니다."
+        },
+        {
+          "key": "pages[2].title",
+          "text": "3. 같은 부분을 크게 비교하기"
+        }
+      ],
+      "candidateHash": "33022769ad34fd96dd6fb3f095952447cbd0e5b882b745dbfa93a953436c5160",
+      "sourceItems": [
+        {
+          "key": "pages[2].blocks[0].alt",
+          "text": "원본의 단계 제목과 설명, 첫 번째 항목 확대"
+        },
+        {
+          "key": "pages[2].blocks[0].caption",
+          "text": "원본 · 항목 상세 확인"
+        },
+        {
+          "key": "pages[2].blocks[0].previewTitle",
+          "text": "원본 예시 · 상세 확대"
+        },
+        {
+          "key": "pages[2].blocks[1].alt",
+          "text": "LDS 적용 예시의 단계 제목과 설명, 첫 번째 항목 확대"
+        },
+        {
+          "key": "pages[2].blocks[1].caption",
+          "text": "LDS 적용 예시 · 같은 부분"
+        },
+        {
+          "key": "pages[2].blocks[1].previewTitle",
+          "text": "LDS 적용 예시 · 상세 확대"
+        },
+        {
+          "key": "pages[2].blocks[2].text",
+          "text": "내용이 누락되거나 화면이 흐리면 해당 쪽의 원문 또는 선명한 이미지를 첨부해 수정을 요청합니다."
+        },
+        {
+          "key": "pages[2].blocks[2].title",
+          "text": "읽지 못한 부분이 있다면"
+        },
+        {
+          "key": "pages[2].lead",
+          "text": "전체 구성에서 확인하기 어려운 글자 크기와 간격을 같은 영역의 확대 이미지로 비교합니다."
+        },
+        {
+          "key": "pages[2].title",
+          "text": "3. 같은 부분을 크게 비교하기"
+        }
+      ],
+      "sourceHash": "33022769ad34fd96dd6fb3f095952447cbd0e5b882b745dbfa93a953436c5160",
+      "task": "3. 같은 부분을 크게 비교하기",
+      "contextReason": "작은 전체 비교의 보완으로 같은 영역을 확대한다. 원본·LDS 적용 예시를 각각 표시하고, 판독이 어려울 때 선명한 원본을 추가하는 행동을 안내한다. 확대 이미지는 전체 문서를 대신하지 않는다.",
+      "decisions": [
+        {
+          "key": "pages[2].blocks[0].alt",
+          "text": "원본의 단계 제목과 설명, 첫 번째 항목 확대",
+          "verdict": "KEEP",
+          "reason": "가상 예시 또는 확대 영역의 대상을 식별하는 대체 텍스트다."
+        },
+        {
+          "key": "pages[2].blocks[0].caption",
+          "text": "원본 · 항목 상세 확인",
+          "verdict": "KEEP",
+          "reason": "바로 위 이미지의 역할과 원본/적용 예시 관계를 설명하며 실제 제품 결과로 주장하지 않는다."
+        },
+        {
+          "key": "pages[2].blocks[0].previewTitle",
+          "text": "원본 예시 · 상세 확대",
+          "verdict": "KEEP",
+          "reason": "프레임 안 문서의 파일명 또는 원본/적용 예시를 식별한다."
+        },
+        {
+          "key": "pages[2].blocks[1].alt",
+          "text": "LDS 적용 예시의 단계 제목과 설명, 첫 번째 항목 확대",
+          "verdict": "KEEP",
+          "reason": "가상 예시 또는 확대 영역의 대상을 식별하는 대체 텍스트다."
+        },
+        {
+          "key": "pages[2].blocks[1].caption",
+          "text": "LDS 적용 예시 · 같은 부분",
+          "verdict": "KEEP",
+          "reason": "바로 위 이미지의 역할과 원본/적용 예시 관계를 설명하며 실제 제품 결과로 주장하지 않는다."
+        },
+        {
+          "key": "pages[2].blocks[1].previewTitle",
+          "text": "LDS 적용 예시 · 상세 확대",
+          "verdict": "KEEP",
+          "reason": "프레임 안 문서의 파일명 또는 원본/적용 예시를 식별한다."
+        },
+        {
+          "key": "pages[2].blocks[2].text",
+          "text": "내용이 누락되거나 화면이 흐리면 해당 쪽의 원문 또는 선명한 이미지를 첨부해 수정을 요청합니다.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[2].blocks[2].title",
+          "text": "읽지 못한 부분이 있다면",
+          "verdict": "KEEP",
+          "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
+        },
+        {
+          "key": "pages[2].lead",
+          "text": "전체 구성에서 확인하기 어려운 글자 크기와 간격을 같은 영역의 확대 이미지로 비교합니다.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[2].title",
+          "text": "3. 같은 부분을 크게 비교하기",
+          "verdict": "KEEP",
+          "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
+        }
+      ]
+    },
+    {
+      "id": "pages[3]",
+      "items": [
+        {
+          "key": "pages[3].blocks[0].items[0].quote",
+          "text": "시안의 「로그인하기」 쪽에서 로그인 화면을 더 크게 배치해 주세요. 단계 설명과 화면을 같은 쪽에 두고, 다른 쪽의 제목 크기와 간격도 맞춰 주세요. 원본의 버튼 이름과 절차는 유지하세요.\n이 구성을 나머지 쪽에도 적용하고, 원본에서 빠진 내용이나 이미지가 없는지 확인해 주세요."
+        },
+        {
+          "key": "pages[3].blocks[0].items[0].title",
+          "text": "수정 요청 보내기"
+        },
+        {
+          "key": "pages[3].blocks[0].items[1].figure.alt",
+          "text": "로그인 단계 설명과 원본 화면"
+        },
+        {
+          "key": "pages[3].blocks[0].items[1].figure.caption",
+          "text": "LDS 적용 예시: 단계 설명 바로 아래에 원본 화면과 결과 설명을 배치했습니다."
+        },
+        {
+          "key": "pages[3].blocks[0].items[1].figure.previewTitle",
+          "text": "LDS 적용 예시 · 로그인하기"
+        },
+        {
+          "key": "pages[3].blocks[0].items[1].text",
+          "text": "지정한 화면이 커졌는지, 설명과 함께 있는지 확인합니다. 버튼 이름과 절차가 원본과 같은지도 다시 확인합니다."
+        },
+        {
+          "key": "pages[3].blocks[0].items[1].title",
+          "text": "수정 결과 확인하기"
+        },
+        {
+          "key": "pages[3].lead",
+          "text": "바꿀 쪽과 요소, 원하는 결과를 지정합니다. 시안이 맞으면 같은 구성을 나머지 쪽에 적용합니다."
+        },
+        {
+          "key": "pages[3].title",
+          "text": "4. 수정한 뒤 전체에 적용하기"
+        }
+      ],
+      "candidateHash": "a622d9947133f1a9f272811ee1215a19594c5d2b7176778cd485d371f7983673",
+      "sourceItems": [
+        {
+          "key": "pages[3].blocks[0].items[0].quote",
+          "text": "시안의 「로그인하기」 쪽에서 로그인 화면을 더 크게 배치해 주세요. 단계 설명과 화면을 같은 쪽에 두고, 다른 쪽의 제목 크기와 간격도 맞춰 주세요. 원본의 버튼 이름과 절차는 유지하세요.\n이 구성을 나머지 쪽에도 적용하고, 원본에서 빠진 내용이나 이미지가 없는지 확인해 주세요."
+        },
+        {
+          "key": "pages[3].blocks[0].items[0].title",
+          "text": "수정 요청 보내기"
+        },
+        {
+          "key": "pages[3].blocks[0].items[1].figure.alt",
+          "text": "로그인 단계 설명과 원본 화면"
+        },
+        {
+          "key": "pages[3].blocks[0].items[1].figure.caption",
+          "text": "LDS 적용 예시: 단계 설명 바로 아래에 원본 화면과 결과 설명을 배치했습니다."
+        },
+        {
+          "key": "pages[3].blocks[0].items[1].figure.previewTitle",
+          "text": "LDS 적용 예시 · 로그인하기"
+        },
+        {
+          "key": "pages[3].blocks[0].items[1].text",
+          "text": "지정한 화면이 커졌는지, 설명과 함께 있는지 확인합니다. 버튼 이름과 절차가 원본과 같은지도 다시 확인합니다."
+        },
+        {
+          "key": "pages[3].blocks[0].items[1].title",
+          "text": "수정 결과 확인하기"
+        },
+        {
+          "key": "pages[3].lead",
+          "text": "바꿀 쪽과 요소, 원하는 결과를 지정합니다. 시안이 맞으면 같은 구성을 나머지 쪽에 적용합니다."
+        },
+        {
+          "key": "pages[3].title",
+          "text": "4. 수정한 뒤 전체에 적용하기"
+        }
+      ],
+      "sourceHash": "a622d9947133f1a9f272811ee1215a19594c5d2b7176778cd485d371f7983673",
+      "task": "4. 수정한 뒤 전체에 적용하기",
+      "contextReason": "수정할 쪽·대상·원하는 배치를 요청문에서 지정한다. 요청 보내기 다음 수정 결과 확인하기를 배치하고 버튼 이름·절차 보존과 실제 예시 화면을 함께 확인한다.",
+      "decisions": [
+        {
+          "key": "pages[3].blocks[0].items[0].quote",
+          "text": "시안의 「로그인하기」 쪽에서 로그인 화면을 더 크게 배치해 주세요. 단계 설명과 화면을 같은 쪽에 두고, 다른 쪽의 제목 크기와 간격도 맞춰 주세요. 원본의 버튼 이름과 절차는 유지하세요.\n이 구성을 나머지 쪽에도 적용하고, 원본에서 빠진 내용이나 이미지가 없는지 확인해 주세요.",
+          "verdict": "KEEP",
+          "reason": "수정 대상과 배치 조건, 원본 보존 조건을 복사할 요청문으로 묶는다."
+        },
+        {
+          "key": "pages[3].blocks[0].items[0].title",
+          "text": "수정 요청 보내기",
+          "verdict": "KEEP",
+          "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
+        },
+        {
+          "key": "pages[3].blocks[0].items[1].figure.alt",
+          "text": "로그인 단계 설명과 원본 화면",
+          "verdict": "KEEP",
+          "reason": "가상 예시 또는 확대 영역의 대상을 식별하는 대체 텍스트다."
+        },
+        {
+          "key": "pages[3].blocks[0].items[1].figure.caption",
+          "text": "LDS 적용 예시: 단계 설명 바로 아래에 원본 화면과 결과 설명을 배치했습니다.",
+          "verdict": "KEEP",
+          "reason": "바로 위 이미지의 역할과 원본/적용 예시 관계를 설명하며 실제 제품 결과로 주장하지 않는다."
+        },
+        {
+          "key": "pages[3].blocks[0].items[1].figure.previewTitle",
+          "text": "LDS 적용 예시 · 로그인하기",
+          "verdict": "KEEP",
+          "reason": "프레임 안 문서의 파일명 또는 원본/적용 예시를 식별한다."
+        },
+        {
+          "key": "pages[3].blocks[0].items[1].text",
+          "text": "지정한 화면이 커졌는지, 설명과 함께 있는지 확인합니다. 버튼 이름과 절차가 원본과 같은지도 다시 확인합니다.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[3].blocks[0].items[1].title",
+          "text": "수정 결과 확인하기",
+          "verdict": "KEEP",
+          "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
+        },
+        {
+          "key": "pages[3].lead",
+          "text": "바꿀 쪽과 요소, 원하는 결과를 지정합니다. 시안이 맞으면 같은 구성을 나머지 쪽에 적용합니다.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[3].title",
+          "text": "4. 수정한 뒤 전체에 적용하기",
+          "verdict": "KEEP",
+          "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
+        }
+      ]
+    },
+    {
+      "id": "pages[4]",
+      "items": [
+        {
+          "key": "pages[4].blocks[0].text",
+          "text": "확인한 시안대로 전체 매뉴얼을 완성해 주세요. 모든 쪽의 글자와 이미지가 잘리지 않는지, 원본의 내용과 화면이 빠지지 않았는지 확인하세요.\n다운로드할 수 있는 redesigned-manual.pdf를 첨부해 주세요. 원본은 덮어쓰지 마세요."
+        },
+        {
+          "key": "pages[4].blocks[1].text",
+          "text": "요청문에 “배포용 PDF와 텍스트를 편집할 수 있는 PPTX를 함께 만들어 주세요.”를 추가합니다. 받은 PPTX에서 글자와 이미지가 실제로 편집되는지 확인합니다."
+        },
+        {
+          "key": "pages[4].blocks[1].title",
+          "text": "편집용 PPTX도 필요한 경우"
+        },
+        {
+          "key": "pages[4].blocks[2].items[0].text",
+          "text": "파일 미리보기를 열고 제목과 전체 쪽을 확인한 뒤 다운로드합니다."
+        },
+        {
+          "key": "pages[4].blocks[2].items[0].title",
+          "text": "결과 파일 내려받기"
+        },
+        {
+          "key": "pages[4].blocks[2].items[1].text",
+          "text": "첫 쪽부터 마지막 쪽까지 열어 글자와 이미지의 잘림, 빠진 쪽, 흐린 화면을 확인합니다."
+        },
+        {
+          "key": "pages[4].blocks[2].items[1].title",
+          "text": "저장한 파일 확인하기"
+        },
+        {
+          "key": "pages[4].blocks[3].text",
+          "text": "“완성한 PDF를 다운로드할 수 있는 파일로 첨부해 주세요.”라고 요청합니다. 파일을 받으면 내려받아 열어 봅니다."
+        },
+        {
+          "key": "pages[4].blocks[3].title",
+          "text": "설명만 받고 파일이 없을 때"
+        },
+        {
+          "key": "pages[4].lead",
+          "text": "전체 문서를 확인한 뒤 배포할 파일을 요청합니다."
+        },
+        {
+          "key": "pages[4].title",
+          "text": "5. 결과 파일 저장하기"
+        }
+      ],
+      "candidateHash": "089521ca10886d0fe7afd08d84fb3b979b5e7caff323ce3e0507c2da0c1193d1",
+      "sourceItems": [
+        {
+          "key": "pages[4].blocks[0].text",
+          "text": "확인한 시안대로 전체 매뉴얼을 완성해 주세요. 모든 쪽의 글자와 이미지가 잘리지 않는지, 원본의 내용과 화면이 빠지지 않았는지 확인하세요.\n다운로드할 수 있는 redesigned-manual.pdf를 첨부해 주세요. 원본은 덮어쓰지 마세요."
+        },
+        {
+          "key": "pages[4].blocks[1].text",
+          "text": "요청문에 “배포용 PDF와 텍스트를 편집할 수 있는 PPTX를 함께 만들어 주세요.”를 추가합니다. 받은 PPTX에서 글자와 이미지가 실제로 편집되는지 확인합니다."
+        },
+        {
+          "key": "pages[4].blocks[1].title",
+          "text": "편집용 PPTX도 필요한 경우"
+        },
+        {
+          "key": "pages[4].blocks[2].items[0].text",
+          "text": "파일 미리보기를 열고 제목과 전체 쪽을 확인한 뒤 다운로드합니다."
+        },
+        {
+          "key": "pages[4].blocks[2].items[0].title",
+          "text": "결과 파일 내려받기"
+        },
+        {
+          "key": "pages[4].blocks[2].items[1].text",
+          "text": "첫 쪽부터 마지막 쪽까지 열어 글자와 이미지의 잘림, 빠진 쪽, 흐린 화면을 확인합니다."
+        },
+        {
+          "key": "pages[4].blocks[2].items[1].title",
+          "text": "저장한 파일 확인하기"
+        },
+        {
+          "key": "pages[4].blocks[3].text",
+          "text": "“완성한 PDF를 다운로드할 수 있는 파일로 첨부해 주세요.”라고 요청합니다. 파일을 받으면 내려받아 열어 봅니다."
+        },
+        {
+          "key": "pages[4].blocks[3].title",
+          "text": "설명만 받고 파일이 없을 때"
+        },
+        {
+          "key": "pages[4].lead",
+          "text": "전체 문서를 확인한 뒤 배포할 파일을 요청합니다."
+        },
+        {
+          "key": "pages[4].title",
+          "text": "5. 결과 파일 저장하기"
+        }
+      ],
+      "sourceHash": "089521ca10886d0fe7afd08d84fb3b979b5e7caff323ce3e0507c2da0c1193d1",
+      "task": "5. 결과 파일 저장하기",
+      "contextReason": "배포 파일을 요청하고 내려받은 파일을 끝까지 확인한다. PPTX는 선택 조건과 편집 여부 확인을 함께 안내한다. 파일 없이 설명만 받은 예외에는 첨부를 재요청한다. 요청했다는 사실과 파일 생성 성공을 혼동하지 않는다.",
+      "decisions": [
+        {
+          "key": "pages[4].blocks[0].text",
+          "text": "확인한 시안대로 전체 매뉴얼을 완성해 주세요. 모든 쪽의 글자와 이미지가 잘리지 않는지, 원본의 내용과 화면이 빠지지 않았는지 확인하세요.\n다운로드할 수 있는 redesigned-manual.pdf를 첨부해 주세요. 원본은 덮어쓰지 마세요.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[4].blocks[1].text",
+          "text": "요청문에 “배포용 PDF와 텍스트를 편집할 수 있는 PPTX를 함께 만들어 주세요.”를 추가합니다. 받은 PPTX에서 글자와 이미지가 실제로 편집되는지 확인합니다.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[4].blocks[1].title",
+          "text": "편집용 PPTX도 필요한 경우",
+          "verdict": "KEEP",
+          "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
+        },
+        {
+          "key": "pages[4].blocks[2].items[0].text",
+          "text": "파일 미리보기를 열고 제목과 전체 쪽을 확인한 뒤 다운로드합니다.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[4].blocks[2].items[0].title",
+          "text": "결과 파일 내려받기",
+          "verdict": "KEEP",
+          "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
+        },
+        {
+          "key": "pages[4].blocks[2].items[1].text",
+          "text": "첫 쪽부터 마지막 쪽까지 열어 글자와 이미지의 잘림, 빠진 쪽, 흐린 화면을 확인합니다.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[4].blocks[2].items[1].title",
+          "text": "저장한 파일 확인하기",
+          "verdict": "KEEP",
+          "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
+        },
+        {
+          "key": "pages[4].blocks[3].text",
+          "text": "“완성한 PDF를 다운로드할 수 있는 파일로 첨부해 주세요.”라고 요청합니다. 파일을 받으면 내려받아 열어 봅니다.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[4].blocks[3].title",
+          "text": "설명만 받고 파일이 없을 때",
+          "verdict": "KEEP",
+          "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
+        },
+        {
+          "key": "pages[4].lead",
+          "text": "전체 문서를 확인한 뒤 배포할 파일을 요청합니다.",
+          "verdict": "KEEP",
+          "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
+        },
+        {
+          "key": "pages[4].title",
+          "text": "5. 결과 파일 저장하기",
+          "verdict": "KEEP",
+          "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
+        }
+      ]
+    }
+  ]
+}

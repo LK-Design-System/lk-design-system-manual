@@ -17,7 +17,7 @@
 | 설명→화면 / 화면→캡션 / 다음 단계 | 12 / 8 / 24px | 유지 |
 | 제목 있는 안내 상자 | 실제 Core Callout compact | 유지 |
 | 원문 표·헤더·테두리 | native ManualTable | 유지 |
-| 세로 화면과 오른쪽 설명 | columns + help | 유지 |
+| 세로 화면과 오른쪽 설명 | columns + callout | 유지 |
 | A4·페이지 번호·하단 여유 | ManualPage | 유지; 콘텐츠 예약 영역은 출력기가 측정 |
 | 사용자 행동 중심 문구·실제 화면명 보존 | 작성 스킬의 writing.md | 유지 |
 

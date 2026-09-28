@@ -7,8 +7,8 @@ import { validateDocument } from '../src/validate.mjs';
 import { scaffold } from '../src/scaffold.mjs';
 const doc = () => ({ schemaVersion: 1, title: 'Sample', pages: [{ title: 'Start', blocks: [{ type: 'paragraph', text: 'Content' }] }] });
 
-test('accepts both shipped examples', async () => {
-  for (const name of ['compact', 'gallery']) assert.ok(validateDocument(JSON.parse(await fs.readFile(new URL(`../examples/${name}.json`, import.meta.url)))));
+test('accepts shipped examples', async () => {
+  for (const name of ['compact', 'gallery', 'authoring-guide/manual']) assert.ok(validateDocument(JSON.parse(await fs.readFile(new URL(`../examples/${name}.json`, import.meta.url)))));
 });
 test('preserves typed copy and rejects incomplete figures, notes and tables', () => {
   const d = doc(); d.pages[0].blocks = [{ type: 'list', items: [{ label: '주소', value: '<script>literal</script>', emphasis: true }] }];
@@ -38,4 +38,14 @@ test('init refuses existing directories and preserves their files', async t => {
   const marker = path.join(root, 'manual.json'); await fs.writeFile(marker, 'keep');
   await assert.rejects(scaffold(root), { code: 'EEXIST' });
   assert.equal(await fs.readFile(marker, 'utf8'), 'keep');
+});
+
+test('document previews retain crop bounds, quote text and labeled list emphasis', () => {
+  const d = doc();
+  const figure = { src: 'sample.png', alt: 'Screen detail', caption: 'Original detail', previewTitle: 'Source', crop: {x:10,y:20,width:100,height:50,sourceWidth:200,sourceHeight:100} };
+  d.pages[0].blocks = [{type:'subheading',text:'Check result'}, {type:'steps',items:[{title:'Send request',quote:'First paragraph\nSecond paragraph',figure}]}, {type:'list',items:[{label:'Content',value:'Check names',labelEmphasis:true}]}];
+  assert.equal(validateDocument(d),d);
+  for (const crop of [{...figure.crop,x:-1},{...figure.crop,width:0},{...figure.crop,height:NaN},{...figure.crop,x:150}]) {
+    const bad=doc();bad.pages[0].blocks=[{type:'figure',...figure,crop}];assert.throws(()=>validateDocument(bad),/crop/);
+  }
 });

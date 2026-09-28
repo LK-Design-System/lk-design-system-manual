@@ -22,9 +22,9 @@ const near = (actual, expected, label, tolerance = 1) => assert.ok(Math.abs(actu
 try {
   browser = await chromium.launch({ headless: true, ...(values.browser ? { executablePath: path.resolve(values.browser) } : {}) });
   const page = await browser.newPage({ viewport: { width: 1158, height: 926 } });
-  for (const [name, count] of [['compact',4],['gallery',6]]) {
+  for (const [name, count] of [['compact',4],['gallery',6],['authoring-guide',6]]) {
     const html = path.join(temp, `${name}.html`);
-    await cli('build', path.join(root, `examples/${name}.json`), '--runtime', runtime, '--out', html);
+    await cli('build', path.join(root, name === 'authoring-guide' ? 'examples/authoring-guide/manual.json' : `examples/${name}.json`), '--runtime', runtime, '--out', html);
     await page.goto(pathToFileURL(html).href); await page.emulateMedia({ media: 'print' });
     const got = await page.evaluate(async () => {
       await document.fonts.ready;
@@ -39,6 +39,10 @@ try {
         logoLoaded: document.querySelector('.lds-manual-logo').naturalWidth > 0,
         metadata: [...meta.querySelectorAll('tr')].map(tr=>[...tr.cells].map(c=>({tag:c.tagName,span:c.colSpan,width:rect(c).width,headers:c.getAttribute('headers'),id:c.id}))),
         stepStyles: steps.map(e=>{const s=getComputedStyle(e.querySelector('h3'));return [s.fontSize,s.lineHeight,s.fontWeight]}),
+        previews: document.querySelectorAll('.lds-manual-document-preview').length,
+        crops: document.querySelectorAll('.lds-manual-figure svg[role=img]').length,
+        quotes: document.querySelectorAll('.lds-manual-quote').length,
+        legacyHelp: document.querySelectorAll('.lds-manual-help').length,
         captionSizes: [...new Set([...document.querySelectorAll('figcaption')].map(e=>getComputedStyle(e).fontSize))],
         fontWeights: [...document.fonts].filter(f=>f.family.replaceAll('"','')==='LDSManual' && f.status==='loaded').map(f=>f.weight).sort(),
         gaps: [...document.querySelectorAll('.lds-manual-step+.lds-manual-step')].map(e=>rect(e).top-rect(e.previousElementSibling).bottom),
@@ -49,7 +53,7 @@ try {
         numberedSteps: [...document.querySelectorAll('.lds-manual-step-label>span')].map(e=>e.textContent),
         figureWidths: [...document.querySelectorAll('.lds-manual-figure')].map(e=>({kind:e.className,width:rect(e).width})),
         footers: [...document.querySelectorAll('.lds-manual-page footer')].map(e=>e.textContent),
-        overflow: [...document.querySelectorAll('.lds-manual-content')].flatMap((c,i)=>[...c.querySelectorAll('*')].filter(e=>{const b=rect(e),a=rect(c);return b.width>0&&(b.left<a.left-1||b.right>a.right+1||b.bottom>a.bottom+1)}).map(e=>({page:i+1,tag:e.tagName})))
+        overflow: [...document.querySelectorAll('.lds-manual-content')].flatMap((c,i)=>[...c.querySelectorAll('*')].filter(e=>{if(e instanceof SVGElement && e.tagName.toLowerCase() !== 'svg') return false;const b=rect(e),a=rect(c);return b.width>0&&(b.left<a.left-1||b.right>a.right+1||b.bottom>a.bottom+1)}).map(e=>({page:i+1,tag:e.tagName})))
       };
     });
     assert.equal(got.pages,count); assert.ok(got.logoLoaded); near(got.logoWidth,35*96/25.4,'logo width');
@@ -72,6 +76,8 @@ try {
     }
     assert.deepEqual(got.footers,Array.from({length:count},(_,i)=>`${String(i+1).padStart(2,'0')} / ${String(count).padStart(2,'0')}`));
     assert.deepEqual(got.overflow,[]);
+    assert.equal(got.legacyHelp,0);
+    if(name==='authoring-guide'){assert.equal(got.previews,4);assert.equal(got.crops,3);assert.equal(got.quotes,3);assert.equal(got.callouts.length,3);}
     checks.push({ name, pages:count, result:'passed', contracts:['brand','metadata','type','fonts','spacing','callout','figures','pagination','overflow'] });
     console.log(`PASS ${name}: ${count} pages, brand/type/spacing/layout`);
   }

@@ -19,6 +19,7 @@ node scripts/check-template.mjs --runtime ../lk-design-system --browser /usr/bin
 - 단계 사이 24px, 설명→이미지 12px, 이미지→캡션 8px
 - 제목 바 8px, 실제 Core Callout의 제목·아이콘·16px 곡률
 - 이미지 reading/compact 폭, 연속 번호, 페이지 넘침
+- 재디자인 안내 6쪽의 프레임 4개·확대 3개·요청문 3개·콜아웃 3개와 A4 넘침
 - 원본 기록이 HTML에 섞이지 않음, 문구를 HTML로 실행하지 않음
 - 넘치는 페이지의 PDF 출력 거부와 이전 PDF 보존
 
@@ -26,3 +27,5 @@ node scripts/check-template.mjs --runtime ../lk-design-system --browser /usr/bin
 픽셀 스냅샷 비교는 아직 없으며 이 검사는 디자인의 모든 변화를 잡지 않습니다.
 숫자 계약을 바꾸는 경우 규칙과 검사를 함께 수정하고 실제 출력물을 검토합니다.
 제품 정보 정확성, 작은 스크린샷의 판독성, 라이팅의 자연스러움은 사람이 확인합니다.
+
+문서별 라이팅 기록의 필수 검사는 [완료 조건](copy-review.md)을 따릅니다. 이 템플릿 검사는 문서별 라이팅 검토를 대신하지 않습니다.

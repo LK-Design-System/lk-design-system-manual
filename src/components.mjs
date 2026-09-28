@@ -1,9 +1,15 @@
 // The adapter receives the upstream peers; Callout is never reimplemented here.
-export function createManualComponents(React, Callout) {
+export function createManualComponents(React, Callout, Blockquote) {
   const h = React.createElement;
-  function ManualFigure({ src, alt, caption, size = 'full' }) {
+  function ManualFigure({ src, alt, caption, size = 'full', previewTitle, crop }) {
+    const media = crop
+      ? h('svg', { role: 'img', 'aria-label': alt, viewBox: `${crop.x} ${crop.y} ${crop.width} ${crop.height}` },
+        h('image', { href: src, width: crop.sourceWidth, height: crop.sourceHeight }))
+      : h('img', { src, alt });
     return h('figure', { className: `lds-manual-figure lds-manual-figure--${size}` },
-      h('img', { src, alt }), caption && h('figcaption', null, caption));
+      previewTitle ? h('div', { className: 'lds-manual-document-preview' },
+        h('p', { className: 'lds-manual-document-preview-label' }, previewTitle), media) : media,
+      caption && h('figcaption', null, caption));
   }
   function ManualTable({ headers, rows, label = '안내 표' }) {
     return h('div', { className: 'lds-manual-table-frame' }, h('table', { 'aria-label': label },
@@ -31,12 +37,18 @@ export function createManualComponents(React, Callout) {
     return h('div', { className: 'lds-manual-callout' },
       h(Callout, { title, tone, density: 'compact', headingLevel: 3 }, text));
   }
+  function ManualQuote({ text }) {
+    if (!Blockquote) throw new Error('ManualQuote requires LDS Core Blockquote.');
+    return h('div', { className: 'lds-manual-quote' },
+      h(Blockquote, null, text.split(/\n+/).map((line, i) => h('p', { key: i }, line))));
+  }
   function ManualSteps({ items, start = 1 }) {
     return h('ol', { className: 'lds-manual-steps', start }, items.map((item, i) =>
       h('li', { key: i, className: 'lds-manual-step' },
         h('div', { className: 'lds-manual-step-label' },
           h('span', { 'aria-hidden': true }, `${start + i}.`),
           h('div', null, h('h3', null, item.title), item.text && h('p', null, item.text))),
+        item.quote && h(ManualQuote, { text: item.quote }),
         item.figure && h(ManualFigure, item.figure))));
   }
   function ManualSectionTitle({ children }) { return h('h2', { className: 'lds-manual-section-title' }, children); }
@@ -44,14 +56,16 @@ export function createManualComponents(React, Callout) {
     return items.map((block, i) => {
       const { type, ...props } = block;
       switch (type) {
+        case 'quote': return h(ManualQuote, { ...props, key: i });
         case 'address': return h(ManualAddress, { ...props, key: i });
         case 'paragraph': return h('p', { key: i }, props.text);
+        case 'subheading': return h('h3', { key: i, className: 'lds-manual-subheading' }, props.text);
         case 'steps': return h(ManualSteps, { ...props, key: i });
         case 'figure': return h(ManualFigure, { ...props, key: i });
         case 'table': return h(ManualTable, { ...props, key: i });
         case 'callout': return h(ManualCallout, { ...props, key: i });
-        case 'list': return h('ul', { key: i }, props.items.map((item, j) => h('li', { key: j }, typeof item === 'string' ? item : [item.label + ': ', item.emphasis ? h('strong', { key: 'value' }, item.value) : item.value])));
-        case 'help': return h('div', { key: i, className: 'lds-manual-help' }, h('h3', null, props.title), h('p', null, props.text));
+        case 'list': return h('ul', { key: i }, props.items.map((item, j) => h('li', { key: j }, typeof item === 'string' ? item : [item.labelEmphasis ? h('strong', { key: 'label' }, item.label + ': ') : item.label + ': ', item.emphasis ? h('strong', { key: 'value' }, item.value) : item.value])));
+        case 'help': return h(ManualCallout, { ...props, key: i }); // Legacy input alias; one presentation for supplemental guidance.
         case 'columns': return h('div', { key: i, className: 'lds-manual-columns' },
           h(ManualFigure, props.figure), h('div', null, blocks(props.blocks)));
         default: throw new Error(`Unknown manual block: ${type}`);
@@ -76,5 +90,5 @@ export function createManualComponents(React, Callout) {
       document.cover && h(ManualCover, { cover: document.cover, number: 1, total }),
       document.pages.map((page, i) => h(ManualPage, { ...page, key: i, number: i + (document.cover ? 2 : 1), total }, blocks(page.blocks))));
   }
-  return { ManualDocument, ManualCover, ManualPage, ManualSectionTitle, ManualSteps, ManualFigure, ManualTable, ManualMetadata, ManualAddress, ManualCallout };
+  return { ManualDocument, ManualCover, ManualPage, ManualSectionTitle, ManualSteps, ManualFigure, ManualTable, ManualMetadata, ManualAddress, ManualCallout, ManualQuote };
 }

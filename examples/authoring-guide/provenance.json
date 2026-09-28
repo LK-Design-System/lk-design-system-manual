@@ -1,0 +1,44 @@
+{
+  "scope": "가상 앱 매뉴얼의 LDS 재디자인 예제",
+  "sourceAssets": [
+    "../assets/login.svg",
+    "../assets/home.svg"
+  ],
+  "production": "가상 SVG로 로컬 제작한 PDF와 PNG. 실제 고객 자료 및 ChatGPT 실행 결과가 아님.",
+  "assets": [
+    {
+      "path": "assets/1b55c4ecdc2c.png",
+      "sha256": "1b55c4ecdc2cacad631c236d7245704d787747679e2e6a785f518358a3e8a804",
+      "source": "가상 앱 연습용 PDF와 LDS 적용 예시의 렌더링 또는 비교 이미지"
+    },
+    {
+      "path": "assets/2ef7773cd92b.png",
+      "sha256": "2ef7773cd92b2e642252c1a3db8de78465f481e19ef9abefe531f2cf4187c02e",
+      "source": "가상 앱 연습용 PDF와 LDS 적용 예시의 렌더링 또는 비교 이미지"
+    },
+    {
+      "path": "assets/4bb44e442afc.png",
+      "sha256": "4bb44e442afc24b8774906af5dd65a32205beda1b12ee4f429b2865b63df9328",
+      "source": "가상 앱 연습용 PDF와 LDS 적용 예시의 렌더링 또는 비교 이미지"
+    },
+    {
+      "path": "assets/6d27f168f508.png",
+      "sha256": "6d27f168f508561a2f272d0cdbce509a715552fb454335603718a8f3b627c2c7",
+      "source": "가상 앱 연습용 PDF와 LDS 적용 예시의 렌더링 또는 비교 이미지"
+    },
+    {
+      "path": "assets/9fed93ce3a02.png",
+      "sha256": "9fed93ce3a02941e78ece4f3c09888097dcaead84c41c3f5631ffecd3a12e71f",
+      "source": "가상 앱 연습용 PDF와 LDS 적용 예시의 렌더링 또는 비교 이미지"
+    },
+    {
+      "path": "assets/e395659bb6ba.png",
+      "sha256": "e395659bb6bafeb9d36ab57bf927683990c517108f46a759eb1c9c7642f58870",
+      "source": "가상 앱 연습용 PDF와 LDS 적용 예시의 렌더링 또는 비교 이미지"
+    }
+  ],
+  "notVerified": [
+    "Chat 모드의 전체 재디자인 실행",
+    "편집 가능한 PPTX 생성"
+  ]
+}

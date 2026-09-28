@@ -57,6 +57,7 @@ async function build(require, input, output) {
   const React = require('react');
   const { renderToStaticMarkup } = require('react-dom/server');
   const { Callout } = await publicModule(require, '@lk-design-system/lds-core', './components/status/Callout');
+  const { Blockquote } = await publicModule(require, '@lk-design-system/lds-core', './components/content/Blockquote');
   const doc = validateDocument(JSON.parse(await fs.readFile(input, 'utf8')));
   const sourceDir = path.dirname(input);
   async function embed(src) {
@@ -95,7 +96,7 @@ async function build(require, input, output) {
   css += (await fs.readFile(path.join(root, 'styles.css'), 'utf8')).replace("@import './tokens/manual.css';", '');
   // This standalone document is the font host. The library never overrides Core tokens.
   css += ':root{--font-sans:LDSManual,sans-serif}body{margin:0;background:var(--color-semantic-background-band)}';
-  const { ManualDocument } = createManualComponents(React, Callout);
+  const { ManualDocument } = createManualComponents(React, Callout, Blockquote);
   const html = '<!doctype html>' + renderToStaticMarkup(React.createElement('html', { lang: doc.lang || 'ko' },
     React.createElement('head', null, React.createElement('meta', { charSet: 'utf-8' }), React.createElement('title', null, doc.title),
       React.createElement('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }),
@@ -120,6 +121,13 @@ async function pdf(require, input, output) {
       await Promise.all([...document.images].map(img => img.decode().catch(() => {})));
       const pages = [...document.querySelectorAll('[data-manual-page]')];
       const errors = [];
+      // Cropped figures use an SVG viewport around a raster source. Wait for
+      // that source too; document.images only includes HTML <img> elements.
+      for (const image of document.querySelectorAll('svg image')) {
+        const probe = new Image();
+        probe.src = image.getAttribute('href') || '';
+        try { await probe.decode(); } catch { errors.push('Missing cropped figure image.'); }
+      }
       if (!pages.length) errors.push('No LDS Manual pages found.');
       if (![...document.fonts].some(f => f.family.replaceAll('"', '') === 'LDSManual' && f.status === 'loaded') || !document.fonts.check('14px LDSManual')) errors.push('Document font did not load.');
       for (const img of document.images) if (!img.naturalWidth) errors.push(`Missing image: ${img.alt}`);
@@ -128,6 +136,9 @@ async function pdf(require, input, output) {
         const bounds = content.getBoundingClientRect();
         let bottom = bounds.top;
         for (const e of content.querySelectorAll('*')) {
+          // Measure the crop viewport, not the deliberately larger source
+          // inside it. Other content remains subject to the full bounds check.
+          if (e instanceof SVGElement && e.tagName.toLowerCase() !== 'svg') continue;
           const b = e.getBoundingClientRect();
           if (!b.width || !b.height) continue;
           bottom = Math.max(bottom, b.bottom);

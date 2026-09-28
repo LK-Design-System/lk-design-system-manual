@@ -1,5 +1,13 @@
 # Changes
 
+## Unreleased
+
+- 검토한 재디자인 안내를 문서 JSON·가상 자료·라이팅 기록으로 보존하여 HTML/PDF 재생성 지원.
+- 문서 프레임, 원본 좌표 기반 확대, 하위 제목, 단계 안의 Core Blockquote 추가.
+- 제목 있는 보충·선택·예외 안내를 Core Callout으로 통일. 기존 help 입력도 같은 표현으로 렌더링.
+- 문맥 라이팅 검토의 범위·최신성 검사와 확대 이미지 로딩·출력 확인 추가.
+
+
 ## 0.1.0-alpha.1 — source alpha, registry unreleased
 
 - 새 문서 init 명령: 공식 로고·문서 정보·초안·화면·원본 기록 생성, 기존 경로 덮어쓰기 금지.

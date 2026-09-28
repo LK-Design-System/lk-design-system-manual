@@ -13,3 +13,5 @@
   이 저장소는 해당 바이너리를 포함하지 않습니다.
 - **제품 스크린샷·문서**: 소비 프로젝트가 출처와 사용 권한을 확인합니다.
   이 레포의 `examples/assets`는 자체 제작한 가상 화면입니다.
+
+`examples/authoring-guide/assets`의 PNG와 `practice`의 PDF는 가상 화면에서 제작한 예제입니다. PDF에 임베드된 Pretendard의 라이선스는 같은 폴더의 `Pretendard-LICENSE.txt`를 따릅니다. 예제 출처는 `examples/authoring-guide/provenance.json`에 기록합니다.

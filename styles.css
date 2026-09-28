@@ -4,7 +4,7 @@
 .lds-manual-page{width:var(--manual-page-width);height:var(--manual-page-height);padding:var(--manual-page-inset);position:relative;background:var(--color-semantic-background-normal-normal);margin:var(--space-8) auto;break-after:page}
 .lds-manual-page:last-child{break-after:auto}
 .lds-manual-content{height:calc(var(--manual-page-height) - var(--manual-page-inset) - var(--manual-footer-reserve));display:flow-root}
-.lds-manual-page footer{position:absolute;left:var(--manual-page-inset);right:var(--manual-page-inset);bottom:var(--manual-footer-inset);text-align:right;font-size:var(--manual-caption-size);line-height:var(--manual-caption-line);color:var(--color-semantic-label-alternative);font-variant-numeric:tabular-nums}
+.lds-manual-page footer{border-top:1px solid var(--color-semantic-line-solid-normal);padding-top:var(--space-3);position:absolute;left:var(--manual-page-inset);right:var(--manual-page-inset);bottom:var(--manual-footer-inset);text-align:right;font-size:var(--manual-caption-size);line-height:var(--manual-caption-line);color:var(--color-semantic-label-alternative);font-variant-numeric:tabular-nums}
 .lds-manual-section-title{font-size:var(--headline1-size);line-height:var(--headline1-line);font-weight:var(--fw-bold);letter-spacing:var(--headline1-spacing);color:var(--color-semantic-brand-on-surface);background:var(--color-semantic-brand-surface);border-radius:var(--manual-section-radius);padding:var(--space-2) var(--space-4);margin:0 0 var(--space-4)}
 .lds-manual p{margin:0 0 var(--space-3)}
 .lds-manual-lead{color:var(--color-semantic-label-neutral)}
@@ -40,12 +40,18 @@
 .lds-manual ul{padding-left:var(--space-5);margin:0 0 var(--space-4)}
 .lds-manual-columns{display:grid;grid-template-columns:64mm minmax(0,1fr);gap:var(--space-8);align-items:start}
 .lds-manual-columns>.lds-manual-figure,.lds-manual-columns .lds-manual-steps{margin-top:0}
-.lds-manual-help{margin-top:var(--space-6);padding-top:var(--space-3);border-top:1px solid var(--color-semantic-line-solid-normal)}
-.lds-manual-help h3{font-size:var(--label1-size);line-height:var(--label1-line);margin:0;font-weight:var(--fw-semibold)}
-.lds-manual-help p{font-size:var(--label2-size);line-height:var(--label2-reading-line);color:var(--color-semantic-label-neutral);margin:var(--space-2) 0 0}
 @page{size:A4;margin:0}
 @media print{html,body{margin:0!important;background:var(--color-semantic-background-normal-normal)!important}.lds-manual-page{margin:0;print-color-adjust:exact;-webkit-print-color-adjust:exact}}
 
 .lds-manual-figure--reading{width:var(--manual-reading-figure-width);margin-left:auto;margin-right:auto}
 .lds-manual-address{color:var(--color-semantic-brand-ink);font-size:var(--body1-size);line-height:var(--body1-line)}
 .lds-manual strong{font-weight:var(--fw-bold)}
+
+.lds-manual-quote{margin:var(--space-4) 0;overflow-wrap:anywhere}
+.lds-manual-quote p:last-child{margin-bottom:0}
+
+.lds-manual-subheading{font-size:var(--manual-step-size);line-height:var(--manual-step-line);font-weight:var(--fw-semibold);margin:var(--space-6) 0 var(--space-3)}
+.lds-manual ul li+li{margin-top:var(--space-2)}
+.lds-manual-figure svg{display:block;width:100%;height:auto;border-radius:var(--radius-xs)}
+.lds-manual-document-preview{padding:var(--space-3);border:1px solid var(--color-semantic-line-solid-normal);border-radius:var(--radius-8);background:var(--color-semantic-background-normal-alternative)}
+.lds-manual-document-preview>.lds-manual-document-preview-label{margin:0 0 var(--space-2);font-size:var(--label2-size);line-height:var(--label2-line);font-weight:var(--fw-semibold);color:var(--color-semantic-label-neutral)}

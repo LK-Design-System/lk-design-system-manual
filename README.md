@@ -73,6 +73,10 @@ export default function Manual() {
 
 ## 안내 문서
 
+- [기존 매뉴얼 재디자인 안내 · 재생성 가능한 6쪽 예제](examples/authoring-guide/README.md)
+
+- [라이팅 검토와 완료 조건](docs/copy-review.md)
+
 - [구성 요소 예제집](examples/gallery.json)
 - [원본 자료와 검토 기록](docs/source-records.md)
 - [출력·배포·의존성 안내](docs/output-and-release.md)

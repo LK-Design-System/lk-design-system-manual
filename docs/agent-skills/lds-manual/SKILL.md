@@ -23,12 +23,20 @@ description: Create and refine compact A4 product user manuals with LDS Manual, 
 - `examples/compact.json`과 `examples/gallery.json`을 구성 참고로 삼고 제품 자료는 소비 프로젝트에 둔다.
 - `sources.json`에 원본·이미지 출처·확인 버전·검토 상태를 기록한다. 내부 근거는 출력물에 포함하지 않는다.
 - 회사 매뉴얼의 `cover`에는 공식 로고·짧은 제목·문서 정보 표·준비사항을 둔다. 기존 표지의 로고를 일반화 과정에서 누락하지 않는다. 각 본문 페이지에는 한 과업을 담는다.
-- steps에 행동·설명·그에 맞는 화면을 묶는다. Callout에는 의미 있는 제목을 붙인다.
+- 복사할 자연어 요청문은 `quote` 블록으로 묶는다. Core Blockquote를 사용하며 일반 설명과 구분한다.
+- steps에 행동·결과 확인·그에 맞는 화면을 묶는다. 보충 안내는 [역할별 선택 기준](references/layout.md#단계보조-안내콜아웃의-선택)을 따른다. 별도 제목이 있는 보충·선택·예외 안내는 모두 실제 Core Callout으로 표현한다. help를 별도 디자인으로 사용하지 않는다.
 - 짧은 보조 안내는 관련 설명 바로 뒤에 둔다. 본문 아래에 제목 한 줄만 남기지 않는다.
 - HTML 생성: `lds-manual build <document.json> --out <manual.html>`.
 - PDF 생성: `lds-manual pdf <manual.html> --out <manual.pdf>`.
 - 필요한 경우 `--runtime <LDS가 설치된 프로젝트>`와 `--browser <Chromium 경로>`를 사용한다.
   자동 설치나 다른 프로젝트의 의존성 변경을 전제하지 않는다.
+
+## 라이팅 완료 조건
+
+- 작성 후 [문맥 검토 절차](../../copy-review.md)에 따라 모든 문구를 사용자 과업별로 다시 읽고 판정·근거를 기록한다.
+- `check-copy-review.mjs`로 현재 문서와 검토 기록을 대조한다. 누락·미검토·BLOCKED·오래된 기록이 있으면 검토 완료로 전달하지 않는다.
+- 문구 수정 후에는 영향을 받은 과업의 문맥을 다시 검토한다. hash만 갱신하거나 동일 판정을 일괄 채우지 않는다.
+- 라이팅 기록 검사와 새 출력물의 레이아웃·시각 확인을 각각 통과해야 작성 완료다. 자체 검토와 제품 담당자 승인을 구분한다.
 
 ## 분량과 마감
 

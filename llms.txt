@@ -15,3 +15,6 @@ Component gallery: examples/gallery.json
 Source records: docs/source-records.md
 Output/release: docs/output-and-release.md
 Regression checks: docs/regression-checks.md
+
+Redesign authoring guide: examples/authoring-guide/README.md
+Copy review completion: docs/copy-review.md
