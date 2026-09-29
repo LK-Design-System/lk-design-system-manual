@@ -35,12 +35,12 @@ export function createManualComponents(React, Callout, Blockquote) {
   function ManualCallout({ title, text, tone = 'signal' }) {
     if (!title?.trim()) throw new Error('ManualCallout requires a meaningful title.');
     return h('div', { className: 'lds-manual-callout' },
-      h(Callout, { title, tone, density: 'compact', headingLevel: 3 }, text));
+      h(Callout, { title, tone, variant: 'bordered', radius: 'body', density: 'compact', headingLevel: 3 }, text));
   }
   function ManualQuote({ text }) {
     if (!Blockquote) throw new Error('ManualQuote requires LDS Core Blockquote.');
     return h('div', { className: 'lds-manual-quote' },
-      h(Blockquote, null, text.split(/\n+/).map((line, i) => h('p', { key: i }, line))));
+      h(Blockquote, { radius: 'body', style: { border: '1px solid var(--color-semantic-line-solid-normal)', padding: 'calc(var(--space-3) - 1px) calc(var(--space-4) - 1px)' } }, text.split(/\n+/).map((line, i) => h('p', { key: i, className: 'lds-manual-quote-text' }, line))));
   }
   function ManualSteps({ items, start = 1 }) {
     return h('ol', { className: 'lds-manual-steps', start }, items.map((item, i) =>

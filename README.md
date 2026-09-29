@@ -21,7 +21,7 @@ Core/Theme 자산을 가져와 포함합니다. Callout은 Core 컴포넌트를 
 
 ## 빠른 시작
 
-Node 22 이상과 **동일 버전 LDS Core/Theme 0.2.9**, React 18/19가 필요합니다.
+Node 22 이상과 **동일 버전 LDS Core/Theme 0.4.3**, React 18/19가 필요합니다.
 PDF 출력과 렌더링 회귀 검사에 Playwright와 Chromium이 필요합니다. 자동 설치·브라우저 다운로드는 하지 않습니다.
 소스는 [GitHub 공개 저장소](https://github.com/LK-Design-System/lk-design-system-manual)에서 관리합니다.
 현재 패키지는 `private: true`인 알파로, 패키지 레지스트리에 발행되지 않았습니다.

@@ -3,9 +3,11 @@
 사용자가 만든 PDF/PPTX를 첨부하고, 대표 쪽의 시안을 검토한 뒤 전체에 적용하는 **6쪽 가상 예제**입니다.
 `manual.json`이 문구·구성의 정본입니다. 출력 HTML을 직접 수정하지 않습니다.
 
+이 예제는 LDS Core 0.4.3의 `variant="bordered"` 및 `radius="body"` 옵션을 사용합니다. 해당 버전의 Core/Theme가 설치된 런타임으로 생성합니다.
+
 ## 재생성
 
-저장소 루트에서 실행합니다. Core/Theme 0.2.9와 React가 설치된 프로젝트를 `--runtime`으로 지정합니다.
+저장소 루트에서 실행합니다. Core/Theme 0.4.3와 React가 설치된 프로젝트를 `--runtime`으로 지정합니다.
 
 ```bash
 node scripts/check-copy-review.mjs examples/authoring-guide/manual.json examples/authoring-guide/copy-review.json

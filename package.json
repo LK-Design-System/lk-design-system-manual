@@ -41,8 +41,8 @@
     "gallery": "node bin/lds-manual.mjs build examples/gallery.json --out output/gallery.html"
   },
   "peerDependencies": {
-    "@lk-design-system/lds-core": "0.2.9",
-    "@lk-design-system/lds-theme": "0.2.9",
+    "@lk-design-system/lds-core": "0.4.3",
+    "@lk-design-system/lds-theme": "0.4.3",
     "react": ">=18 <20",
     "react-dom": ">=18 <20",
     "playwright": ">=1.51 <2"

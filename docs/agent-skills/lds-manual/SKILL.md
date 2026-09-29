@@ -25,7 +25,7 @@ description: Create and refine compact A4 product user manuals with LDS Manual, 
 - 회사 매뉴얼의 `cover`에는 공식 로고·짧은 제목·문서 정보 표·준비사항을 둔다. 기존 표지의 로고를 일반화 과정에서 누락하지 않는다. 각 본문 페이지에는 한 과업을 담는다.
 - 복사할 자연어 요청문은 `quote` 블록으로 묶는다. Core Blockquote를 사용하며 일반 설명과 구분한다.
 - steps에 행동·결과 확인·그에 맞는 화면을 묶는다. 보충 안내는 [역할별 선택 기준](references/layout.md#단계보조-안내콜아웃의-선택)을 따른다. 별도 제목이 있는 보충·선택·예외 안내는 모두 실제 Core Callout으로 표현한다. help를 별도 디자인으로 사용하지 않는다.
-- 짧은 보조 안내는 관련 설명 바로 뒤에 둔다. 본문 아래에 제목 한 줄만 남기지 않는다.
+- 콜아웃은 [위치 판단 기준](references/layout.md#콜아웃-위치-판단)에 따라 관련 행동 전후에 배치한다. 짧은 페이지의 보충 콜아웃은 상단 또는 하단 한곳에 모두 모은다. 기본 절차를 먼저 읽는 페이지는 하단을 우선하고, 필수 주의사항만 관련 단계 앞에 둔다. 기본 절차의 흐름과 안내의 발견 가능성을 확인하고, 역할·관련 행동·위치·판단 근거를 검토 기록에 남긴다. 본문 아래에 제목 한 줄만 남기지 않는다.
 - HTML 생성: `lds-manual build <document.json> --out <manual.html>`.
 - PDF 생성: `lds-manual pdf <manual.html> --out <manual.pdf>`.
 - 필요한 경우 `--runtime <LDS가 설치된 프로젝트>`와 `--browser <Chromium 경로>`를 사용한다.

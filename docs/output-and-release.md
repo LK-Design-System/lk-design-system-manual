@@ -10,7 +10,7 @@ node bin/lds-manual.mjs pdf ./new-manual/output/manual.html --runtime ../lk-desi
 
 init은 **존재하지 않는 디렉터리**에만 생성합니다. 상위 디렉터리는 미리 준비합니다.
 기존 파일이나 빈 디렉터리도 덮어쓰지 않습니다. init에는 LDS·React 설치가 필요하지 않습니다.
-build에는 LDS Core/Theme 0.2.9와 React가, pdf에는 Playwright와 Chromium이 추가로 필요합니다.
+build에는 LDS Core/Theme 0.4.3와 React가, pdf에는 Playwright와 Chromium이 추가로 필요합니다.
 자동 설치·원격 다운로드·게시를 수행하지 않습니다.
 
 이미 LDS가 설치된 소비 프로젝트의 `--runtime`을 사용하는 것이 가장 간단합니다.

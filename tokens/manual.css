@@ -9,6 +9,10 @@
   --manual-step-line: var(--headline2-line);
   --manual-body-size: var(--label1-size);
   --manual-body-line: var(--label1-reading-line);
+  --manual-subheading-size: var(--body1-size);
+  --manual-subheading-line: var(--body1-line);
+  --manual-meta-size: var(--label2-size);
+  --manual-meta-line: var(--label2-reading-line);
   --manual-caption-size: var(--caption1-size);
   --manual-caption-line: var(--caption1-line);
   --manual-section-radius: var(--radius-8);

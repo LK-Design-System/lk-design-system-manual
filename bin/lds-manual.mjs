@@ -53,7 +53,7 @@ async function build(require, input, output) {
   const theme = await packageRoot(require, '@lk-design-system/lds-theme');
   const coreVersion = JSON.parse(await fs.readFile(path.join(core, 'package.json'))).version;
   const themeVersion = JSON.parse(await fs.readFile(path.join(theme, 'package.json'))).version;
-  if (coreVersion !== '0.2.9' || themeVersion !== '0.2.9') throw new Error('This alpha targets LDS Core/Theme 0.2.9. Use matching peers.');
+  if (coreVersion !== '0.4.3' || themeVersion !== '0.4.3') throw new Error('This alpha targets LDS Core/Theme 0.4.3. Use matching peers.');
   const React = require('react');
   const { renderToStaticMarkup } = require('react-dom/server');
   const { Callout } = await publicModule(require, '@lk-design-system/lds-core', './components/status/Callout');
