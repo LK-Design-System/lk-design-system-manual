@@ -4,9 +4,9 @@
   "ruleset": "LDS Manual writing + LDS Core Writing/Voice and Tone; docs/copy-review.md",
   "reviewKind": "contextual-agent-review",
   "reviewer": "Codex",
-  "reviewedAt": "2026-09-29",
+  "reviewedAt": "2026-10-05T13:38:38.549Z",
   "audience": "기존 PDF/PPTX 매뉴얼을 재디자인하려는 사용자",
-  "documentHash": "38c1fbeb179992a472d06b811b12b9571609937a3f1285dbd1c1e6e5bdfb7bbd",
+  "documentHash": "3024e6ccd6a79cffb7945770996b572cdfad7d2ff73db674dc6b5a902ca97849",
   "sourceNote": "HTML 검토 결과를 정본 JSON으로 옮긴 후의 문구 snapshot. 모든 과업을 다시 읽은 자체 검토이며 원본 대비 자동 품질 판정이 아님.",
   "sets": [
     {
@@ -96,7 +96,7 @@
           "text": "기존 매뉴얼을 LDS로 재디자인하기"
         }
       ],
-      "candidateHash": "ffe7cf2874581feef2f2360ea00650852bae3191cced131d596c9c019957037b",
+      "candidateHash": "56ccf3b81ee8f5ea588f27cd73f5a561ec3bebe502701da9972cd4b4e15d0e4d",
       "sourceItems": [
         {
           "key": "cover.blocks[0].text",
@@ -157,7 +157,7 @@
       ],
       "sourceHash": "ffe7cf2874581feef2f2360ea00650852bae3191cced131d596c9c019957037b",
       "task": "기존 매뉴얼을 LDS로 재디자인하기",
-      "contextReason": "기존 PDF/PPTX를 내용·화면 보존 조건으로 정리하는 목적을 먼저 설명한다. 표지 로고와 버전·날짜·입력·결과 정보가 있고, 이미지가 가상 예시임을 캡션에서 밝힌다. 중복된 자료 소개는 삭제한 상태다.",
+      "contextReason": "입력 자료의 종류와 선택 기준을 표지 준비 영역에서 먼저 확인한 뒤 원본/LDS 비교 그림을 읽는다. 첨부할 자료 표의 모든 문구·파일명은 원문 그대로 이동했으며 표지의 과업과 연결된다.",
       "decisions": [
         {
           "key": "cover.blocks[0].text",
@@ -166,16 +166,70 @@
           "reason": "페이지 과업의 대상·행동·확인 결과와 앞뒤 절차가 연결된다. 원본 파일명·화면 용어와 가상 예시 범위를 유지한다."
         },
         {
-          "key": "cover.blocks[1].alt",
-          "text": "동일한 로그인 절차를 담은 원본 PDF와 LDS 적용 예시",
-          "verdict": "KEEP",
-          "reason": "가상 예시 또는 확대 영역의 대상을 식별하는 대체 텍스트다."
+          "key": "cover.blocks[1].headers[0]",
+          "text": "항목",
+          "verdict": "REVISE",
+          "reason": "입력 자료의 종류와 선택 기준을 표지 준비 영역에서 먼저 확인한 뒤 원본/LDS 비교 그림을 읽는다. 첨부할 자료 표의 모든 문구·파일명은 원문 그대로 이동했으며 표지의 과업과 연결된다."
         },
         {
-          "key": "cover.blocks[1].caption",
+          "key": "cover.blocks[1].headers[1]",
+          "text": "확인할 내용",
+          "verdict": "REVISE",
+          "reason": "입력 자료의 종류와 선택 기준을 표지 준비 영역에서 먼저 확인한 뒤 원본/LDS 비교 그림을 읽는다. 첨부할 자료 표의 모든 문구·파일명은 원문 그대로 이동했으며 표지의 과업과 연결된다."
+        },
+        {
+          "key": "cover.blocks[1].label",
+          "text": "첨부할 자료",
+          "verdict": "REVISE",
+          "reason": "입력 자료의 종류와 선택 기준을 표지 준비 영역에서 먼저 확인한 뒤 원본/LDS 비교 그림을 읽는다. 첨부할 자료 표의 모든 문구·파일명은 원문 그대로 이동했으며 표지의 과업과 연결된다."
+        },
+        {
+          "key": "cover.blocks[1].rows[0][0]",
+          "text": "기존 매뉴얼",
+          "verdict": "REVISE",
+          "reason": "입력 자료의 종류와 선택 기준을 표지 준비 영역에서 먼저 확인한 뒤 원본/LDS 비교 그림을 읽는다. 첨부할 자료 표의 모든 문구·파일명은 원문 그대로 이동했으며 표지의 과업과 연결된다."
+        },
+        {
+          "key": "cover.blocks[1].rows[0][1]",
+          "text": "PDF 또는 PPTX. 두 파일이 있으면 기준으로 삼을 버전을 지정합니다.",
+          "verdict": "REVISE",
+          "reason": "입력 자료의 종류와 선택 기준을 표지 준비 영역에서 먼저 확인한 뒤 원본/LDS 비교 그림을 읽는다. 첨부할 자료 표의 모든 문구·파일명은 원문 그대로 이동했으며 표지의 과업과 연결된다."
+        },
+        {
+          "key": "cover.blocks[1].rows[1][0]",
+          "text": "LDS 기준 자료",
+          "verdict": "REVISE",
+          "reason": "입력 자료의 종류와 선택 기준을 표지 준비 영역에서 먼저 확인한 뒤 원본/LDS 비교 그림을 읽는다. 첨부할 자료 표의 모든 문구·파일명은 원문 그대로 이동했으며 표지의 과업과 연결된다."
+        },
+        {
+          "key": "cover.blocks[1].rows[1][1]",
+          "text": "lds-redesign-guide.txt와 LDS 적용 예시 PDF",
+          "verdict": "REVISE",
+          "reason": "입력 자료의 종류와 선택 기준을 표지 준비 영역에서 먼저 확인한 뒤 원본/LDS 비교 그림을 읽는다. 첨부할 자료 표의 모든 문구·파일명은 원문 그대로 이동했으며 표지의 과업과 연결된다."
+        },
+        {
+          "key": "cover.blocks[1].rows[2][0]",
+          "text": "추가 이미지",
+          "verdict": "REVISE",
+          "reason": "입력 자료의 종류와 선택 기준을 표지 준비 영역에서 먼저 확인한 뒤 원본/LDS 비교 그림을 읽는다. 첨부할 자료 표의 모든 문구·파일명은 원문 그대로 이동했으며 표지의 과업과 연결된다."
+        },
+        {
+          "key": "cover.blocks[1].rows[2][1]",
+          "text": "교체할 화면·로고가 있을 때 해당 원본 파일",
+          "verdict": "REVISE",
+          "reason": "입력 자료의 종류와 선택 기준을 표지 준비 영역에서 먼저 확인한 뒤 원본/LDS 비교 그림을 읽는다. 첨부할 자료 표의 모든 문구·파일명은 원문 그대로 이동했으며 표지의 과업과 연결된다."
+        },
+        {
+          "key": "cover.blocks[2].alt",
+          "text": "동일한 로그인 절차를 담은 원본 PDF와 LDS 적용 예시",
+          "verdict": "REVISE",
+          "reason": "입력 자료의 종류와 선택 기준을 표지 준비 영역에서 먼저 확인한 뒤 원본/LDS 비교 그림을 읽는다. 첨부할 자료 표의 모든 문구·파일명은 원문 그대로 이동했으며 표지의 과업과 연결된다."
+        },
+        {
+          "key": "cover.blocks[2].caption",
           "text": "가상 앱 매뉴얼의 같은 쪽을 비교한 예시입니다.",
-          "verdict": "KEEP",
-          "reason": "바로 위 이미지의 역할과 원본/적용 예시 관계를 설명하며 실제 제품 결과로 주장하지 않는다."
+          "verdict": "REVISE",
+          "reason": "입력 자료의 종류와 선택 기준을 표지 준비 영역에서 먼저 확인한 뒤 원본/LDS 비교 그림을 읽는다. 첨부할 자료 표의 모든 문구·파일명은 원문 그대로 이동했으며 표지의 과업과 연결된다."
         },
         {
           "key": "cover.logo.alt",
@@ -321,7 +375,7 @@
           "text": "1. 기존 매뉴얼 첨부하기"
         }
       ],
-      "candidateHash": "ef104ba2162b96ff8668710185ba0b27b4910effa89f0dde228255c933a2a2ef",
+      "candidateHash": "893f92aa08d53108cd2fc11e928243147769a114ac91a7464bc77daf4b1a1e9d",
       "sourceItems": [
         {
           "key": "pages[0].blocks[0].items[0].text",
@@ -398,7 +452,7 @@
       ],
       "sourceHash": "ef104ba2162b96ff8668710185ba0b27b4910effa89f0dde228255c933a2a2ef",
       "task": "1. 기존 매뉴얼 첨부하기",
-      "contextReason": "원본과 기준 파일을 첨부한 뒤 필요한 선명한 이미지를 보완한다. 표에서 각 파일의 역할을 구분하고 실제 연습 원본을 프레임 안에 보여 준다. 첨부 UI의 현재 동작은 제품 검증 범위 밖이라는 한계를 예제 README에 명시한다.",
+      "contextReason": "표지에서 준비 자료를 확인한 뒤 이 쪽에서 원본·기준 자료 첨부와 필요한 이미지 첨부를 수행한다. 원본 화면·캡션을 절차와 같은 쪽에 유지했으며 문구·그림·단계 순서를 보존한다.",
       "decisions": [
         {
           "key": "pages[0].blocks[0].items[0].text",
@@ -425,76 +479,22 @@
           "reason": "현재 과업 또는 조건부 안내의 대상을 짧게 식별한다."
         },
         {
-          "key": "pages[0].blocks[1].headers[0]",
-          "text": "항목",
-          "verdict": "KEEP",
-          "reason": "첨부할 자료 종류와 해당 확인 조건이 같은 행에서 대응한다."
-        },
-        {
-          "key": "pages[0].blocks[1].headers[1]",
-          "text": "확인할 내용",
-          "verdict": "KEEP",
-          "reason": "첨부할 자료 종류와 해당 확인 조건이 같은 행에서 대응한다."
-        },
-        {
-          "key": "pages[0].blocks[1].label",
-          "text": "첨부할 자료",
-          "verdict": "KEEP",
-          "reason": "표·목록·문서 정보 항목의 역할을 식별한다."
-        },
-        {
-          "key": "pages[0].blocks[1].rows[0][0]",
-          "text": "기존 매뉴얼",
-          "verdict": "KEEP",
-          "reason": "첨부할 자료 종류와 해당 확인 조건이 같은 행에서 대응한다."
-        },
-        {
-          "key": "pages[0].blocks[1].rows[0][1]",
-          "text": "PDF 또는 PPTX. 두 파일이 있으면 기준으로 삼을 버전을 지정합니다.",
-          "verdict": "KEEP",
-          "reason": "첨부할 자료 종류와 해당 확인 조건이 같은 행에서 대응한다."
-        },
-        {
-          "key": "pages[0].blocks[1].rows[1][0]",
-          "text": "LDS 기준 자료",
-          "verdict": "KEEP",
-          "reason": "첨부할 자료 종류와 해당 확인 조건이 같은 행에서 대응한다."
-        },
-        {
-          "key": "pages[0].blocks[1].rows[1][1]",
-          "text": "lds-redesign-guide.txt와 LDS 적용 예시 PDF",
-          "verdict": "KEEP",
-          "reason": "첨부할 자료 종류와 해당 확인 조건이 같은 행에서 대응한다."
-        },
-        {
-          "key": "pages[0].blocks[1].rows[2][0]",
-          "text": "추가 이미지",
-          "verdict": "KEEP",
-          "reason": "첨부할 자료 종류와 해당 확인 조건이 같은 행에서 대응한다."
-        },
-        {
-          "key": "pages[0].blocks[1].rows[2][1]",
-          "text": "교체할 화면·로고가 있을 때 해당 원본 파일",
-          "verdict": "KEEP",
-          "reason": "첨부할 자료 종류와 해당 확인 조건이 같은 행에서 대응한다."
-        },
-        {
-          "key": "pages[0].blocks[2].alt",
+          "key": "pages[0].blocks[1].alt",
           "text": "연습용 rough-manual.pdf의 로그인 절차",
-          "verdict": "KEEP",
-          "reason": "가상 예시 또는 확대 영역의 대상을 식별하는 대체 텍스트다."
+          "verdict": "REVISE",
+          "reason": "표지에서 준비 자료를 확인한 뒤 이 쪽에서 원본·기준 자료 첨부와 필요한 이미지 첨부를 수행한다. 원본 화면·캡션을 절차와 같은 쪽에 유지했으며 문구·그림·단계 순서를 보존한다."
         },
         {
-          "key": "pages[0].blocks[2].caption",
+          "key": "pages[0].blocks[1].caption",
           "text": "연습용 원본 PDF 첫 쪽입니다. 화면과 설명이 이미 들어 있는 자료로 시작합니다.",
-          "verdict": "KEEP",
-          "reason": "바로 위 이미지의 역할과 원본/적용 예시 관계를 설명하며 실제 제품 결과로 주장하지 않는다."
+          "verdict": "REVISE",
+          "reason": "표지에서 준비 자료를 확인한 뒤 이 쪽에서 원본·기준 자료 첨부와 필요한 이미지 첨부를 수행한다. 원본 화면·캡션을 절차와 같은 쪽에 유지했으며 문구·그림·단계 순서를 보존한다."
         },
         {
-          "key": "pages[0].blocks[2].previewTitle",
+          "key": "pages[0].blocks[1].previewTitle",
           "text": "원본 예시 · rough-manual.pdf",
-          "verdict": "KEEP",
-          "reason": "프레임 안 문서의 파일명 또는 원본/적용 예시를 식별한다."
+          "verdict": "REVISE",
+          "reason": "표지에서 준비 자료를 확인한 뒤 이 쪽에서 원본·기준 자료 첨부와 필요한 이미지 첨부를 수행한다. 원본 화면·캡션을 절차와 같은 쪽에 유지했으며 문구·그림·단계 순서를 보존한다."
         },
         {
           "key": "pages[0].lead",
@@ -1176,5 +1176,15 @@
       "reason": "PPTX 선택 안내 바로 뒤에서 예외 해결 방법을 찾을 수 있도록 함께 묶는다.",
       "decision": "KEEP"
     }
-  ]
+  ],
+  "layoutReview": {
+    "setsReviewed": [
+      "cover",
+      "pages[0]"
+    ],
+    "reviewer": "Codex",
+    "kind": "contextual-agent-review",
+    "reason": "Preparing inputs precedes attaching inputs; move unchanged preparation table to cover and retain steps with source screen on page 2.",
+    "productApproval": false
+  }
 }

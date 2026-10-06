@@ -42,6 +42,7 @@ try {
         previews: document.querySelectorAll('.lds-manual-document-preview').length,
         crops: document.querySelectorAll('.lds-manual-figure svg[role=img]').length,
         quotes: document.querySelectorAll('.lds-manual-quote').length,
+        quoteRadii: [...document.querySelectorAll('.lds-manual-quote')].map(e=>getComputedStyle(e.firstElementChild).borderRadius),
         legacyHelp: document.querySelectorAll('.lds-manual-help').length,
         captionSizes: [...new Set([...document.querySelectorAll('figcaption')].map(e=>getComputedStyle(e).fontSize))],
         fontWeights: [...document.fonts].filter(f=>f.family.replaceAll('"','')==='LDSManual' && f.status==='loaded').map(f=>f.weight).sort(),
@@ -69,7 +70,9 @@ try {
     for(const gap of got.imageGaps) near(gap,12,'image gap');
     for(const gap of got.captionGaps) near(gap,8,'caption gap');
     assert.deepEqual(got.sectionRadii,['8px']);
-    for(const c of got.callouts) {assert.ok(c.title);assert.ok(c.icon);assert.equal(c.radius,'16px');}
+    // Manual compact uses the published Core radius="body" (radius-8) contract.
+    for(const c of got.callouts) {assert.ok(c.title);assert.ok(c.icon);assert.equal(c.radius,'8px');}
+    for(const radius of got.quoteRadii) assert.equal(radius,'8px');
     for(const figure of got.figureWidths) {
       if(figure.kind.includes('--reading')) near(figure.width,170*96/25.4,'reading width');
       if(figure.kind.includes('--compact')) near(figure.width,151*96/25.4,'compact width');
@@ -78,7 +81,7 @@ try {
     assert.deepEqual(got.overflow,[]);
     assert.equal(got.legacyHelp,0);
     if(name==='authoring-guide'){assert.equal(got.previews,4);assert.equal(got.crops,3);assert.equal(got.quotes,3);assert.equal(got.callouts.length,3);}
-    checks.push({ name, pages:count, result:'passed', contracts:['brand','metadata','type','fonts','spacing','callout','figures','pagination','overflow'] });
+    checks.push({ name, pages:count, result:'passed', contracts:['brand','metadata','type','fonts','spacing','callout','quote-radius','figures','pagination','overflow'] });
     console.log(`PASS ${name}: ${count} pages, brand/type/spacing/layout`);
   }
   // The init output must build without including the private source record in HTML.

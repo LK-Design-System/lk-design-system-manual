@@ -53,6 +53,7 @@ export function validateDocument(doc) {
   if(doc.lang !== undefined) text(doc.lang,'document.lang');
   if(doc.cover) {
     text(doc.cover.title,'cover.title');array(doc.cover.metadata,'cover.metadata');
+    if(doc.cover.sectionTitle !== undefined) text(doc.cover.sectionTitle,'cover.sectionTitle');
     doc.cover.metadata.forEach(m=>{text(m.label,'metadata.label');text(m.value,'metadata.value');});
     if(doc.cover.logo){text(doc.cover.logo.src,'logo.src');text(doc.cover.logo.alt,'logo.alt');}
     blocks(doc.cover.blocks,'cover.blocks');

@@ -1,0 +1,32 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="LDS Manual/시작하기" />
+
+# LDS Manual
+
+A4 사용 매뉴얼의 구성 요소와 compact 템플릿입니다. 실제 제품의 문구·화면·버전·승인은 제품 문서에서 관리합니다.
+
+## 구성 선택
+
+- **Templates**: 표지, 기본 본문, 이어지는 쪽.
+- **Components**: 단계·그림·캡션·표·문서 정보·주소·보충 안내·인용문.
+- **Examples**: 공개 합성 JSON으로 만든 전체 매뉴얼.
+- **Review States**: 긴 내용·누락 그림·본문 넘침을 확인하는 상태.
+
+## 작성과 출력
+
+```bash
+node bin/lds-manual.mjs init ./new-manual --title "제품 사용 매뉴얼"
+node bin/lds-manual.mjs build ./new-manual/manual.json --runtime <LDS가-설치된-프로젝트> --out ./new-manual/output/manual.html
+node bin/lds-manual.mjs pdf ./new-manual/output/manual.html --runtime <LDS가-설치된-프로젝트> --out ./new-manual/output/manual.pdf
+```
+
+Core·Theme는 같은 버전 0.4.3을 사용합니다. PDF에는 기존 Playwright·Chromium이 필요합니다. 출력기는 누락 자산이나 본문 넘침이 있으면 PDF 생성을 중단합니다.
+
+## 쪽 크기와 완료 조건
+
+쪽은 A4 210×297mm입니다. 글자 크기를 유지하고, 좁은 화면에서는 가로 스크롤로 원래 크기를 읽습니다. 글자나 화면을 자동 축소하지 않습니다.
+
+문구 검토 기록의 범위·신선도 검사와 새 출력물의 전 페이지 시각 검토를 함께 확인합니다. Storybook에서 보인다는 사실은 실제 제품 문구 승인이나 PDF/UA 인증을 의미하지 않습니다.
+
+[작성 스킬](https://github.com/LK-Design-System/lk-design-system-manual/blob/main/docs/agent-skills/lds-manual/SKILL.md) · [출력과 배포](https://github.com/LK-Design-System/lk-design-system-manual/blob/main/docs/output-and-release.md)

@@ -73,6 +73,14 @@ export default function Manual() {
 
 ## 안내 문서
 
+- [문서 인덱스 · 에디터 실행 계획](docs/README.md)
+- [로컬 에디터 실행·검증](docs/manual-editor-server-run.md) · [저장·복구 계약](docs/manual-editor-storage.md) · [편집 모델 계약](docs/plans/manual-editor-model-contract.md)
+
+로컬 에디터는 구현·통합 검증 중입니다. 문맥 검토·초안 복원·출력물 확인 화면과 새 문서/폴더 launcher를 구현했고,
+이전 UI 빌드의 주요 저작 조작 및 그때 저장한 17쪽 문서의 독립 PDF 검수 근거가 있습니다.
+단계 이동·분리 UI 결함 2건은 후속 소스 검토와 범위 검사 4/4 근거로 해결됐습니다. 최신 빌드의 시작·검토·저장재열기·출력 흐름과 실제 한글 IME 검증은 필요합니다.
+현재 완료 범위와 누락은 [실행 계획](docs/plans/manual-editor-plan.md)의 구현 대조를 따릅니다.
+
 - [기존 매뉴얼 재디자인 안내 · 재생성 가능한 6쪽 예제](examples/authoring-guide/README.md)
 
 - [라이팅 검토와 완료 조건](docs/copy-review.md)

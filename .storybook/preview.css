@@ -1,0 +1,5 @@
+.manual-story-surface { overflow-x: auto; padding-block: var(--space-1); background: var(--color-semantic-background-band); color-scheme: light; }
+.manual-story-surface > .lds-manual { min-width: 210mm; }
+.manual-story-review { padding: var(--space-4); font: inherit; }
+.manual-story-review p { margin: 0; }
+@media print { .manual-story-surface { overflow: visible; padding: 0; } .manual-story-review { display: none; } }

@@ -1,0 +1,14 @@
+import path from 'node:path';
+import { spawn } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
+import { parseArgs } from 'node:util';
+import { storybookHost } from '../../scripts/storybook-host.mjs';
+const { positionals, values } = parseArgs({ allowPositionals:true, options:{ runtime:{type:'string'}, port:{type:'string',default:'6012'} } });
+const mode = positionals[0] || 'dev';
+if (!['dev','build'].includes(mode)) throw new Error('Use dev or build');
+const host=storybookHost(values.runtime);
+const args=[path.join(host.packageRoot('vite'),'bin/vite.js'),...(mode==='build'?['build']:['--port',values.port]),'--config',fileURLToPath(new URL('./vite.config.mjs',import.meta.url))];
+const child=spawn(process.execPath,args,{cwd:fileURLToPath(new URL('.',import.meta.url)),stdio:'inherit',env:{...process.env,LDS_MANUAL_EDITOR_RUNTIME:host.directory}});
+for(const signal of ['SIGINT','SIGTERM'])process.once(signal,()=>child.kill(signal));
+child.once('exit',code=>{process.exitCode=code??1;});
+child.once('error',error=>{console.error(error.message);process.exitCode=1;});

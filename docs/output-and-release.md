@@ -18,6 +18,28 @@ build에는 LDS Core/Theme 0.4.3와 React가, pdf에는 Playwright와 Chromium�
 공개 소스 저장소라는 사실이 패키지 레지스트리의 익명 접근을 의미하지는 않습니다.
 자격증명을 문서·명령 로그·레포에 넣지 않습니다. 브라우저 설치도 사용자 환경의 정책을 따릅니다.
 
+## Core/Theme peer 검증
+
+2026-10-05에 GitHub Packages의 실제 0.4.3 배포 파일을 조회·다운로드하고 레지스트리의
+SHA-512 integrity와 대조했습니다. Core·Theme 모두 배포 메타데이터의 `gitHead`가
+`ac537d879b122858b5c9f4dc0ff947b69d903359`이며 `lds-v0.4.3` 태그와 일치합니다.
+
+| 발행본 | 확인한 계약 |
+|---|---|
+| [Core 0.4.3](https://github.com/orgs/LK-Design-System/packages/npm/lds-core/1313873805) | Callout·Blockquote 공개 타입에 `radius: 'default' \| 'body'`가 있고, 배포 구현은 `body`를 `--radius-8`에 매핑합니다. 배포된 spacing 토큰의 값은 8px입니다. |
+| [Theme 0.4.3](https://github.com/orgs/LK-Design-System/packages/npm/lds-theme/1313873874) | Core와 같은 배포 소스 SHA의 짝 버전입니다. |
+
+두 버전은 2026-09-30에 발행됐습니다. 작성 가이드의 이전 “배포 전 로컬 구현” 설명은
+발행 전 상태를 가리켰으며, 현재 `radius="body"` 지원 여부와 맞지 않아 정정했습니다.
+package.json의 Core/Theme 0.4.3 핀은 그대로 유지합니다. 다른 버전의 지원 여부를
+추정하여 핀을 올리지 않습니다.
+
+이 대조는 발행된 peer의 API·구현·토큰 지원 근거입니다. 로컬 checkout에서 생성한
+문서의 검증 결과를 발행본 전체 출력 검증으로 대신하지 않습니다. Manual 발행 전에는
+정확한 발행 Core/Theme를 사용한 템플릿 회귀 검사, 모든 쪽의 시각 검토, PDF 출력과
+현재 문구 검토 기록을 함께 확인해야 합니다. Manual 자체의 private 설정·CI·발행 준비도
+별도로 남아 있습니다.
+
 ## 결과 확인
 
 1. 종료 코드와 `.layout.json`의 errors를 확인합니다. 실패하면 **기존 PDF가 남아 있을 수 있습니다**.

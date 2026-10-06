@@ -1,0 +1,36 @@
+.manual-editor-shell{font-family:var(--font-sans);color:var(--color-semantic-label-normal);background:var(--color-semantic-background-normal);height:100vh;display:flex;flex-direction:column;font-size:14px;line-height:1.6}
+.manual-editor-shell *{box-sizing:border-box}
+.manual-editor-header{padding:20px 24px;border-bottom:1px solid var(--color-semantic-line-solid-normal);display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.manual-editor-eyebrow{font-size:12px;margin:0;color:var(--color-semantic-label-neutral)}
+.manual-editor-header h1{font-size:20px;line-height:1.4;margin:0;font-weight:700}
+.manual-editor-save-state{margin:0 auto 0 0;font-size:12px}
+.manual-editor-actions,.manual-editor-block-actions,.manual-editor-view-switch{display:flex;gap:8px;flex-wrap:wrap}
+.manual-editor-shell button{font:inherit;color:inherit;background:var(--color-semantic-background-normal);border:1px solid var(--color-semantic-line-solid-normal);border-radius:8px;padding:6px 12px;cursor:pointer}
+.manual-editor-shell button:disabled{opacity:.45;cursor:default}
+.manual-editor-shell button:focus-visible{outline:2px solid var(--color-semantic-primary-normal);outline-offset:2px}
+.manual-editor-shell button[aria-current=true],.manual-editor-shell button[aria-pressed=true]{border-color:var(--color-semantic-primary-normal);background:var(--color-semantic-background-band)}
+.manual-editor-workspace{display:grid;grid-template-columns:220px minmax(320px,1fr) minmax(820px,1.1fr);flex:1;min-height:0}
+.manual-editor-outline,.manual-editor-edit-pane,.manual-editor-preview-pane{min-width:0;padding:20px;overflow:auto}
+.manual-editor-outline,.manual-editor-edit-pane{border-right:1px solid var(--color-semantic-line-solid-normal)}
+.manual-editor-outline h2,.manual-editor-properties h2,.manual-editor-preview-pane h2,.manual-editor-review h2{font-size:14px;line-height:1.6;margin:0 0 12px}
+.manual-editor-outline ol{padding:0;list-style:none;margin:8px 0 20px}
+.manual-editor-outline button{text-align:left;width:100%;border-color:transparent}
+.manual-editor-outline button span{display:block;font-size:11px;color:var(--color-semantic-label-neutral)}
+.manual-editor-page-link{font-weight:600!important}
+.manual-editor-block-actions{margin-bottom:16px}
+.manual-editor-properties{border-top:1px solid var(--color-semantic-line-solid-normal);margin-top:24px;padding-top:16px}
+.manual-editor-review{padding:12px 24px;border-top:1px solid var(--color-semantic-line-solid-normal);max-height:40vh;overflow:auto;flex-shrink:0}
+.manual-editor-review p{margin:0}
+.manual-editor-notice{margin:0;padding:12px 24px;background:var(--color-semantic-background-band)}
+.manual-editor-preview-pane{background:var(--color-semantic-background-band)}
+.manual-editor-preview-frame{width:100%;min-height:700px;border:0;background:white}
+.manual-editor-view-switch{display:none;padding:12px 20px}
+@media(max-width:1500px){.manual-editor-workspace{grid-template-columns:190px minmax(280px,1fr)}.manual-editor-view-switch{display:flex}.manual-editor-shell[data-view=edit] .manual-editor-preview-pane{display:none}.manual-editor-shell[data-view=preview] .manual-editor-edit-pane{display:none}}
+@media(max-width:640px){.manual-editor-header{padding:16px}.manual-editor-workspace{display:block}.manual-editor-outline{border-right:0;border-bottom:1px solid var(--color-semantic-line-solid-normal);max-height:220px}.manual-editor-edit-pane{border-right:0}.manual-editor-review{padding:12px 16px}.manual-editor-actions{width:100%}}
+.manual-editor-review pre{white-space:pre-wrap;overflow-wrap:anywhere}
+.manual-editor-review label,.manual-editor-properties label{display:inline-flex;flex-wrap:wrap;gap:8px;margin:4px 12px 4px 0;max-width:100%}
+.manual-editor-review input,.manual-editor-review textarea,.manual-editor-properties input,.manual-editor-properties select{max-width:100%;min-width:0}
+.manual-editor-replacement{position:fixed;inset:15% max(16px,calc((100% - 640px)/2));z-index:1000;padding:24px;background:var(--color-semantic-background-normal);border:2px solid var(--color-semantic-primary-normal);overflow:auto}
+.manual-editor-replacement button{margin:6px;font:inherit;padding:8px}
+.manual-editor-array-tools{display:flex;gap:8px;flex-wrap:wrap}
+.manual-editor-array-tools label{display:inline-flex;gap:4px}

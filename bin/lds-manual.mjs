@@ -7,6 +7,7 @@ import { parseArgs } from 'node:util';
 import { createManualComponents } from '../src/components.mjs';
 import { validateDocument } from '../src/validate.mjs';
 import { scaffold } from '../src/scaffold.mjs';
+import { validateCropSource } from '../src/image-dimensions.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const { values, positionals } = parseArgs({ allowPositionals: true, options: {
@@ -60,9 +61,10 @@ async function build(require, input, output) {
   const { Blockquote } = await publicModule(require, '@lk-design-system/lds-core', './components/content/Blockquote');
   const doc = validateDocument(JSON.parse(await fs.readFile(input, 'utf8')));
   const sourceDir = path.dirname(input);
-  async function embed(src) {
+  async function embed(src, crop) {
     if (src === '@lk-design-system/lds-theme/assets/brand/lk-logo-inline-navy.svg') {
       const bytes = await fs.readFile(path.join(theme, 'assets/brand/lk-logo-inline-navy.svg'));
+      validateCropSource(crop, bytes, 'image/svg+xml', src);
       return `data:image/svg+xml;base64,${bytes.toString('base64')}`;
     }
     if (/^[a-z][a-z\d+.-]*:/i.test(src) || path.isAbsolute(src)) throw new Error(`Use a relative local asset path: ${src}`);
@@ -74,19 +76,20 @@ async function build(require, input, output) {
     if (!mime) throw new Error(`Unsupported image type: ${src}`);
     const bytes = await fs.readFile(asset);
     if (bytes.length > 20 * 1024 * 1024) throw new Error(`Image exceeds 20 MiB: ${src}`);
+    validateCropSource(crop, bytes, mime, src);
     return `data:${mime};base64,${bytes.toString('base64')}`;
   }
   async function assets(blocks) {
     for (const b of blocks) {
-      if (b.type === 'figure') b.src = await embed(b.src);
-      if (b.type === 'steps') for (const s of b.items) if (s.figure) s.figure.src = await embed(s.figure.src);
-      if (b.type === 'columns') { b.figure.src = await embed(b.figure.src); await assets(b.blocks); }
+      if (b.type === 'figure') b.src = await embed(b.src, b.crop);
+      if (b.type === 'steps') for (const s of b.items) if (s.figure) s.figure.src = await embed(s.figure.src, s.figure.crop);
+      if (b.type === 'columns') { b.figure.src = await embed(b.figure.src, b.figure.crop); await assets(b.blocks); }
     }
   }
   if (doc.cover) { if (doc.cover.logo) doc.cover.logo.src = await embed(doc.cover.logo.src); await assets(doc.cover.blocks); }
   for (const page of doc.pages) await assets(page.blocks);
   let css = '';
-  for (const [owner, name] of [[core, 'spacing.css'], [theme, 'color-semantic.css'], [theme, 'typography.css']]) css += await fs.readFile(path.join(owner, 'tokens', name), 'utf8');
+  for (const [owner, name] of [[core, 'spacing.css'], [theme, 'color-atomic.css'], [theme, 'color-semantic.css'], [theme, 'typography.css']]) css += await fs.readFile(path.join(owner, 'tokens', name), 'utf8');
   // Embed upstream font files in the generated artifact, not in this repository.
   for (const [weight, name] of [[400, 'Regular'], [500, 'Medium'], [600, 'SemiBold'], [700, 'Bold'], [800, 'ExtraBold']]) {
     const bytes = await fs.readFile(path.join(theme, 'assets/fonts', `Pretendard-${name}.woff2`));
@@ -126,7 +129,11 @@ async function pdf(require, input, output) {
       for (const image of document.querySelectorAll('svg image')) {
         const probe = new Image();
         probe.src = image.getAttribute('href') || '';
-        try { await probe.decode(); } catch { errors.push('Missing cropped figure image.'); }
+        try {
+          await probe.decode();
+          if (probe.naturalWidth !== Math.round(Number(image.getAttribute('width'))) || probe.naturalHeight !== Math.round(Number(image.getAttribute('height'))))
+            errors.push('Cropped figure source dimensions do not match the embedded image. Rebuild from verified original assets.');
+        } catch { errors.push('Missing cropped figure image.'); }
       }
       if (!pages.length) errors.push('No LDS Manual pages found.');
       if (![...document.fonts].some(f => f.family.replaceAll('"', '') === 'LDSManual' && f.status === 'loaded') || !document.fonts.check('14px LDSManual')) errors.push('Document font did not load.');

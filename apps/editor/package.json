@@ -1,0 +1,21 @@
+{
+  "name": "@lk-design-system/manual-editor-local",
+  "version": "0.1.0-alpha.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node run.mjs dev",
+    "build": "node run.mjs build",
+    "new": "node launch.mjs new",
+    "open": "node launch.mjs open"
+  },
+  "dependencies": {
+    "@tiptap/core": "3.31.4",
+    "@tiptap/pm": "3.31.4",
+    "@tiptap/react": "3.31.4"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}

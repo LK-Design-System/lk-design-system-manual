@@ -52,6 +52,12 @@ export function createManualComponents(React, Callout, Blockquote) {
         item.figure && h(ManualFigure, item.figure))));
   }
   function ManualSectionTitle({ children }) { return h('h2', { className: 'lds-manual-section-title' }, children); }
+  function ManualSection({ title, lead, children }) {
+    return h('div', { className: 'lds-manual-section' },
+      h(ManualSectionTitle, null, title),
+      h('div', { className: 'lds-manual-section-body' },
+        lead && h('p', { className: 'lds-manual-lead' }, lead), children));
+  }
   function blocks(items) {
     return items.map((block, i) => {
       const { type, ...props } = block;
@@ -74,20 +80,22 @@ export function createManualComponents(React, Callout, Blockquote) {
   }
   function ManualPage({ title, lead, children, number, total, cover = false }) {
     return h('section', { className: `lds-manual-page${cover ? ' lds-manual-cover' : ''}`, 'data-manual-page': number },
-      h('div', { className: 'lds-manual-content' }, !cover && h(ManualSectionTitle, null, title),
-        lead && h('p', { className: 'lds-manual-lead' }, lead), children),
+      h('div', { className: 'lds-manual-content' },
+        cover ? children : h(ManualSection, { title, lead }, children)),
       h('footer', null, h('span', { 'aria-label': `${total}쪽 중 ${number}쪽` }, `${String(number).padStart(2, '0')} / ${String(total).padStart(2, '0')}`)));
   }
-  function ManualCover({ cover, number, total }) {
+  function ManualCover({ cover, number, total, titleId }) {
     return h(ManualPage, { cover: true, number, total },
       cover.logo && h('img', { className: 'lds-manual-logo', src: cover.logo.src, alt: cover.logo.alt }),
-      h('h1', null, cover.title), h(ManualMetadata, { items: cover.metadata }), h('hr'),
-      h(ManualSectionTitle, null, cover.sectionTitle || '시작하기 전에'), blocks(cover.blocks));
+      h('h1', { id: titleId }, cover.title), h(ManualMetadata, { items: cover.metadata }), h('hr'),
+      h(ManualSection, { title: cover.sectionTitle ?? '시작하기 전에' }, blocks(cover.blocks)));
   }
   function ManualDocument({ document }) {
+    const titleId = React.useId();
     const total = document.pages.length + (document.cover ? 1 : 0);
-    return h('main', { className: 'lds-manual', 'data-manual-preset': 'compact', lang: document.lang || 'ko' },
-      document.cover && h(ManualCover, { cover: document.cover, number: 1, total }),
+    return h('main', { className: 'lds-manual', 'data-manual-preset': 'compact', lang: document.lang || 'ko', 'aria-labelledby': titleId },
+      !document.cover && h('h1', { id: titleId, style: { position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clipPath: 'inset(50%)', whiteSpace: 'nowrap', border: 0 } }, document.title),
+      document.cover && h(ManualCover, { cover: document.cover, number: 1, total, titleId }),
       document.pages.map((page, i) => h(ManualPage, { ...page, key: i, number: i + (document.cover ? 2 : 1), total }, blocks(page.blocks))));
   }
   return { ManualDocument, ManualCover, ManualPage, ManualSectionTitle, ManualSteps, ManualFigure, ManualTable, ManualMetadata, ManualAddress, ManualCallout, ManualQuote };
