@@ -1,0 +1,36 @@
+✔ automatic mixed block forward selection replacement and continued typing (11.316916ms)
+✔ automatic mixed block reverse selection replacement and continued typing (4.906309ms)
+✔ explicit page block replacement forward keeps titles and types into the replacement end (0.870977ms)
+✔ explicit page block replacement reverse keeps titles and types into the replacement end (0.689136ms)
+✔ empty deletion retains a valid selection and an exact UndoRedo (0.755741ms)
+✔ atomic replacement selects the inserted body atom and preserves its metadata (0.700493ms)
+✔ pagination fragment duplicate rewrites its copied root while preserving opaque extensions (8.02884ms)
+✔ pagination fragment duplicate without its root becomes an independent block (0.84484ms)
+✔ selects whole siblings with marks and nested objects, not page titles (0.715393ms)
+✔ backward range selection extends and shrinks without changing the anchor block (0.647263ms)
+✔ multi-page content contains only selected blocks; cut preserves every page and title and is one undo (1.145291ms)
+✔ deletes full block contents, retains page boundaries, and restores selected range with undo/redo (0.795283ms)
+✔ nested paragraph deletion retains callout title and does not delete the container (0.723229ms)
+✔ deleting every quote paragraph inserts a valid empty paragraph, preserving the quote (0.717564ms)
+✔ duplicate range preserves all content with fresh descendant IDs and one undo (0.898625ms)
+✔ multi-page duplicate produces one complete group at the end of the selected range (0.996631ms)
+✔ moves a group with stable IDs and one undo, refuses destinations inside the group (3.96644ms)
+✔ moves a multi-page group into another page without deleting page titles or changing IDs (0.966825ms)
+✔ typing over selected blocks creates an editable paragraph and preserves surrounding content (1.619729ms)
+✔ paste over selected blocks preserves page titles and accepts complete block slices (0.481608ms)
+✔ Escape selects current nested text block then returns to a caret, composition blocks commands (0.432973ms)
+✔ selection maps stable IDs through edits, and missing blocks collapse safely (0.600648ms)
+✔ ShiftArrow crosses logical page boundaries and refuses selecting titles (0.28139ms)
+✔ dry run commands and invalid target ranges leave the document and selection untouched (0.325193ms)
+✔ deleting all selected steps keeps a valid procedure and restores the full range in one undo (0.619875ms)
+✔ a nested-to-outside range promotes its containing block and copies the visible selected objects (0.21517ms)
+✔ duplicate rewrites internal anchors across the copied group and preserves links to outside blocks (0.805356ms)
+✔ Enter after a selected divider continues in a paragraph, while Escape only clears selection (0.589997ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 99.310613

@@ -12,7 +12,13 @@
     "./styles.css": "./styles.css",
     "./tokens/*": "./tokens/*",
     "./docs/*": "./docs/*",
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./components": "./src/components.mjs",
+    "./callout-content": "./src/manual-callout-content.mjs",
+    "./figure-style": "./src/manual-figure-style.mjs",
+    "./node/copy-review": "./src/copy-review.mjs",
+    "./node/image-dimensions": "./src/image-dimensions.mjs",
+    "./cli": "./bin/lds-manual.mjs"
   },
   "files": [
     "src",

@@ -1,0 +1,22 @@
+{
+  "undoExact": true,
+  "redoExact": true,
+  "splitSelected": [
+    "qa-range-flow-callout",
+    "4fbf8466-5e03-497d-96cd-b416623d2420",
+    "qa-range-flow-paragraph",
+    "qa-range-flow-todo"
+  ],
+  "viewport": {
+    "width": 1280,
+    "height": 2400
+  },
+  "source": "130253/cdd5/93ff",
+  "caret": {
+    "selectionCount": 0,
+    "focused": "매뉴얼 본문",
+    "kind": "todo",
+    "headId": "qa-range-flow-todo",
+    "nativeTyping": " QA-CARET appended at todo head caret; one Undo removed typing"
+  }
+}

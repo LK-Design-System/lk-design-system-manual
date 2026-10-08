@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-06",
+  "scope": "First usability implementation follow-up; no browser acceptance claim",
+  "tests": {
+    "passed": 38,
+    "suites": [
+      "tests/editor-model.test.mjs",
+      "tests/editor-model-runtime.test.mjs",
+      "apps/editor/tests/step-controls.test.mjs",
+      "apps/editor/tests/browser-documents.test.mjs"
+    ]
+  },
+  "browser": "Not rerun: CUA URL security policy blocked the editor URL; no alternate browser control used",
+  "sourceSHA256": {
+    "apps/editor/src/editor/canvas-commands.mjs": "492f8c9a24b20c4d84423927b905723b38d0d72d5bae424af41cd603511182d4",
+    "apps/editor/src/editor/direct-edit.mjs": "55eeec93f3c3dedba1a7b7faa5343007d92ab50901a38984a962dd21d42d805c",
+    "apps/editor/src/main.jsx": "e5efa5157a862f89fa9c9bcfc7da724ae0d8efdea4bece342eb280d1bf2b1243",
+    "apps/editor/src/preview-main.jsx": "2993e5f66e164c24caa24de25ef8a768b2de71841daf58737f230588aa2aebc6",
+    "apps/editor/src/ui/canvas-input.mjs": "c116d96d5377f8466d2f2a11faee7c0914211ce6a8ebe6cd420438293babb145",
+    "apps/editor/src/ui/canvas-document.mjs": "f1dba502e4dd761f631c51c186038b048319e6385dc2cdc6033aae302e76f7ed",
+    "apps/editor/src/ui/A4Preview.jsx": "abb865fdc3ad9575dfb41035f5d22661bb1adc75b4ad999f6f083e620deb179a",
+    "apps/editor/src/ui/EditorShell.jsx": "b8bc879a8a1ba0f3e2c090051afea0e75d22115d5eb09cacbc9d83eb53786ad8",
+    "apps/editor/src/ui/BrowserLibrary.jsx": "e2dcffc14e4164b579895baba06202ba8a84424011319a342395a14a536239ab",
+    "apps/editor/src/ui/editor-shell.css": "4fd318b10ab1fbeed3f74aac78cda5c809c711c23709635f4e69cc0bf5961be6",
+    "apps/editor/src/ui/preview-surface.css": "0ffd40cf45a8198cf222c1acdffebc6a22426b5dfb00b89c2df077438b2a5046",
+    "tests/editor-model-runtime.test.mjs": "70168ae64516a50cb3813e949dba7a3e61491245f242df4a91811d6ad815ef10",
+    "apps/editor/tests/browser-documents.test.mjs": "cbb7e6a68cffed2ba915f28129877ae75b5b414931e5c355f22a8fd50a76122f"
+  },
+  "build": {
+    "index.html": [
+      "./assets/editor-RfnPW8P_.js",
+      "./assets/styles-D2W52zdS.js",
+      "./assets/styles-B1qr310O.css",
+      "./assets/editor-DJ35YUZF.css"
+    ],
+    "preview.html": [
+      "./assets/preview-BXCQlxLW.js",
+      "./assets/styles-D2W52zdS.js",
+      "./assets/styles-B1qr310O.css",
+      "./assets/preview-BhVjqmc4.css"
+    ]
+  }
+}

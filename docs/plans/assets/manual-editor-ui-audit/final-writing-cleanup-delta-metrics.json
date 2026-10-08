@@ -1,0 +1,84 @@
+{
+  "resize": {
+    "assets": [
+      "http://127.0.0.1:44590/assets/controls-BEFxCe88.js",
+      "http://127.0.0.1:44590/assets/jsx-runtime-Yp7cqpbS.css",
+      "http://127.0.0.1:44590/assets/controls-Da6QQbZU.css"
+    ],
+    "inspector": false,
+    "main": {
+      "bottom": 810,
+      "height": 665,
+      "left": 0,
+      "right": 390,
+      "top": 145,
+      "width": 390,
+      "x": 0,
+      "y": 145
+    },
+    "menu": {
+      "bottom": 513,
+      "height": 360,
+      "left": 62,
+      "right": 382,
+      "top": 153,
+      "width": 320,
+      "x": 62,
+      "y": 153
+    },
+    "outline": false,
+    "width": 390
+  },
+  "pending": {
+    "id": "manual-command-list-option-bulletList",
+    "item": {
+      "bottom": 249,
+      "height": 49,
+      "left": 67,
+      "right": 362,
+      "top": 200,
+      "width": 295,
+      "x": 67,
+      "y": 200
+    },
+    "list": {
+      "bottom": 512,
+      "height": 315.5,
+      "left": 63,
+      "right": 381,
+      "top": 196.5,
+      "width": 318,
+      "x": 63,
+      "y": 196.5
+    },
+    "scroll": 225,
+    "visible": true,
+    "width": 390
+  },
+  "settled": {
+    "id": "manual-command-list-option-callout",
+    "item": {
+      "bottom": 249,
+      "height": 49,
+      "left": 67,
+      "right": 362,
+      "top": 200,
+      "width": 295,
+      "x": 67,
+      "y": 200
+    },
+    "list": {
+      "bottom": 512,
+      "height": 315.5,
+      "left": 63,
+      "right": 381,
+      "top": 196.5,
+      "width": 318,
+      "x": 63,
+      "y": 196.5
+    },
+    "scroll": 470,
+    "visible": true,
+    "width": 390
+  }
+}

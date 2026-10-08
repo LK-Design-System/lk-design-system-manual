@@ -1,0 +1,13 @@
+{
+  "assets": [
+    "http://127.0.0.1:44590/assets/controls-BEFxCe88.js",
+    "http://127.0.0.1:44590/assets/jsx-runtime-Yp7cqpbS.css",
+    "http://127.0.0.1:44590/assets/controls-Da6QQbZU.css"
+  ],
+  "error": "합성 저장 공간 부족: 현재 내용은 편집기에 남아 있습니다.다시 저장닫기",
+  "overflow": false,
+  "role": "alert",
+  "saveStatus": "저장 실패",
+  "title": "합성 저장 실패 시각 확인",
+  "width": 390
+}

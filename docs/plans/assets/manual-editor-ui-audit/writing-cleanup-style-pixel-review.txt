@@ -1,0 +1,12 @@
+통합 e752/93ff 실제 pixel 독립 스타일 리뷰
+검토자: visual_styles. repo/browser 변경 0. 근거: 최종 JPG 01~04, 06, 08~15를 직접 열어 관찰.
+
+V01: 01-shell-1065 / 15-page-add-390에서 + 페이지 추가 label이 목차와 조화되는 크기/무게이며 위치 설명이 별도 행으로 분리됨. 잘림 없음. 시각 pass.
+V02: 09-empty-390 / 13-empty-1280에서 남색 제목 띠의 페이지 제목 placeholder가 흰색으로 분명하게 보임. 시각 pass.
+D02: 02-headings-1065에서 제목1/2/3 크기와 무게의 계층이 식별되며 제목 아래 본문과 충분히 구분됨. 기존 pageTitle/callout 타입 유지. 시각 pass.
+V05/D03: 10-import-error-390 / 11-import-error-1280에서 오류가 분홍 band와 붉은 message로 footer에서 분리되며 복구/닫기 버튼을 읽을 수 있음. 390에서는 actions가 다음 행으로 내려가 잘리지 않음. 12-print-error-1280의 확인 dialog와 수정 위치도 분명함. 시각 pass.
+D01: 03-insert-1065 / 06-insert-first-390 / 14-insert-760의 삽입 메뉴가 같은 검색/아이콘/설명 row 형식이며 viewport 내 배치. 시각 pass.
+전체 검토 캡처에서 새로 보고할 추가 시각 결함 없음.
+
+제외: 알려진 05 resize-inspector 잔존, 07 mouse-scroll-arrow focus 회귀는 중복 보고하지 않음. 메뉴 경계에서 마지막 항목 일부가 잘리는 것은 scrollable 영역의 연속 내용 표시이며 V04 이동 가시성의 동작 pass를 뜻하지 않음. 760/390 목차 overlay와 고정 A4의 가로 scroll은 현행 계약.
+확대 주의: 정지 캡처 리뷰이며 실제 keyboard focus/Undo/재열기/OS IME/PDF 수락으로 확대하지 않음. parent가 실행한 native 동작 증거와 결합해야 함.

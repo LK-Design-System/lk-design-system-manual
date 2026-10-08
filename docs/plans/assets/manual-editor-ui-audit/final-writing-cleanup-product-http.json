@@ -1,0 +1,73 @@
+{
+  "candidate": "UI13025358/Menu cdd5c06f/CSS93ff",
+  "manualAndAssetRefs": [
+    {
+      "path": "manual.html",
+      "status": 200,
+      "sha256": "e4f800ab52e8e44b53329cbe2aa926c30685769ad10d7059643dabfe0b07c1cb"
+    },
+    {
+      "path": "assets/manual-DwdcZC6x.js",
+      "status": 200,
+      "bytes": 352975,
+      "sha256": "287f22ffbe60d90af7bf9cec907cddae4aa6cb63d3cb955363f02b41631ac2b8"
+    },
+    {
+      "path": "assets/styles-Dw0bw_ax.js",
+      "status": 200,
+      "bytes": 190850,
+      "sha256": "5a16c15c540ab23ad537a2fc0874f5b8a4618b08f14fdc5610ab08deeac11a30"
+    },
+    {
+      "path": "assets/dist-CSJzoXF6.js",
+      "status": 200,
+      "bytes": 232160,
+      "sha256": "f880942c6a16122c7aa4c2c244898c47bfdfb7881e252f8ca304e1f91ec55c04"
+    },
+    {
+      "path": "assets/chunk-SI3YPTRJ-CclQ1DSF.js",
+      "status": 200,
+      "bytes": 1992867,
+      "sha256": "53eec90d8a77dbe493b2dcbfc5de2fd33c1d2a2faf1a084e427139568b35f50d"
+    },
+    {
+      "path": "assets/chunk-W2MJ66YB-DAUIR3Cj.js",
+      "status": 200,
+      "bytes": 29190,
+      "sha256": "4bc0814a8903f55c39213e422fefc473e59ae89eaa872bdb43efbd08b7baf2d6"
+    },
+    {
+      "path": "assets/lk-logo-inline-navy-wZCr-Esg.js",
+      "status": 200,
+      "bytes": 21209,
+      "sha256": "c84426cb73d55108a300997f664c0591e4de4211365048d2113cdc643b37310d"
+    },
+    {
+      "path": "assets/prototype-kernel-DNkzSplA.js",
+      "status": 200,
+      "bytes": 5342,
+      "sha256": "cc12a1711055bc6ad9824669afd2ac26d687200746d1a3df590dca905a0fbace"
+    },
+    {
+      "path": "assets/styles-Yp7cqpbS.css",
+      "status": 200,
+      "bytes": 84304,
+      "sha256": "e6eb227604a4474ebec0534424929ca68226912d6795240633bd52f93dba808b"
+    },
+    {
+      "path": "assets/lk-logo-inline-navy-CLC1OluZ.css",
+      "status": 200,
+      "bytes": 7124,
+      "sha256": "6f111da71f579cbd74da2ad0411a6874cc399a3e03bf80e6e259eab91a2e5a8e"
+    },
+    {
+      "path": "assets/manual-CQhRuthu.css",
+      "status": 200,
+      "bytes": 28899,
+      "sha256": "31fd03cec5ab5960fe78b0125fc0cdcc87207e670b6cf2b0de679c6fc025d7c8"
+    }
+  ],
+  "otherEntrypointsHttp200": 3,
+  "allBytesExact": true,
+  "serverRestarted": false
+}

@@ -1,0 +1,230 @@
+{
+  "format": "lds-manual-document/v2",
+  "document": {
+    "schemaVersion": 2,
+    "id": "qa-end-boundaries-document",
+    "title": "복합 블록 끝 이어 쓰기 · 합성 검증",
+    "pages": [
+      {
+        "id": "qa-end-page-callout",
+        "title": [
+          {
+            "type": "text",
+            "text": "안내 아래 이어 쓰기"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "qa-end-before-callout",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "안내 내부 내용과 바깥 본문의 구분을 확인합니다."
+              }
+            ]
+          },
+          {
+            "id": "qa-large-00008",
+            "type": "callout",
+            "tone": "signal",
+            "title": [
+              {
+                "type": "text",
+                "text": "안내 01"
+              }
+            ],
+            "blocks": [
+              {
+                "id": "qa-large-00009",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "안내 안의 합성 본문 01"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "qa-end-page-table",
+        "title": [
+          {
+            "type": "text",
+            "text": "표 아래 이어 쓰기"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "qa-end-before-table",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "표 내부 내용과 바깥 본문의 구분을 확인합니다."
+              }
+            ]
+          },
+          {
+            "id": "qa-large-00011",
+            "type": "table",
+            "label": "합성 표 01",
+            "headers": [
+              {
+                "id": "qa-large-00012",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "항목"
+                  }
+                ]
+              },
+              {
+                "id": "qa-large-00013",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "내용"
+                  }
+                ]
+              }
+            ],
+            "rows": [
+              [
+                {
+                  "id": "qa-large-00014",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "01"
+                    }
+                  ]
+                },
+                {
+                  "id": "qa-large-00015",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "합성 값"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "qa-end-page-figure",
+        "title": [
+          {
+            "type": "text",
+            "text": "그림 아래 이어 쓰기"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "qa-end-before-figure",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "그림 내부 내용과 바깥 본문의 구분을 확인합니다."
+              }
+            ]
+          },
+          {
+            "id": "qa-large-00016",
+            "type": "figure",
+            "asset": "assets/qa-large.png",
+            "alt": "합성 200px 검증 이미지",
+            "caption": [
+              {
+                "type": "text",
+                "text": "합성 그림 01"
+              }
+            ],
+            "widthPreset": "compact"
+          }
+        ]
+      },
+      {
+        "id": "qa-end-page-toggle",
+        "title": [
+          {
+            "type": "text",
+            "text": "토글 아래 이어 쓰기"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "qa-end-before-toggle",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "토글 내부 내용과 바깥 본문의 구분을 확인합니다."
+              }
+            ]
+          },
+          {
+            "id": "qa-large-00006",
+            "type": "toggle",
+            "open": true,
+            "title": [
+              {
+                "type": "text",
+                "text": "접을 내용 01"
+              }
+            ],
+            "blocks": [
+              {
+                "id": "qa-large-00007",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "토글 안의 합성 본문 01"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "qa-end-page-codeBlock",
+        "title": [
+          {
+            "type": "text",
+            "text": "코드 아래 이어 쓰기"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "qa-end-before-codeBlock",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "코드 내부 내용과 바깥 본문의 구분을 확인합니다."
+              }
+            ]
+          },
+          {
+            "id": "qa-large-00010",
+            "type": "codeBlock",
+            "language": "javascript",
+            "text": "const page = 1;\n  console.log(page);"
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "assets/qa-large.png": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAIAAABM5OhcAAABKUlEQVR4nO3cwQ2AMAwAsRZ1/5XLEpxQwR4gyuOUZ+YeZ9qnLv4T19sL8E3CIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSyzNPCi4WCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFonVjOVJc47juFgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWIzCDefwBcl4GikBAAAAAElFTkSuQmCC"
+  }
+}

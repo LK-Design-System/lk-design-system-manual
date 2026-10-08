@@ -1,0 +1,473 @@
+{
+  "format": "lds-manual-document/v2",
+  "document": {
+    "schemaVersion": 2,
+    "id": "qa-connected-workflow-document",
+    "title": "두 페이지 편집 연결 · 합성 검증",
+    "pages": [
+      {
+        "id": "qa-large-00002",
+        "title": [
+          {
+            "type": "text",
+            "text": "블록 작성과 부분 서식"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "qa-large-00003",
+            "type": "heading",
+            "level": 1,
+            "content": [
+              {
+                "type": "text",
+                "text": "제목 01"
+              }
+            ]
+          },
+          {
+            "id": "qa-large-00016",
+            "type": "figure",
+            "asset": "assets/qa-large.png",
+            "alt": "합성 200px 검증 이미지",
+            "caption": [
+              {
+                "type": "text",
+                "text": "합성 그림 01"
+              }
+            ],
+            "widthPreset": "compact"
+          },
+          {
+            "id": "qa-large-00004",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "페이지 01 본문입니다. 입력과 선택, 저장을 확인합니다."
+              }
+            ]
+          },
+          {
+            "id": "qa-large-00005",
+            "type": "todo",
+            "checked": false,
+            "content": [
+              {
+                "type": "text",
+                "text": "합성 항목 01"
+              }
+            ]
+          },
+          {
+            "id": "qa-large-00006",
+            "type": "toggle",
+            "open": true,
+            "title": [
+              {
+                "type": "text",
+                "text": "접을 내용 01"
+              }
+            ],
+            "blocks": [
+              {
+                "id": "qa-large-00007",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "토글 안의 합성 본문 01"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "qa-large-00008",
+            "type": "callout",
+            "tone": "signal",
+            "title": [
+              {
+                "type": "text",
+                "text": "안내 01"
+              }
+            ],
+            "blocks": [
+              {
+                "id": "qa-large-00009",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "안내 안의 합성 본문 01"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "qa-large-00010",
+            "type": "codeBlock",
+            "language": "javascript",
+            "text": "const page = 1;\n  console.log(page);"
+          },
+          {
+            "id": "qa-large-00011",
+            "type": "table",
+            "label": "합성 표 01",
+            "headers": [
+              {
+                "id": "qa-large-00012",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "항목"
+                  }
+                ]
+              },
+              {
+                "id": "qa-large-00013",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "내용"
+                  }
+                ]
+              }
+            ],
+            "rows": [
+              [
+                {
+                  "id": "qa-large-00014",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "01"
+                    }
+                  ]
+                },
+                {
+                  "id": "qa-large-00015",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "합성 값"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": "qa-large-00017",
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "id": "qa-large-00018",
+                "blocks": [
+                  {
+                    "id": "qa-large-00019",
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "목록 첫 항목 01"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "qa-large-00020",
+                "blocks": [
+                  {
+                    "id": "qa-large-00021",
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "목록 둘째 항목 01"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "qa-workflow-quote",
+            "type": "quote",
+            "blocks": [
+              {
+                "id": "qa-workflow-quote-body",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "복사와 이동 후에도 인용을 보존합니다."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "qa-large-00022",
+        "title": [
+          {
+            "type": "text",
+            "text": "블록 이동과 문서 보관"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "qa-large-00023",
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "제목 02"
+              }
+            ]
+          },
+          {
+            "id": "qa-large-00024",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "페이지 02 본문입니다. 입력과 선택, 저장을 확인합니다."
+              }
+            ]
+          },
+          {
+            "id": "qa-large-00025",
+            "type": "todo",
+            "checked": true,
+            "content": [
+              {
+                "type": "text",
+                "text": "합성 항목 02"
+              }
+            ]
+          },
+          {
+            "id": "qa-large-00026",
+            "type": "toggle",
+            "open": false,
+            "title": [
+              {
+                "type": "text",
+                "text": "접을 내용 02"
+              }
+            ],
+            "blocks": [
+              {
+                "id": "qa-large-00027",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "토글 안의 합성 본문 02"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "qa-large-00028",
+            "type": "callout",
+            "tone": "positive",
+            "title": [
+              {
+                "type": "text",
+                "text": "안내 02"
+              }
+            ],
+            "blocks": [
+              {
+                "id": "qa-large-00029",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "안내 안의 합성 본문 02"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "qa-large-00030",
+            "type": "codeBlock",
+            "language": "javascript",
+            "text": "const page = 2;\n  console.log(page);"
+          },
+          {
+            "id": "qa-large-00031",
+            "type": "table",
+            "label": "합성 표 02",
+            "headers": [
+              {
+                "id": "qa-large-00032",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "항목"
+                  }
+                ]
+              },
+              {
+                "id": "qa-large-00033",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "내용"
+                  }
+                ]
+              }
+            ],
+            "rows": [
+              [
+                {
+                  "id": "qa-large-00034",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "02"
+                    }
+                  ]
+                },
+                {
+                  "id": "qa-large-00035",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "합성 값"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": "qa-large-00036",
+            "type": "figure",
+            "asset": "assets/qa-large.png",
+            "alt": "합성 200px 검증 이미지",
+            "caption": [
+              {
+                "type": "text",
+                "text": "합성 그림 02"
+              }
+            ],
+            "widthPreset": "compact"
+          },
+          {
+            "id": "qa-large-00037",
+            "type": "list",
+            "ordered": false,
+            "items": [
+              {
+                "id": "qa-large-00038",
+                "blocks": [
+                  {
+                    "id": "qa-large-00039",
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "목록 첫 항목 02"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "qa-large-00040",
+                "blocks": [
+                  {
+                    "id": "qa-large-00041",
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "목록 둘째 항목 02"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "qa-workflow-heading3",
+            "type": "heading",
+            "level": 3,
+            "content": [
+              {
+                "type": "text",
+                "text": "저장 확인"
+              }
+            ]
+          },
+          {
+            "id": "qa-workflow-procedure",
+            "type": "procedure",
+            "start": 1,
+            "steps": [
+              {
+                "id": "qa-workflow-step1",
+                "title": [
+                  {
+                    "type": "text",
+                    "text": "내용 작성"
+                  }
+                ],
+                "blocks": [
+                  {
+                    "id": "qa-workflow-step1-body",
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "본문을 편집합니다."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "qa-workflow-step2",
+                "title": [
+                  {
+                    "type": "text",
+                    "text": "보관 확인"
+                  }
+                ],
+                "blocks": [
+                  {
+                    "id": "qa-workflow-step2-body",
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "저장한 내용을 다시 엽니다."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "assets/qa-large.png": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAIAAABM5OhcAAABKUlEQVR4nO3cwQ2AMAwAsRZ1/5XLEpxQwR4gyuOUZ+YeZ9qnLv4T19sL8E3CIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSyzNPCi4WCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFonVjOVJc47juFgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWIzCDefwBcl4GikBAAAAAElFTkSuQmCC"
+  }
+}

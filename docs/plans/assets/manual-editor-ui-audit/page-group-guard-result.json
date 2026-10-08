@@ -1,0 +1,17 @@
+{
+  "source": "/home/jinhyuk2me/lk-workspace/shared/lk-design-system-manual/apps/editor/src/redesign/ManualEditor.jsx",
+  "sha256": "3980a9fcf05a99a00bd22effc9c48ca41cbac14450675f71c0dd4908eec60e41",
+  "result": "pass",
+  "checks": [
+    "root alone",
+    "cover alone",
+    "root plus tail",
+    "multiple tails and unrelated root",
+    "orphan marker stays explicit",
+    "foreign owner stays explicit",
+    "unknown version stays explicit"
+  ],
+  "commands": 60,
+  "fallbackCalls": 0,
+  "scope": "exact extracted helper/choose/menuItems on synthetic JSON-shaped page meta; underlying command functions stubbed, no logical group API/native claim"
+}

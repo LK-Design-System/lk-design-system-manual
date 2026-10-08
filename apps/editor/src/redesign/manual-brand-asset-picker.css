@@ -1,0 +1,7 @@
+.manual-brand-asset-picker{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:var(--space-3);max-width:100%;min-width:0;max-height:55vh;overflow-y:auto;overscroll-behavior:contain;padding:var(--space-1);box-sizing:border-box}
+.manual-brand-asset-card-content{display:flex;flex-direction:column;gap:var(--space-2);width:100%;min-width:0;font-size:var(--component-button-font-size-md);line-height:var(--component-button-line-height-md)}
+.manual-brand-asset-preview{display:flex;align-items:center;justify-content:center;width:100%;min-width:0;height:80px;padding:var(--space-3);box-sizing:border-box;border-radius:var(--radius-xs);background:var(--color-semantic-background-normal-normal);border:1px solid var(--color-semantic-line-solid-normal)}
+.manual-brand-asset-preview[data-surface="navy"]{background:var(--color-semantic-brand-surface)}
+.manual-brand-asset-preview img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.manual-brand-asset-label{font:inherit;overflow-wrap:anywhere}
+.manual-brand-asset-purpose{font:inherit;color:var(--color-semantic-label-neutral);font-size:12px;line-height:1.5;overflow-wrap:anywhere}

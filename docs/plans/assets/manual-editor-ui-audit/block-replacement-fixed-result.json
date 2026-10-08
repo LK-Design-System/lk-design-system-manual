@@ -1,0 +1,28 @@
+{
+  "command": "/home/jinhyuk2me/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node /tmp/lds-manual-keyboard-input-20261007/fix-check.mjs",
+  "node": "v24.19.0",
+  "scope": "actual PM planner and pagination transaction with synthetic measurements; not browser layout or OS IME",
+  "sourceBefore": {
+    "apps/editor/src/redesign/manual-kernel.mjs": "3fdb5cf23defa9cc4e40ac36557fe90854075c0291967ddbbee4d12cb31a6b6e",
+    "apps/editor/src/redesign/manual-pagination.mjs": "df36834bd3e68f412fe56cb8239210caeaea58f46b5c5627ff77f220e0e74c0a",
+    "apps/editor/src/redesign/manual-pagination-selection.mjs": "9af8ff59cc57061a7ebe76a38317f56ce4cf925e37874e7b383856f452961ba4",
+    "apps/editor/src/redesign/manual-block-selection.mjs": "137cec8ad834eca74cf2d7289a6516ce7ede54fd9b5141b28bcc7585476fa9cf"
+  },
+  "sourceAfter": {
+    "apps/editor/src/redesign/manual-kernel.mjs": "3fdb5cf23defa9cc4e40ac36557fe90854075c0291967ddbbee4d12cb31a6b6e",
+    "apps/editor/src/redesign/manual-pagination.mjs": "df36834bd3e68f412fe56cb8239210caeaea58f46b5c5627ff77f220e0e74c0a",
+    "apps/editor/src/redesign/manual-pagination-selection.mjs": "9af8ff59cc57061a7ebe76a38317f56ce4cf925e37874e7b383856f452961ba4",
+    "apps/editor/src/redesign/manual-block-selection.mjs": "137cec8ad834eca74cf2d7289a6516ce7ede54fd9b5141b28bcc7585476fa9cf"
+  },
+  "sourceStable": true,
+  "results": [
+    {
+      "name": "automatic mixed block forward selection replacement and continued typing",
+      "status": "pass"
+    },
+    {
+      "name": "automatic mixed block reverse selection replacement and continued typing",
+      "status": "pass"
+    }
+  ]
+}

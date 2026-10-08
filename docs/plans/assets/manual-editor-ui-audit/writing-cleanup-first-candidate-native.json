@@ -1,0 +1,25 @@
+{
+  "candidate": "controls-zYWF1_aL.js/controls-Da6QQbZU.css",
+  "source": "ManualEditor e7524970; CSS93ff; Menu9cb",
+  "native_pass": [
+    "V01 pageadd text12px500 + separateposition:1065/760/390",
+    "V02 whiteplaceholder on navy18.51:1; input+Undoempty390; wide1280",
+    "V03 unified menu visible selectedrow/search:1065/760/390",
+    "V05 importalert13px negative/recovery:390/1280; printpreflight+currentretry1280",
+    "D01 unified catalog icons/groups/search; topbodyinsertion+oneUndoexact",
+    "D02 22/20/16 hierarchy; fixtureA4 remains3pages",
+    "D03 footer12/mobile save11",
+    "cover fixture4pages unchanged1280"
+  ],
+  "pending": [
+    "V04 pending wheel scroll→immediate ArrowDown hides active item; next ArrowDown recovers",
+    "V06 wide inspector+openmenu→390 leaves inspector overlay"
+  ],
+  "captures": {
+    "V04": "07-mouse-scroll-arrow-390.jpg",
+    "V06": "05-resize-inspector-390-before.jpg"
+  },
+  "settled_scroll_case": "17-scroll-settled-390-before.jpg confirms ArrowDown reveals when an AX observation separates wheel and key",
+  "save_error_native": "pending new ?quota memoryfixture; staticgreen",
+  "user_document_writes": 0
+}

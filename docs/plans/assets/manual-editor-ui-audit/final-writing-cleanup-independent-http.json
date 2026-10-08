@@ -1,0 +1,20 @@
+[
+  {
+    "path": "manual.html",
+    "status": 200,
+    "sha256": "e4f800ab52e8e44b53329cbe2aa926c30685769ad10d7059643dabfe0b07c1cb",
+    "matchesPublishedEvidence": true
+  },
+  {
+    "path": "assets/manual-DwdcZC6x.js",
+    "status": 200,
+    "sha256": "287f22ffbe60d90af7bf9cec907cddae4aa6cb63d3cb955363f02b41631ac2b8",
+    "matchesPublishedEvidence": true
+  },
+  {
+    "path": "assets/manual-CQhRuthu.css",
+    "status": 200,
+    "sha256": "31fd03cec5ab5960fe78b0125fc0cdcc87207e670b6cf2b0de679c6fc025d7c8",
+    "matchesPublishedEvidence": true
+  }
+]

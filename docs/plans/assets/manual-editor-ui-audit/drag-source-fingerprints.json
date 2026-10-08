@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-06",
+  "validation": "20/20 PM runtime tests and Vite build; no pointer/browser acceptance claim",
+  "sourceSHA256": {
+    "apps/editor/src/editor/canvas-move.mjs": "e00526c0a95c2b8dd47c043ea9b1dcbf9f61cc7f18d5005147a5d2a6500f75c1",
+    "apps/editor/src/ui/canvas-drag.mjs": "4f49b4fe82cef1a568489b4ba193067d42df7912f151a701f21e753b0e846659",
+    "apps/editor/src/preview-main.jsx": "15ccc2c66dc84c2ef6cce39d38d8f0e4df97892a597d7637dacc50c7c184ff3b",
+    "apps/editor/src/main.jsx": "058f2226e52472e5e04cae05c56f42a5cf9aeb791e71f1872a81404ec0467ab3",
+    "apps/editor/src/ui/A4Preview.jsx": "1da32bab2f7d498bb3ee415b57a78829929783aeadc2b52be4bb9b691a628266",
+    "apps/editor/src/ui/preview-surface.css": "1cf8771b54af9d4cbdde2727ec1484656380733ec71240a7a7532bf2558c7675",
+    "tests/editor-model-runtime.test.mjs": "3f1c21dc09737c17b94f2f751bc3c4d17312b5146cff64fa9e79c1aa08af49fd"
+  }
+}

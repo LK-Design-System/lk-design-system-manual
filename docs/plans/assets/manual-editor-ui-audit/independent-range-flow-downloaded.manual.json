@@ -1,0 +1,435 @@
+{
+  "format": "lds-manual-document/v2",
+  "document": {
+    "schemaVersion": 2,
+    "id": "1c53e75a-689d-454c-9e67-f935c7c2d497",
+    "title": "범위 이동과 A4 흐름 · 합성 검증",
+    "pages": [
+      {
+        "extensions": {
+          "fixture": {
+            "keep": "source-page"
+          }
+        },
+        "id": "15c9d32b-f928-4e31-b3f1-293bd68cbcaa",
+        "title": [
+          {
+            "type": "text",
+            "text": "함께 옮길 내용"
+          }
+        ],
+        "blocks": []
+      },
+      {
+        "extensions": {
+          "fixture": {
+            "keep": "target-page"
+          }
+        },
+        "id": "80a8e3df-9bbc-46e1-afd2-aecfd4dad939",
+        "title": [
+          {
+            "type": "text",
+            "text": "내용을 받을 페이지"
+          }
+        ],
+        "blocks": [
+          {
+            "tone": "signal",
+            "extensions": {
+              "fixture": {
+                "keep": "callout"
+              }
+            },
+            "id": "8eabc2b1-38cf-4e6a-9eb7-5efd9da8eb4d",
+            "type": "callout",
+            "title": [
+              {
+                "type": "text",
+                "text": "함께 옮길 안내"
+              }
+            ],
+            "blocks": [
+              {
+                "id": "e48d576d-572d-4223-9edb-66cd9d604a7b",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "안내의 첫 본문을 보존합니다."
+                  }
+                ]
+              },
+              {
+                "extensions": {
+                  "fixture": {
+                    "keep": "inner-marked"
+                  }
+                },
+                "id": "bcf60b7d-eff9-4443-9dd8-50aa32c87f86",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "서식과 링크 보존",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      },
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/manual"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "547f4774-0c90-4df1-b6b9-f075c6ec863d",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "안내의 마지막 본문을 보존합니다."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "extensions": {
+              "fixture": {
+                "keep": "paragraph"
+              }
+            },
+            "id": "2113d400-8f50-40b0-8d78-a9ac28710dde",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "함께 옮길 본문",
+                "marks": [
+                  {
+                    "type": "emphasis"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "같은 문단의 다음 줄"
+              }
+            ]
+          },
+          {
+            "checked": true,
+            "extensions": {
+              "fixture": {
+                "keep": "todo"
+              }
+            },
+            "id": "4ae95b1a-0975-4fa8-b822-68782e1f4ace",
+            "type": "todo",
+            "content": [
+              {
+                "type": "text",
+                "text": "함께 옮길 체크 항목"
+              }
+            ]
+          },
+          {
+            "id": "5fff5378-1ce6-481e-a082-438bbfe1e6c4",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 01"
+              }
+            ]
+          },
+          {
+            "id": "9f70c5ca-991e-4582-9330-e9436541fb6d",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 02"
+              }
+            ]
+          },
+          {
+            "id": "2a686e76-7db3-4822-8def-a7f9110a6075",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 03"
+              }
+            ]
+          },
+          {
+            "id": "708e0f59-a950-4510-b093-4f7ef704f3a6",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 04"
+              }
+            ]
+          },
+          {
+            "id": "5ea99d63-146b-4559-aef1-dcc13941e722",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 05"
+              }
+            ]
+          },
+          {
+            "id": "a88fdbe6-4810-479e-a615-1f8edd140d90",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 06"
+              }
+            ]
+          },
+          {
+            "id": "613fb00c-b722-4ff7-8d09-d55791b45688",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 07"
+              }
+            ]
+          },
+          {
+            "id": "26b06a8d-6be9-4a54-8c78-6517f6e7e6a9",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 08"
+              }
+            ]
+          },
+          {
+            "id": "cf10bf4b-ae04-4cf5-9600-f1d8886246aa",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 09"
+              }
+            ]
+          },
+          {
+            "id": "3d455a8b-5956-4e36-afb7-362248ba2703",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 10"
+              }
+            ]
+          },
+          {
+            "id": "be2c88cc-7620-4444-a671-a878232408ea",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 11"
+              }
+            ]
+          },
+          {
+            "id": "22e6b88e-e519-4edc-b716-1653e5d1f12b",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 12"
+              }
+            ]
+          },
+          {
+            "id": "369417f7-6452-4246-897d-d3ae276b222d",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 13"
+              }
+            ]
+          },
+          {
+            "id": "0806eb05-69c8-4238-9ee4-76a7436b2c4b",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 14"
+              }
+            ]
+          },
+          {
+            "id": "a7e9f059-31fe-4a9e-92cd-ca141aafb147",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 15"
+              }
+            ]
+          },
+          {
+            "id": "faa3be79-d558-4f66-84f7-3d44507c6776",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 16"
+              }
+            ]
+          },
+          {
+            "id": "73844101-4a30-4c9a-982c-7e0187379551",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 17"
+              }
+            ]
+          },
+          {
+            "id": "6a354bdc-da5a-4a91-9219-33684265a48c",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 18"
+              }
+            ]
+          },
+          {
+            "id": "2a9071f7-3142-41f9-aaa7-8ff8704f7f42",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 19"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extensions": {
+          "manualPagination": {
+            "kind": "page",
+            "rootPageId": "80a8e3df-9bbc-46e1-afd2-aecfd4dad939",
+            "owner": "@lk-design-system/manual-pagination",
+            "version": 1
+          }
+        },
+        "id": "943a9944-b605-45bd-a4fe-8b06e4b452a7",
+        "title": [
+          {
+            "type": "text",
+            "text": "내용을 받을 페이지"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "d9a74fe1-a826-406f-a9c1-fd7e17175895",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 20"
+              }
+            ]
+          },
+          {
+            "id": "1f989a90-81dd-4443-aa77-0db12dea6b74",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 21"
+              }
+            ]
+          },
+          {
+            "id": "266ab839-cdd4-412b-a2a1-171b8b7ac877",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 22"
+              }
+            ]
+          },
+          {
+            "id": "61645fe5-e74e-4a8b-a7e7-2564a39b676a",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 23"
+              }
+            ]
+          },
+          {
+            "id": "70cfd134-0df9-4b33-ba34-8f9c5931f49b",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 24"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extensions": {
+          "fixture": {
+            "keep": "sentinel-page"
+          }
+        },
+        "id": "18d4dd5b-bb04-4e22-9a02-e5d635382856",
+        "title": [
+          {
+            "type": "text",
+            "text": "뒤의 독립 페이지"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "64e5df88-ce83-4160-8251-f27da7f800dd",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "뒤의 독립 페이지와 원래 본문을 보존합니다."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {}
+}

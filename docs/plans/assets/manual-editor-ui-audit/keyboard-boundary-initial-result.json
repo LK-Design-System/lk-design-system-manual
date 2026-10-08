@@ -1,0 +1,74 @@
+{
+  "command": "/home/jinhyuk2me/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node /tmp/lds-manual-keyboard-input-20261007/block-trace.mjs",
+  "node": "v24.19.0",
+  "scope": "actual PM planner and pagination transaction with synthetic measurements; not browser layout or OS IME",
+  "sourceBefore": {
+    "apps/editor/src/redesign/manual-kernel.mjs": "3fdb5cf23defa9cc4e40ac36557fe90854075c0291967ddbbee4d12cb31a6b6e",
+    "apps/editor/src/redesign/manual-pagination.mjs": "df36834bd3e68f412fe56cb8239210caeaea58f46b5c5627ff77f220e0e74c0a",
+    "apps/editor/src/redesign/manual-pagination-selection.mjs": "9af8ff59cc57061a7ebe76a38317f56ce4cf925e37874e7b383856f452961ba4",
+    "apps/editor/src/redesign/manual-block-selection.mjs": "fbfd6398c9da9a6156f3f87cea0328dd204d7e2897f067c232a26e79e19d31cf"
+  },
+  "sourceAfter": {
+    "apps/editor/src/redesign/manual-kernel.mjs": "3fdb5cf23defa9cc4e40ac36557fe90854075c0291967ddbbee4d12cb31a6b6e",
+    "apps/editor/src/redesign/manual-pagination.mjs": "df36834bd3e68f412fe56cb8239210caeaea58f46b5c5627ff77f220e0e74c0a",
+    "apps/editor/src/redesign/manual-pagination-selection.mjs": "9af8ff59cc57061a7ebe76a38317f56ce4cf925e37874e7b383856f452961ba4",
+    "apps/editor/src/redesign/manual-block-selection.mjs": "fbfd6398c9da9a6156f3f87cea0328dd204d7e2897f067c232a26e79e19d31cf"
+  },
+  "sourceStable": true,
+  "results": [
+    {
+      "name": "automatic partial forward range backspace, actual backfill, continued marked typing",
+      "status": "pass",
+      "selection": {
+        "type": "text",
+        "anchor": 13,
+        "head": 13
+      }
+    },
+    {
+      "name": "automatic partial forward range deleteForward, actual backfill, continued marked typing",
+      "status": "pass",
+      "selection": {
+        "type": "text",
+        "anchor": 13,
+        "head": 13
+      }
+    },
+    {
+      "name": "automatic partial reverse range backspace, actual backfill, continued marked typing",
+      "status": "pass",
+      "selection": {
+        "type": "text",
+        "anchor": 13,
+        "head": 13
+      }
+    },
+    {
+      "name": "automatic partial reverse range deleteForward, actual backfill, continued marked typing",
+      "status": "pass",
+      "selection": {
+        "type": "text",
+        "anchor": 13,
+        "head": 13
+      }
+    },
+    {
+      "name": "automatic mixed block forward selection replacement and continued typing",
+      "status": "fail",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n'교체😀' !== '교체😀계속'\n\n    at file:///tmp/lds-manual-keyboard-input-20261007/block-trace.mjs:35:1291\n    at check (file:///tmp/lds-manual-keyboard-input-20261007/block-trace.mjs:25:60)\n    at file:///tmp/lds-manual-keyboard-input-20261007/block-trace.mjs:34:35"
+    },
+    {
+      "name": "automatic mixed block reverse selection replacement and continued typing",
+      "status": "fail",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n'교체😀' !== '교체😀계속'\n\n    at file:///tmp/lds-manual-keyboard-input-20261007/block-trace.mjs:35:1291\n    at check (file:///tmp/lds-manual-keyboard-input-20261007/block-trace.mjs:25:60)\n    at file:///tmp/lds-manual-keyboard-input-20261007/block-trace.mjs:34:35"
+    },
+    {
+      "name": "callout empty body Enter exit then marked typing",
+      "status": "pass"
+    },
+    {
+      "name": "toggle empty body Enter exit then marked typing",
+      "status": "pass"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "allOriginalIdsKept": true,
+    "originalContentMarksCheckedAndTitles": true,
+    "fixtureMetadata": true,
+    "calloutActuallySplit": true,
+    "pages3To4": true,
+    "tailContainsMarkedAndLast": true
+  },
+  "derivedIds": [
+    "4fbf8466-5e03-497d-96cd-b416623d2420",
+    "7d1f96c1-f80d-4f10-8e6f-a9ec12291e67"
+  ],
+  "bytes": 11997,
+  "sha256": "dcdaea2f9269c3c2ba4a7a5a970d4d60c7bb2d658a5537d89327ca66eaf3179f",
+  "basis": "actual native download bytes; not toast-only",
+  "viewport": "1280x2400 permits both drag endpoints; held-pointer autoscroll not tested",
+  "markComparison": "PM schema serializes strong/link/underline in canonical order; equivalent mark sets compared, exact text/attrs retained"
+}

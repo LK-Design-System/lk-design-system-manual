@@ -1,0 +1,18 @@
+.manual-v2-table-selection-controls .manual-table-grip-mark{display:grid;place-items:center;width:12px;height:20px;border-radius:4px;color:var(--color-semantic-label-alternative)}
+.manual-v2-table-selection-controls [data-table-grip-mode=column] .manual-table-grip-mark{transform:translateY(4px) rotate(90deg)}
+.manual-v2-table-selection-controls [data-table-grip-active=true] .manual-table-grip-mark{background:var(--color-semantic-primary-normal);color:var(--color-semantic-static-white)}
+.manual-v2-table-selection-controls button:focus-visible{outline:2px solid var(--color-semantic-primary-normal);outline-offset:1px}
+.manual-table-action-menu{position:fixed;z-index:64;box-sizing:border-box;padding:6px;background:var(--color-semantic-background-normal-normal);border:1px solid var(--color-semantic-line-solid-normal);border-radius:8px;box-shadow:0 4px 20px #0002;overflow-x:hidden;overflow-y:auto;font:13px/18px var(--font-sans);color:var(--color-semantic-label-normal);outline:none}
+.manual-table-action-menu:focus-visible{outline:none}
+.manual-table-action-menu button.manual-table-action-item{display:flex;align-items:center;justify-content:flex-start;gap:10px;width:100%;min-height:36px;text-align:left;padding:7px 8px;border-radius:4px;white-space:normal}
+.manual-table-action-menu button.manual-table-action-item>svg{flex-shrink:0}
+.manual-table-action-menu button.manual-table-action-item>span{min-width:0;overflow-wrap:anywhere;text-wrap:wrap}
+.manual-table-action-menu button.manual-table-action-item [data-slot=content]>span:last-child{flex:1;min-width:0;white-space:normal;overflow-wrap:anywhere;text-align:left}
+.manual-table-action-menu button.manual-table-action-item:is(:hover,[data-current=true]){--manual-table-action-item-background:var(--component-menu-item-hover-bg)}
+.manual-table-action-menu[data-keyboard=true] button.manual-table-action-item[data-current=true]{outline:1px solid var(--color-semantic-focus-indicator);outline-offset:-1px}
+.manual-table-action-menu button.manual-table-action-item[aria-disabled=true]{opacity:1;color:var(--color-semantic-label-disable)}
+.manual-table-action-menu button.manual-table-action-item[data-danger=true]:not([aria-disabled=true]){color:var(--color-semantic-status-negative-text)}
+.manual-table-action-menu .manual-table-action-divider{height:1px;margin:4px 2px;background:var(--color-semantic-line-solid-normal)}
+@media (forced-colors:active){.manual-table-action-menu[data-keyboard=true] button.manual-table-action-item[data-current=true]{outline:2px solid Highlight;outline-offset:-2px}}
+
+.manual-table-action-menu .manual-table-action-reason{margin:2px 8px 6px;padding:0;font:inherit;font-size:12px;line-height:17px;color:var(--color-semantic-label-alternative);overflow-wrap:anywhere}

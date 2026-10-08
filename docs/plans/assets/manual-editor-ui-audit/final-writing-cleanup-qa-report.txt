@@ -1,0 +1,12 @@
+LDS Manual visual QA final — 2026-10-07
+Roles: visual_menu real JSX proposal; visual_styles sole CSS writer and pixel review; visual_verify independent actual-source seams; existing UI/menu owners integrated/built.
+Original 5 P2 and 3 P3 resolved; extra mobile-resize overlay resolved.
+Native viewport:1280/1065/760/390. Header/toolbar/outline/footer, empty title, heading hierarchy, cover, insertion menus, import/print/save alerts and recovery. Initial full 33-capture audit reused only on unchanged code. Final 23 visual captures+one additional range proof.
+Final candidate UI13025358/CSS93ff/Menu cdd5/helper0cc24e2c; QA controls-BEFxCe88.js/controls-Da6QQbZU.css. V04 pending wheel and settled wheel both selected item visible. Wide inspector+menu→390 closes both panels. Quota memory fixture failure alerts/retry and contents retained, console errors0.
+Static13 seams green, menu owner focused8/8, final pixel review13 captures green. No full suite repeated.
+Product44589 manual-DwdcZC6x.js/manual-CQhRuthu.css published by UI owner; independent HTTP SHA checks match published evidence. Server restart0. User existing tab untouched; needs reload to load new assets.
+Extra range gate: public memory ?range=1, 1280x2400 two-endpoint drag. Callout/paragraph/todo dragged after filler24. Actual selected callout split:head page2/tail page3, all4parts selected. Native1Undo/Redo rich DOM exact; Enter restored head todo caret; typing/Undo verified. Actual downloaded11997B JSON preserved IDs, fixture metadata, text/marks/checked; PM mark order compared as equivalent sets. This is not held-pointer autoscroll proof.
+Remaining environment-only exclusions:OS IME/native touch/200%OS zoom/independent PDF/forced-colors/held-pointer Escape/reverse-direction split. These were not claimed by synthetic/static tests.
+User document/IDB writes0, temporary tabs closed, viewport reset; user tab6 preserved.
+Evidence: delta-native-metrics.json,quota-native-result.json,range-after-target24.json,range-history-caret-result.json,range-file-preservation-result.json,final-source-bundle-sha.json,independent-product-http.json and 01–24 JPGs.
+QA44590 stopped by its UI owner after final native acceptance; product44589 remains HTTP200. No new source change/build after acceptance.

@@ -1,1 +1,42 @@
-html{color-scheme:light;background:#fff}body{margin:0;padding:16px;background:var(--color-semantic-background-band)}.lds-manual{min-width:210mm}body>p{font-family:var(--font-sans)}
+html{color-scheme:light;background:var(--color-semantic-background-band)}body{margin:0;padding:20px 24px;background:var(--color-semantic-background-band)}.manual-editor-paper-stack{width:210mm;margin:auto}.lds-manual{min-width:210mm}.lds-manual-page{box-shadow:0 2px 12px #0001}.lds-manual-content[data-source-path],.lds-manual-content [data-source-path]{cursor:pointer;outline-offset:5px}.manual-editor-selected{outline:none}.lds-manual-content:focus-visible,.lds-manual-content [data-source-path]:not([data-edit-path]):focus-visible{outline:2px solid var(--color-semantic-primary-normal)}body>p{font-family:var(--font-sans)}
+
+[data-edit-path]{white-space:pre-wrap;min-height:1em;cursor:text!important;outline-offset:3px}[data-edit-path]:focus{outline:none;caret-color:var(--color-semantic-label-normal)}[data-edit-path]:empty:before{content:attr(data-placeholder);opacity:.4}.manual-canvas-action{font-family:var(--font-sans);font-size:11px;color:var(--color-semantic-primary-normal);background:var(--color-semantic-background-normal-normal);border:1px solid var(--color-semantic-line-solid-normal);border-radius:4px;padding:3px 8px;cursor:pointer;position:absolute;right:0;bottom:0}.lds-manual-step{position:relative}.lds-manual-steps{position:relative}.lds-manual-step>.manual-canvas-action{opacity:0}.lds-manual-step:hover>.manual-canvas-action,.lds-manual-step:focus-within>.manual-canvas-action{opacity:1}
+@media print{html,body{background:white!important;margin:0!important;padding:0!important}.manual-editor-paper-stack{zoom:1!important;width:210mm}.manual-canvas-action{display:none!important}[data-edit-path],.manual-editor-selected{outline:none!important}[data-edit-path]:empty:before{content:none}.lds-manual-page{box-shadow:none!important}}
+/* These controls belong to the editor, never to the printed manual. */
+.manual-canvas-action[hidden],[data-optional-empty][hidden]{display:none!important}
+.lds-manual-section-body>.manual-canvas-action{position:static;display:block;width:100%;padding:16px;margin-top:12px;font-size:14px;text-align:left}
+.lds-manual-figure{position:relative}
+.lds-manual-figure>.manual-canvas-action{position:static;display:block;margin:8px auto;font-size:12px}
+@media screen{
+ html[data-view=write] body{padding:12px}
+ html[data-view=write] .manual-editor-paper-stack,html[data-view=write] .lds-manual{width:100%;min-width:0}
+ html[data-view=write] .lds-manual-page{width:100%;height:auto;min-height:0;padding:24px 20px 24px 40px;margin:0 auto 20px}
+ html[data-view=write] .lds-manual-content{height:auto}
+ html[data-view=write] .lds-manual-page footer{position:static;margin-top:24px}
+ html[data-view=write] .lds-manual-columns{grid-template-columns:minmax(0,1fr)}
+ html[data-view=write] .lds-manual-table-frame{overflow-x:auto}
+}
+@media print{[data-optional-empty]{display:none!important}}
+.manual-move-layer{position:fixed;inset:0;z-index:50;pointer-events:none;font-family:var(--font-sans);font-size:12px;zoom:1}
+.manual-move-handle{position:absolute;display:grid;place-items:center;width:24px;height:24px;border:0;border-radius:4px;background:transparent;color:var(--color-semantic-label-alternative);padding:0;pointer-events:auto;cursor:grab;touch-action:none}
+.manual-move-handle svg{width:var(--manual-handle-icon-width,9px);height:var(--manual-handle-icon-height,13px)}
+.manual-move-handle[hidden]{display:none}
+.manual-move-handle[data-pointer-focus]:focus{outline:none!important}
+.manual-move-handle:hover{background:var(--color-semantic-background-band);color:var(--color-semantic-label-normal)}
+.manual-move-handle:focus-visible{background:var(--color-semantic-background-band);outline:2px solid var(--color-semantic-primary-normal);outline-offset:1px}
+.manual-move-layer[data-dragging] .manual-move-handle{cursor:grabbing}.manual-move-source{opacity:.35}
+.manual-move-line{position:absolute;height:2px;background:var(--color-semantic-primary-normal);pointer-events:none}
+.manual-move-line:before{content:'';position:absolute;width:8px;height:8px;left:-4px;top:-3px;border-radius:50%;background:inherit}
+.manual-move-status{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 12px;background:var(--color-semantic-background-normal-normal);border:1px solid var(--color-semantic-line-solid-normal);border-radius:6px;white-space:nowrap;box-shadow:0 2px 12px #0002}
+@media print{.manual-move-layer{display:none!important}.manual-move-source{opacity:1!important}}
+
+@media screen{
+ .manual-element-selected{outline:none!important;background-color:color-mix(in srgb,var(--color-semantic-primary-normal) 9%,transparent);border-radius:3px}
+ .manual-move-handle[aria-pressed=true]{color:var(--color-semantic-primary-normal)}
+}
+
+/* Inline commands remain distinct from printed content and reachable by keyboard. */
+.manual-canvas-action{min-height:32px;font-size:12px}
+.manual-canvas-action:focus-visible{outline:2px solid var(--color-semantic-primary-normal);outline-offset:2px;opacity:1}
+.manual-canvas-action:hover{background:var(--color-semantic-background-band)}
+@media(hover:none){.lds-manual-step>.manual-canvas-action{opacity:1}}

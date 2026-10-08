@@ -1,0 +1,112 @@
+Outline page drag: caller integration contract (2026-10-07)
+
+Status: preparation only. No JSX/CSS/kernel changes or build/native/product evidence.
+Frozen helper: apps/editor/src/redesign/outline-page-drag.mjs
+SHA256: 196b48068337af32447fb4a8248a9bcdfd5f11d3fb5636456a4ec77f6677880a
+Focused tests: 18/18, 78 ms. Native acceptance belongs to the UI operator.
+
+1. Group authority
+
+manual-pagination.mjs pagesOf is file-local, not a public export. Its observed
+rule is: retain the current manual page root; a recognized page marker whose
+rootPageId equals that current root is an automatic tail. Every other page
+becomes a new root. Do not import pagesOf or add a new grouping API here.
+Use the model owner's agreed logical-page command/group authority when ready.
+
+manualPaginationMarker is public. It accepts an object extension entry only
+when owner=@lk-design-system/manual-pagination, version=1, kind=page and
+rootPageId is a string. The extension key need not be manualPagination.
+The PM location is node.attrs.meta.extensions; the domain page location is
+page.extensions. Foreign/unsupported/malformed extensions stay opaque.
+Valid metadata alone is insufficient: only consecutive tails of the current
+root join that root. Do not collect distant pages by matching ID globally.
+
+Input order -> expected logical groups (C is cover):
+C, A, A1(marker A), A2(marker A), B, B1(marker B)
+-> C fixed; A=[A,A1,A2]; B=[B,B1].
+C, A, A1(marker A), B, A2(marker A)
+-> C fixed; A=[A,A1]; B=[B]; A2=[A2] (nonconsecutive is a new root).
+C, A, X(foreign owner/version/kind or non-string root), B
+-> C fixed; A=[A]; X=[X]; B=[B].
+First page marked against a missing predecessor -> its own root.
+A marked against A2 followed by A2 marked against A -> A root, A2 tail:
+matching the current root, not speculative future IDs, controls grouping.
+
+2. Existing DOM and helper input
+
+Current sidebar renders one li.manual-v2-page-entry per physical page.
+Navigation and action buttons are siblings. Add no duplicate action button:
+the existing right button becomes the six-dot click/menu and drag handle.
+Only manual-root handles carry data-outline-page-handle=<root ID>. Cover and
+automatic tails do not independently start reorder gestures.
+The scroll container is nav.manual-v2-outline (overflow:auto), not the ol.
+Use stable keyed row refs by page ID; read live row DOMRects on every getGroups.
+
+Example physical row rects in client pixels:
+C [140,178], A [184,224], A1 [230,270], A2 [276,316], B [322,362].
+getGroups returns:
+[{id:C,kind:cover,fixed:true,rect:{top:140,bottom:178}},
+ {id:A,rect:{top:184,bottom:316}},
+ {id:B,rect:{top:322,bottom:362}}].
+Combined rectangles include intervening row gaps and all consecutive tails.
+Read fresh geometry after scrolling; do not subtract scrollTop from DOMRects
+again. Missing/hidden/zero-height required rows invalidate the group's gesture.
+Do not supply a partial root rectangle or filter IDs into a different order.
+getBounds returns the visible nav area clipped to its scroll viewport/window;
+helper coordinates, pointer points and feedback anchors are all client pixels.
+
+3. Click, model callback and selection
+
+Native handle onClick opens the existing page menu for that logical root.
+Keep the handle a button with a meaningful accessible label. Keyboard click
+detail=0 is allowed. The helper suppresses a pointer click only after moving
+at least 6 px; below the threshold, normal menu activation remains intact.
+The handle needs touch-action:none and grab/grabbing cursor in the CSS owner.
+DOM focus/selection should not change the PM document or caret on pointerdown.
+
+getRevision returns the current PM document identity or equivalent version.
+canStart(rootId) checks edit/replacement/print/IME/modal state and valid root.
+onMove({sourceId,targetId,edge,revision}) invokes the model owner's logical
+group command once. Recheck doc identity and availability at that boundary.
+Never call generic moveManualObject(rootId): it moves only one physical page.
+Cover remains first; tails remain with their root; document/page/block IDs,
+inline text and opaque extensions remain identical apart from group order.
+The model command owns mapping the current caret/block selection and history.
+
+4. Pagination pause and resumption: caller bridge required
+
+isDragging() is true immediately at pointerdown, including the pre-threshold
+seed. Add !outlineDrag.current?.isDragging() to the existing runtime isEnabled
+predicate alongside canvas drag and margin selection, without replacing them.
+After drop, cancellation or a short click, resume with pagination.request()
+only after the helper has cleared its session and the editor owner is alive.
+
+IMPORTANT: the frozen helper calls onFeedback(null) only for a gesture that
+crossed the drag threshold. It has no idle callback for a short seed/cancel.
+Therefore onFeedback(null) alone is insufficient for pagination resumption.
+The caller must bridge pointerup/pointercancel/lostpointercapture, Escape and
+window blur completion (including the seed), then defer a guarded request
+until !isDragging(). Attach completion observation after the helper listeners,
+or use a deferred event observer so the session is cleared before requesting.
+On component/outline disposal request only if the editor still belongs to the
+live owner; replacement/unmount must not read terminated owner refs. A focused
+helper lifecycle change would need a new explicit source-freeze decision.
+
+5. Separate native acceptance after P1 product reflection
+
+Synthetic isolated fixture only; no user's document or IndexedDB mutations.
+Cover press/drop moves0. Root A with two tails moves as one before/after B.
+Short click opens root menu; Enter/Space opens it; true drag opens no menu.
+Release before the first animation frame commits at most once.
+Autoscroll recalculates live rectangles; stopping at scroll bounds leaves no
+pending frame. Foreign pointer and outside-nav drop commit0.
+Escape/cancel/lostcapture/blur/doc revision/disabled/dispose commit0 and clear
+feedback/capture. Seed and true-drag cancellation both resume pagination.
+Snapshot exact doc text, IDs, markers, selection and history before/after
+cancel. Successful reorder changes only group ordering with mapped selection;
+Undo/Redo restores/reapplies the full group atomically. Save/reload is checked
+by the designated storage/product operator in a synthetic fixture.
+
+Unresolved dependency: logical group command/API and assigned JSX/CSS wiring.
+The newer toolbar property-entry correction is higher priority than this drag
+integration. Current source helper remains frozen and unconnected to product.

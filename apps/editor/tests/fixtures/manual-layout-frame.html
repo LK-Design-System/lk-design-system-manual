@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<title>Manual 독립 작성 폭 검증</title>
+<style>body{margin:0;font:14px sans-serif}header{padding:8px;display:flex;gap:8px;align-items:center}iframe{display:block;border:0;width:1280px;height:900px}.stage{overflow:auto}</style>
+<header><strong>합성 문서 · 독립 프레임</strong><button data-width="1280">1280px 작성 폭</button><button data-width="390">390px 작성 폭</button><output id="size">1280px</output></header>
+<div class="stage"><iframe id="manual-layout-frame" title="독립 메모리 에디터" src="./manual-storage.html"></iframe></div>
+<script>document.querySelectorAll('[data-width]').forEach(button=>button.addEventListener('click',()=>{document.querySelector('iframe').style.width=button.dataset.width+'px';document.querySelector('output').textContent=button.dataset.width+'px';}));</script>
+</html>

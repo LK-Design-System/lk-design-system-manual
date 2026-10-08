@@ -1,0 +1,202 @@
+[
+  {
+    "html": "<div class=\"lds-manual-content\"><h2 data-manual-id=\"\" data-manual-node=\"pageTitle\" data-manual-kind=\"pageTitle\" class=\"lds-manual-section-title\">함께 옮길 내용</h2></div>",
+    "id": "15c9d32b-f928-4e31-b3f1-293bd68cbcaa",
+    "kind": "page"
+  },
+  {
+    "html": "함께 옮길 내용",
+    "id": "",
+    "kind": "pageTitle"
+  },
+  {
+    "html": "<div class=\"lds-manual-content\"><h2 data-manual-id=\"\" data-manual-node=\"pageTitle\" data-manual-kind=\"pageTitle\" class=\"lds-manual-section-title\">내용을 받을 페이지</h2><div class=\"lds-manual-callout manual-block-selected\" data-manual-id=\"8eabc2b1-38cf-4e6a-9eb7-5efd9da8eb4d\" data-manual-node=\"callout\" data-manual-kind=\"callout\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/0\" data-move-label=\"안내\" data-move-collection=\"8eabc2b1-38cf-4e6a-9eb7-5efd9da8eb4d/blocks\" data-manual-block-selected=\"true\"><div data-slot=\"root\" data-density=\"compact\" class=\"lk-callout\" style=\"display:flex;min-width:0;max-width:100%;gap:var(--space-3);padding:calc(var(--space-3) - 1px) calc(var(--space-4) - 1px);box-sizing:border-box;background:var(--color-semantic-status-info-surface);border:1px solid color-mix(in srgb, var(--color-semantic-status-info-border) 35%, transparent);border-radius:var(--radius-8);box-shadow:none;font-family:var(--font-sans)\"><span data-slot=\"icon\" class=\"lk-callout__icon\" aria-hidden=\"true\" style=\"width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;color:var(--color-semantic-status-info-text);line-height:0;flex-shrink:0\" contenteditable=\"false\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" style=\"display:block;flex-shrink:0\" aria-hidden=\"true\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M2.09998 12.0001C2.09998 6.53248 6.53234 2.1001 11.9999 2.1001C17.4675 2.1001 21.8999 6.53248 21.8999 12.0001C21.8999 17.4677 17.4675 21.9001 11.9999 21.9001C6.53234 21.9001 2.09998 17.4677 2.09998 12.0001ZM12.9999 8C12.9999 8.55228 12.5522 9 11.9999 9C11.4476 9 10.9999 8.55228 10.9999 8C10.9999 7.44772 11.4476 7 11.9999 7C12.5522 7 12.9999 7.44772 12.9999 8ZM12 10.6C12.4971 10.6 12.9 11.0029 12.9 11.5V16C12.9 16.4971 12.4971 16.9 12 16.9C11.503 16.9 11.1 16.4971 11.1 16V11.5C11.1 11.0029 11.503 10.6 12 10.6Z\" fill=\"currentColor\"></path></svg></span><div data-slot=\"content\" class=\"lk-callout__content\" style=\"flex:1;min-width:0\"><div data-slot=\"body\" class=\"lk-callout__body\" style=\"font-size:var(--label1-size);line-height:var(--label1-line);color:var(--color-semantic-label-neutral);word-break:keep-all\"><div data-manual-content-slot=\"\"><h3 data-manual-id=\"\" data-manual-node=\"calloutTitle\" data-manual-kind=\"calloutTitle\" class=\"lds-manual-callout-title\">함께 옮길 안내</h3><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"e48d576d-572d-4223-9edb-66cd9d604a7b\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"8eabc2b1-38cf-4e6a-9eb7-5efd9da8eb4d/blocks/0\" data-move-label=\"본문\">안내의 첫 본문을 보존합니다.</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"bcf60b7d-eff9-4443-9dd8-50aa32c87f86\" data-manual-type=\"paragraph\" data-manual-meta=\"{&quot;extensions&quot;:{&quot;fixture&quot;:{&quot;keep&quot;:&quot;inner-marked&quot;}}}\" data-move-path=\"8eabc2b1-38cf-4e6a-9eb7-5efd9da8eb4d/blocks/1\" data-move-label=\"본문\"><strong><a href=\"https://example.invalid/manual\" rel=\"noopener noreferrer\"><u>서식과 링크 보존</u></a></strong></p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"547f4774-0c90-4df1-b6b9-f075c6ec863d\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"8eabc2b1-38cf-4e6a-9eb7-5efd9da8eb4d/blocks/2\" data-move-label=\"본문\">안내의 마지막 본문을 보존합니다.</p></div></div></div></div></div><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"2113d400-8f50-40b0-8d78-a9ac28710dde\" data-manual-type=\"paragraph\" data-manual-meta=\"{&quot;extensions&quot;:{&quot;fixture&quot;:{&quot;keep&quot;:&quot;paragraph&quot;}}}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/1\" data-move-label=\"본문\" data-manual-block-selected=\"true\" class=\"manual-block-selected\"><em>함께 옮길 본문</em><br data-manual-type=\"hardBreak\">같은 문단의 다음 줄</p><div class=\"manual-v2-todo manual-block-selected\" data-manual-id=\"4ae95b1a-0975-4fa8-b822-68782e1f4ace\" data-manual-node=\"todo\" data-manual-kind=\"todo\" data-checked=\"true\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/2\" data-move-label=\"할 일\" data-manual-block-selected=\"true\"><input type=\"checkbox\" contenteditable=\"false\" aria-label=\"완료 표시\"><p>함께 옮길 체크 항목</p></div><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"5fff5378-1ce6-481e-a082-438bbfe1e6c4\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/3\" data-move-label=\"본문\">받는 쪽의 기존 본문 01</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"9f70c5ca-991e-4582-9330-e9436541fb6d\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/4\" data-move-label=\"본문\">받는 쪽의 기존 본문 02</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"2a686e76-7db3-4822-8def-a7f9110a6075\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/5\" data-move-label=\"본문\">받는 쪽의 기존 본문 03</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"708e0f59-a950-4510-b093-4f7ef704f3a6\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/6\" data-move-label=\"본문\">받는 쪽의 기존 본문 04</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"5ea99d63-146b-4559-aef1-dcc13941e722\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/7\" data-move-label=\"본문\">받는 쪽의 기존 본문 05</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"a88fdbe6-4810-479e-a615-1f8edd140d90\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/8\" data-move-label=\"본문\">받는 쪽의 기존 본문 06</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"613fb00c-b722-4ff7-8d09-d55791b45688\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/9\" data-move-label=\"본문\">받는 쪽의 기존 본문 07</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"26b06a8d-6be9-4a54-8c78-6517f6e7e6a9\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/10\" data-move-label=\"본문\">받는 쪽의 기존 본문 08</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"cf10bf4b-ae04-4cf5-9600-f1d8886246aa\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/11\" data-move-label=\"본문\">받는 쪽의 기존 본문 09</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"3d455a8b-5956-4e36-afb7-362248ba2703\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/12\" data-move-label=\"본문\">받는 쪽의 기존 본문 10</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"be2c88cc-7620-4444-a671-a878232408ea\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/13\" data-move-label=\"본문\">받는 쪽의 기존 본문 11</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"22e6b88e-e519-4edc-b716-1653e5d1f12b\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/14\" data-move-label=\"본문\">받는 쪽의 기존 본문 12</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"369417f7-6452-4246-897d-d3ae276b222d\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/15\" data-move-label=\"본문\">받는 쪽의 기존 본문 13</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"0806eb05-69c8-4238-9ee4-76a7436b2c4b\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/16\" data-move-label=\"본문\">받는 쪽의 기존 본문 14</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"a7e9f059-31fe-4a9e-92cd-ca141aafb147\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/17\" data-move-label=\"본문\">받는 쪽의 기존 본문 15</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"faa3be79-d558-4f66-84f7-3d44507c6776\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/18\" data-move-label=\"본문\">받는 쪽의 기존 본문 16</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"73844101-4a30-4c9a-982c-7e0187379551\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/19\" data-move-label=\"본문\">받는 쪽의 기존 본문 17</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"6a354bdc-da5a-4a91-9219-33684265a48c\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/20\" data-move-label=\"본문\">받는 쪽의 기존 본문 18</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"2a9071f7-3142-41f9-aaa7-8ff8704f7f42\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"80a8e3df-9bbc-46e1-afd2-aecfd4dad939/blocks/21\" data-move-label=\"본문\">받는 쪽의 기존 본문 19</p></div>",
+    "id": "80a8e3df-9bbc-46e1-afd2-aecfd4dad939",
+    "kind": "page"
+  },
+  {
+    "html": "내용을 받을 페이지",
+    "id": "",
+    "kind": "pageTitle"
+  },
+  {
+    "html": "<div data-slot=\"root\" data-density=\"compact\" class=\"lk-callout\" style=\"display:flex;min-width:0;max-width:100%;gap:var(--space-3);padding:calc(var(--space-3) - 1px) calc(var(--space-4) - 1px);box-sizing:border-box;background:var(--color-semantic-status-info-surface);border:1px solid color-mix(in srgb, var(--color-semantic-status-info-border) 35%, transparent);border-radius:var(--radius-8);box-shadow:none;font-family:var(--font-sans)\"><span data-slot=\"icon\" class=\"lk-callout__icon\" aria-hidden=\"true\" style=\"width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;color:var(--color-semantic-status-info-text);line-height:0;flex-shrink:0\" contenteditable=\"false\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" style=\"display:block;flex-shrink:0\" aria-hidden=\"true\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M2.09998 12.0001C2.09998 6.53248 6.53234 2.1001 11.9999 2.1001C17.4675 2.1001 21.8999 6.53248 21.8999 12.0001C21.8999 17.4677 17.4675 21.9001 11.9999 21.9001C6.53234 21.9001 2.09998 17.4677 2.09998 12.0001ZM12.9999 8C12.9999 8.55228 12.5522 9 11.9999 9C11.4476 9 10.9999 8.55228 10.9999 8C10.9999 7.44772 11.4476 7 11.9999 7C12.5522 7 12.9999 7.44772 12.9999 8ZM12 10.6C12.4971 10.6 12.9 11.0029 12.9 11.5V16C12.9 16.4971 12.4971 16.9 12 16.9C11.503 16.9 11.1 16.4971 11.1 16V11.5C11.1 11.0029 11.503 10.6 12 10.6Z\" fill=\"currentColor\"></path></svg></span><div data-slot=\"content\" class=\"lk-callout__content\" style=\"flex:1;min-width:0\"><div data-slot=\"body\" class=\"lk-callout__body\" style=\"font-size:var(--label1-size);line-height:var(--label1-line);color:var(--color-semantic-label-neutral);word-break:keep-all\"><div data-manual-content-slot=\"\"><h3 data-manual-id=\"\" data-manual-node=\"calloutTitle\" data-manual-kind=\"calloutTitle\" class=\"lds-manual-callout-title\">함께 옮길 안내</h3><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"e48d576d-572d-4223-9edb-66cd9d604a7b\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"8eabc2b1-38cf-4e6a-9eb7-5efd9da8eb4d/blocks/0\" data-move-label=\"본문\">안내의 첫 본문을 보존합니다.</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"bcf60b7d-eff9-4443-9dd8-50aa32c87f86\" data-manual-type=\"paragraph\" data-manual-meta=\"{&quot;extensions&quot;:{&quot;fixture&quot;:{&quot;keep&quot;:&quot;inner-marked&quot;}}}\" data-move-path=\"8eabc2b1-38cf-4e6a-9eb7-5efd9da8eb4d/blocks/1\" data-move-label=\"본문\"><strong><a href=\"https://example.invalid/manual\" rel=\"noopener noreferrer\"><u>서식과 링크 보존</u></a></strong></p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"547f4774-0c90-4df1-b6b9-f075c6ec863d\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"8eabc2b1-38cf-4e6a-9eb7-5efd9da8eb4d/blocks/2\" data-move-label=\"본문\">안내의 마지막 본문을 보존합니다.</p></div></div></div></div>",
+    "id": "8eabc2b1-38cf-4e6a-9eb7-5efd9da8eb4d",
+    "kind": "callout"
+  },
+  {
+    "html": "함께 옮길 안내",
+    "id": "",
+    "kind": "calloutTitle"
+  },
+  {
+    "html": "안내의 첫 본문을 보존합니다.",
+    "id": "e48d576d-572d-4223-9edb-66cd9d604a7b",
+    "kind": "paragraph"
+  },
+  {
+    "html": "<strong><a href=\"https://example.invalid/manual\" rel=\"noopener noreferrer\"><u>서식과 링크 보존</u></a></strong>",
+    "id": "bcf60b7d-eff9-4443-9dd8-50aa32c87f86",
+    "kind": "paragraph"
+  },
+  {
+    "html": "안내의 마지막 본문을 보존합니다.",
+    "id": "547f4774-0c90-4df1-b6b9-f075c6ec863d",
+    "kind": "paragraph"
+  },
+  {
+    "html": "<em>함께 옮길 본문</em><br data-manual-type=\"hardBreak\">같은 문단의 다음 줄",
+    "id": "2113d400-8f50-40b0-8d78-a9ac28710dde",
+    "kind": "paragraph"
+  },
+  {
+    "html": "<input type=\"checkbox\" contenteditable=\"false\" aria-label=\"완료 표시\"><p>함께 옮길 체크 항목</p>",
+    "id": "4ae95b1a-0975-4fa8-b822-68782e1f4ace",
+    "kind": "todo"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 01",
+    "id": "5fff5378-1ce6-481e-a082-438bbfe1e6c4",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 02",
+    "id": "9f70c5ca-991e-4582-9330-e9436541fb6d",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 03",
+    "id": "2a686e76-7db3-4822-8def-a7f9110a6075",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 04",
+    "id": "708e0f59-a950-4510-b093-4f7ef704f3a6",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 05",
+    "id": "5ea99d63-146b-4559-aef1-dcc13941e722",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 06",
+    "id": "a88fdbe6-4810-479e-a615-1f8edd140d90",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 07",
+    "id": "613fb00c-b722-4ff7-8d09-d55791b45688",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 08",
+    "id": "26b06a8d-6be9-4a54-8c78-6517f6e7e6a9",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 09",
+    "id": "cf10bf4b-ae04-4cf5-9600-f1d8886246aa",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 10",
+    "id": "3d455a8b-5956-4e36-afb7-362248ba2703",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 11",
+    "id": "be2c88cc-7620-4444-a671-a878232408ea",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 12",
+    "id": "22e6b88e-e519-4edc-b716-1653e5d1f12b",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 13",
+    "id": "369417f7-6452-4246-897d-d3ae276b222d",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 14",
+    "id": "0806eb05-69c8-4238-9ee4-76a7436b2c4b",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 15",
+    "id": "a7e9f059-31fe-4a9e-92cd-ca141aafb147",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 16",
+    "id": "faa3be79-d558-4f66-84f7-3d44507c6776",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 17",
+    "id": "73844101-4a30-4c9a-982c-7e0187379551",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 18",
+    "id": "6a354bdc-da5a-4a91-9219-33684265a48c",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 19",
+    "id": "2a9071f7-3142-41f9-aaa7-8ff8704f7f42",
+    "kind": "paragraph"
+  },
+  {
+    "html": "<div class=\"lds-manual-content\"><h2 data-manual-id=\"\" data-manual-node=\"pageTitle\" data-manual-kind=\"pageTitle\" class=\"lds-manual-section-title\" data-manual-derived-title=\"true\" contenteditable=\"false\" aria-readonly=\"true\" title=\"첫 페이지의 제목을 따릅니다.\">내용을 받을 페이지</h2><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"d9a74fe1-a826-406f-a9c1-fd7e17175895\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"943a9944-b605-45bd-a4fe-8b06e4b452a7/blocks/0\" data-move-label=\"본문\">받는 쪽의 기존 본문 20</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"1f989a90-81dd-4443-aa77-0db12dea6b74\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"943a9944-b605-45bd-a4fe-8b06e4b452a7/blocks/1\" data-move-label=\"본문\">받는 쪽의 기존 본문 21</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"266ab839-cdd4-412b-a2a1-171b8b7ac877\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"943a9944-b605-45bd-a4fe-8b06e4b452a7/blocks/2\" data-move-label=\"본문\">받는 쪽의 기존 본문 22</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"61645fe5-e74e-4a8b-a7e7-2564a39b676a\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"943a9944-b605-45bd-a4fe-8b06e4b452a7/blocks/3\" data-move-label=\"본문\">받는 쪽의 기존 본문 23</p><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"70cfd134-0df9-4b33-ba34-8f9c5931f49b\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"943a9944-b605-45bd-a4fe-8b06e4b452a7/blocks/4\" data-move-label=\"본문\">받는 쪽의 기존 본문 24</p></div>",
+    "id": "943a9944-b605-45bd-a4fe-8b06e4b452a7",
+    "kind": "page"
+  },
+  {
+    "html": "내용을 받을 페이지",
+    "id": "",
+    "kind": "pageTitle"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 20",
+    "id": "d9a74fe1-a826-406f-a9c1-fd7e17175895",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 21",
+    "id": "1f989a90-81dd-4443-aa77-0db12dea6b74",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 22",
+    "id": "266ab839-cdd4-412b-a2a1-171b8b7ac877",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 23",
+    "id": "61645fe5-e74e-4a8b-a7e7-2564a39b676a",
+    "kind": "paragraph"
+  },
+  {
+    "html": "받는 쪽의 기존 본문 24",
+    "id": "70cfd134-0df9-4b33-ba34-8f9c5931f49b",
+    "kind": "paragraph"
+  },
+  {
+    "html": "<div class=\"lds-manual-content\"><h2 data-manual-id=\"\" data-manual-node=\"pageTitle\" data-manual-kind=\"pageTitle\" class=\"lds-manual-section-title\">뒤의 독립 페이지</h2><p data-manual-kind=\"paragraph\" data-manual-node=\"paragraph\" data-manual-id=\"64e5df88-ce83-4160-8251-f27da7f800dd\" data-manual-type=\"paragraph\" data-manual-meta=\"{}\" data-move-path=\"18d4dd5b-bb04-4e22-9a02-e5d635382856/blocks/0\" data-move-label=\"본문\">뒤의 독립 페이지와 원래 본문을 보존합니다.</p></div>",
+    "id": "18d4dd5b-bb04-4e22-9a02-e5d635382856",
+    "kind": "page"
+  },
+  {
+    "html": "뒤의 독립 페이지",
+    "id": "",
+    "kind": "pageTitle"
+  },
+  {
+    "html": "뒤의 독립 페이지와 원래 본문을 보존합니다.",
+    "id": "64e5df88-ce83-4160-8251-f27da7f800dd",
+    "kind": "paragraph"
+  }
+]

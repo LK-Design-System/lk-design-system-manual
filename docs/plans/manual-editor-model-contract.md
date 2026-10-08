@@ -1,5 +1,7 @@
 # Manual 에디터 모델 계약과 구현 상태
 
+> 2026-10-06: 다음 구현의 방향은 [편집기 재설계 제안](manual-editor-redesign.md)을 참조한다. 이 문서의 v1 계약·구현·검증은 현행 및 역사적 근거이며 v2 구현 완료를 뜻하지 않는다.
+
 상태: **adapter·명령·실제 ProseMirror history 구현 및 빠른 검사 통과**, 2026-10-05. 브라우저의 한글 IME 실입력, 최종 UI와 파일 host 통합은 별도 확인 대상이다. [실행 계획](manual-editor-plan.md)과 [준비도 점검](manual-editor-readiness.md)의 B 담당 구현 근거다.
 
 ## 구현 파일과 호출 방법

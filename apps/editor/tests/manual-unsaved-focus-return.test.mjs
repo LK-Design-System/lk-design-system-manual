@@ -1,0 +1,23 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {createRequire} from 'node:module';
+import {createManualState,selectManualObject} from '../src/redesign/manual-kernel.mjs';
+const source=readFileSync(process.env.LDS_REPLACEMENT_SOURCE||new URL('../src/redesign/ManualEditor.jsx',import.meta.url),'utf8');
+const require=createRequire(new URL('../../../../lk-design-system/package.json',import.meta.url));
+const {parse}=require('@babel/parser');const callbacks={};
+function walk(n){if(!n||typeof n!=='object')return;if(n.type==='FunctionDeclaration'&&['protect','cancelReplacement','deferredFocusEnabled','scheduleFocus'].includes(n.id.name))callbacks[n.id.name]=source.slice(n.start,n.end);for(const v of Object.values(n))if(Array.isArray(v))v.forEach(walk);else if(v&&typeof v==='object')walk(v);}
+walk(parse(source,{sourceType:'module',plugins:['jsx']}));
+function harness({previous=null}={}){
+ const state=createManualState({document:{schemaVersion:2,id:'synthetic',title:'Synthetic',pages:[{id:'p',title:[],blocks:[{id:'a',type:'paragraph',content:[{type:'text',text:'A'}]},{id:'b',type:'paragraph',content:[{type:'text',text:'B'}]}]}]}});
+ const calls={focus:0,action:0};const editor={state,editable:true,composing:false,dom:{isConnected:true},focus(){calls.focus++}};editor.dispatch=tr=>editor.state=editor.state.applyTransaction(tr).state;
+ const api=new Function('editor','previous',`${callbacks.protect}\n${callbacks.cancelReplacement}\n${callbacks.deferredFocusEnabled}\n${callbacks.scheduleFocus}\nconst view={current:editor},generation={current:1},pendingAction={current:null},queue=[];let ready=true,busy=false,printRequested=false,replacementBusy=false,modal=previous,menu=null;const replacing={current:false},replacementSaving={current:false},printing={current:false},figureResizeSession={current:null},tableUISession={current:null},tableResizeSession={current:null},ownOutlineSelectSession={current:null},outlineDragSession={current:null},marginDrag={current:null},dragController={current:null},outlineDragController={current:null},marqueeController={current:null},uiApi={current:{deferredFocusEnabled}};function setModal(value){modal=value}function isDirty(){return true}function queueMicrotask(fn){queue.push(fn)}function requestAnimationFrame(fn){queue.push(fn)}return {protect,cancelReplacement,scheduleFocus,view,generation,pendingAction,refs:{replacing,replacementSaving,printing,figureResizeSession,tableUISession,tableResizeSession,ownOutlineSelectSession,outlineDragSession,marginDrag,dragController,outlineDragController,marqueeController},modal:()=>modal,queued:()=>queue.length,setModal,flush(){while(queue.length)queue.shift()()}};`)(editor,previous);
+ return {...api,editor,calls,begin(){api.protect(()=>calls.action++)}};
+}
+
+test('actual Parent cancel restores same editor and selection without executing replacement',()=>{const h=harness();const state=h.editor.state;h.begin();h.cancelReplacement();h.flush();assert.equal(h.calls.focus,1);assert.equal(h.calls.action,0);assert.equal(h.editor.state,state);assert.equal(h.pendingAction.current,null);});
+test('actual Parent cancel preserves library focus owner',()=>{const previous={kind:'library'},h=harness({previous});h.begin();h.cancelReplacement();h.flush();assert.equal(h.calls.focus,0);assert.equal(h.modal(),previous);});
+test('duplicate cancellation schedules no focus',()=>{const h=harness();h.cancelReplacement();h.flush();assert.equal(h.calls.focus,0);});
+test('saving cannot cancel replacement',()=>{const h=harness();h.begin();const pending=h.pendingAction.current;h.refs.replacementSaving.current=true;h.cancelReplacement();h.flush();assert.equal(h.pendingAction.current,pending);assert.equal(h.calls.focus,0);});
+const changes={editor:h=>h.view.current={...h.editor},doc:h=>h.editor.state={...h.editor.state,doc:{}},generation:h=>h.generation.current++,selection:h=>selectManualObject('b',{text:true})(h.editor.state,h.editor.dispatch,h.editor),figure:h=>h.refs.figureResizeSession.current={},table:h=>h.refs.tableUISession.current={},resize:h=>h.refs.tableResizeSession.current={},outline:h=>h.refs.ownOutlineSelectSession.current={},margin:h=>h.refs.marginDrag.current={},drag:h=>h.refs.dragController.current={isDragging:()=>true},readOnly:h=>h.editor.editable=false,ime:h=>h.editor.composing=true,disconnected:h=>h.editor.dom.isConnected=false};
+for(const phase of ['while-modal-open','after-cancel'])for(const [name,change] of Object.entries(changes))test(`actual Parent cancel blocks ${name} ${phase}`,()=>{const h=harness();h.begin();if(phase==='after-cancel')h.cancelReplacement();change(h);if(phase==='while-modal-open')h.cancelReplacement();h.flush();assert.equal(h.calls.focus,0);});

@@ -1,0 +1,57 @@
+LDS Manual 독립 UI·동작 QA — 2026-10-07
+범위: 합성 fixture와 memory store. 제품 탭/사용자 IDB/소스/문서/build/server 변경 없음. 전체 suite 재실행 없음. /tmp 증거와 브라우저가 생성한 실제 Downloads 파일만 사용.
+
+검증 대상과 source 경계
+1) 제품44589: manual-CiREa-jR.js / manual-ILW1W5bw.css. HTTP 및 entry/asset bytes만 수집. native 수락으로 확대하지 않음. 시작과 종료 조회 모두 CiRE.
+2) QA44590 처음 열린 tab1/tab2: controls-BLTYx5A_.js / controls-lsGzkotn.css. 아래 기본 입력/콜아웃/drag/저장/다운로드 왕복은 이 로드 번들의 결과. contemporaneous source SHA는 source-sha.json. ManualEditor fb0a9a13, kernel efefe5c3, catalog61a288a4, menu e62d89a3. 서버 갱신 뒤에도 두 탭의 script src는 BLTY였으며 reload하지 않음.
+3) 검증 중 UI owner가 entry와 ManualEditor를 변경. 나중에 열린 tab3/tab4 frame은 controls-CHPo7IMX.js / 같은 lsGzkotn CSS. source-sha-later.json의 ManualEditor7b4651aa, 다른3개 동일. 표지/페이지 제어와 새 키보드 메뉴 결과만 이 후보에 귀속. 새 후보로 전체 앞선 검증을 승계하지 않음.
+4) Core manifest SHA077dffd3, runtimeTree347b4820. 소스 핀 및 manifest 근거이고 이번 independent QA의 Core 전수 확인은 아님. QA bundle과 동시 관측 source의 관계만 기록; 별도 publisher build provenance manifest는 제공받지 않음.
+
+BLTY 실제 입력 결과
+- 빈 본문에 QA-CONTINUE 입력, Return→별도 p SECOND, ShiftReturn→같은 p의 hardBreak+SOFT 확인. Home/Backspace가 hardBreak를 삭제하고 Undo가 줄바꿈 복원.
+- 선택 SOFT bubble에 인라인 코드/CtrlE 안내, 링크 버튼 없음. CtrlE→<code>SOFT</code>. 상시 도구 줄 링크/코드 버튼 없음.
+- 줄 시작 quote(큰따옴표+공백), toggle(>+공백), codeBlock(백틱3개+공백)이 native 입력으로 변환. 즉시 Backspace는 각 literal 원문 복원. 백틱 한 쌍은 <code>inline-qa</code>로 변환.
+- 빈 bullet Enter→본문 AFTER-LIST 입력. procedure 제목 STEP-TITLE Return→설명 STEP-BODY, 마지막 빈 설명 Enter→새2단계, 빈 단계 제목 ShiftTab→외부 AFTER-PROCEDURE 입력. 첫 단계 내용 보존.
+- Home/Delete는 inline-qa 첫 글자를 제거. 즉시 Undo는 짧은 history 시간창에서 preceding input-rule과 합쳐져 literal 일부를 복원: isolated Delete 한 Undo 수락은 아님. 기본 시간 기반 grouping의 관측이며 제품 결함으로 단정하지 않음.
+- slash /zznomatch 결과없음→Escape가 literal 내용을 보존. 이후 계속 입력하면 같은 slash trigger를 다시 검색하는 것을 관측. 작업 메뉴 검색에 자동 focus, 복제 filter, Escape→본문 즉시 입력 확인.
+
+BLTY 콜아웃 Backspace
+A. toolbar로 빈 안내 삽입: Backspace→안내0/외부 기존p1. before DOM record의 page/wrapper/innerp/외부p ID를 수집. 한 Undo가 전체 before DOM 일치(true), Redo 후 QA-CONTINUE가 외부p에 입력됨.
+B. rich 이전p: RICH-PREVIOUS에 strong 적용→빈 안내 삽입→title start Backspace→이전p 끝. 한 Undo DOM equality(true). Redo 뒤 -NEXT 입력이 <strong>RICH-PREVIOUS-NEXT</strong>이고 이전p ID 보존.
+C. sole-empty-callout.manual.json: 안내 한 개만 있는 page import, title Home/Backspace→외부p 생성. 한 Undo DOM equality(true), Redo 후 SOLE-AFTER 외부 입력.
+D. protected-callout.manual.json: 빈title 아래 strong PROTECTED-BODY. title Home/Backspace→전체 DOM/IDs equality(true), wrapper 보존.
+E. 공백·중첩 자산·다른 field·범위·IME 보호는 기존 efefe focused10green 기록/소스 근거 재사용. 모든 guard native 전수 수락은 아님. selection 내부 exact equality는 이번 browser read API에서 제공되지 않아 caret는 실제 focus/즉시 입력과 toolbar로 검증. 기존 모델의 exact selection/metadata assertion을 native assertion으로 바꾸지 않음.
+
+BLTY 실제 범위 drag + A4
+- manual-range-flow.manual.json을 native chooser로 copy import. 파일 복사본은 새ID 계약이므로 fixture 원ID와 importedID를 동일하다고 주장하지 않음. 이후 이동에서 imported 원ID 보존을 검증.
+- 안내 title caret에서 Escape, ShiftDown2→callout/paragraph/todo 3개 명시 선택. 모든 before DOM을 range-before.json에 보관.
+- 1280×1170 QA viewport, 약293px 스크롤에서 selected todo rail (385,184)→받는 쪽 first body 앞 (550,1090) native drag.
+- 3→4쪽: source page 빈 body, target page에 세 블록+기존본문01~19, auto continuation에20~24, 뒤 독립page 보존. 모든 paper793.6875×1122.515625px 고정. imported 원ID 모두 after에 존재.
+- .manual-block-selected/data-manual-block-selected=true의 세 ID: 8eabc2b1-38cf-4e6a-9eb7-5efd9da8eb4d / 2113d400-8f50-40b0-8d78-a9ac28710dde / 4ae95b1a-0975-4fa8-b822-68782e1f4ace. full selection 유지. 링크/u, em/hardBreak, checked=true, paragraph metadata 보존.
+- CtrlZ 한번→3쪽 before DOM equality(true). CtrlShiftZ 한번→4쪽 after DOM equality(true). range-after.json 보관.
+- 선택 후 Enter로 cursor 전환까지는 이 drag recipe에서 별도 수락하지 않음; 선택 표시와 native focus/현재2쪽 footer만 확인.
+
+BLTY 저장·실제 다운로드
+- 자동 저장 badge→보관함에서 같은 문서 재열기:4쪽, all importedID 및 derived pageID 유지, rich marks/link/metadata 보존.
+- download event API10초 timeout. 실제 /home/jinhyuk2me/Downloads/범위 이동과 A4 흐름 · 합성 검증.manual.json 생성 확인. /tmp/range-flow-downloaded.manual.json로 증거 복사.11,708bytes/SHA b0bd0539903bc144556d0c3d586a51b152dab6d61622fbe6eafe9b8b33a139c4.
+- 실제 파일 bytes JSON format/document/assets 확인. native chooser로 이 파일 복사본 가져오기→4쪽/link/em/hardBreak/metadata/checked 보존. copy는 IDs 재발급 계약. 요청 toast만으로 완료 판정하지 않았음.
+- 이 왕복은 memory 저장 재열기와 실제 파일 왕복. 사용자 브라우저 IDB persistence/OS quota는 미검증.
+
+화면 메뉴
+- BLTY actual390×844 작업 menu screenshot menu-390.jpg: x63..381 안에서 메뉴, search x71 width268. thin neutral focus. 자동focus/복제filter/Escape 후입력. 고정 A4 가로스크롤은 현행계약이며 menu overflow로 간주하지 않음.
+- CHPo frame390: 표지 속성 overlay 열기/닫기; 목차 opening/nav first page→현재2쪽, 자동 목록닫힘. 현재2쪽뒤 page add4→5쪽/index3; 한 Undo4쪽. 표지와 본문 control 구분 관측.
+- CHPo duplicate 상단 작업 버튼 제거. pageTitle Ctrl/→페이지 작업, body ShiftF10→블록 작업. Escape/ShiftDown 명시2블록 후 Ctrl/→2개 블록 작업, Escape→focus와 range표시 유지. 캡처chpo-keyboard-menu-390.jpg/chpo-multi-selection.jpg.
+
+결함 / 조사 항목
+확정된 사용자 기능 결함: 이번 범위에서 없음.
+I01 판정 보류(조사 우선순위 P2): CHPo iframe QA 초기 console MutationObserver.observe TypeError.
+재현: 44590/page-controls-frame.html을 새 IAB tab으로 열고 dev.logs(error) 조회. 두 새 frame 탭에서 첫 조작 전/초기에 같은 오류1개. expected: 초기 console 오류0. actual: parameter1 not Node. UI native 기능은 정상.
+해당 runtime: controls-CHPo7IMX.js지만 log에 source URL/stack 없음. 제품 코드 vs IAB instrumentation/QA wrapper 귀속 불명. direct BLTY 두 탭 errors0. 앱 수정 요청으로 확대하지 않음.
+증거: iframe-console.json. 재확인: source stack 확보 또는 표준 browser의 같은 합성 frame/direct entry 비교로 귀속 후, same candidate 초기 오류0와 native 기능 유지.
+T01 도구 한계: iframe getByLabel 페이지 목록 locator click은 No node found였지만 같은 AX native click은 성공. 제품 결함 판정 아님. 다운로드 event timeout도 실제 bytes 생성으로 제품 파일 실패에서 제외.
+
+미수락/추가 확인
+OS 한글 IME, 모바일 native touch, 실제200%, 독립 OS PDF, held-pointer Escape, forced-colors. 최신 CHPo source에서 기존BLTY 전체 flow 반복 수락 없음. 일부 nested/field guard는 기존 focused 모델 근거만 있음. overflow 중 원래 텍스트caret 이동 케이스와 standalone 링크 데이터 외 자산bytes 왕복(이번 range fixture 자산0), slash의 긴 메뉴scroll/arrow-selection 전체, 범위Delete의 단일undo는 이번 native 대상에서 전수 확인 안 함. 통과한 같은 source full suite 재실행0. 별도 Notion 비교/인용은 이번에는 하지 않음.
+
+정리
+QA agent-created4탭 모두 닫음. viewport reset. 44589/44590 server process 조작0. repo 변경0. 사용자 탭/IDB 변경0. Downloads 실제 file은 보존.

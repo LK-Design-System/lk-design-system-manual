@@ -1,0 +1,57 @@
+[
+  {
+    "id": "V01",
+    "priority": "P2",
+    "title": "페이지 추가 라벨이 목차보다 크고 위치 설명과 붙음",
+    "steps": "1065x900, 목차 열림, + 페이지 추가 관찰",
+    "expected": "목차와 어울리는 일정한 text 크기·무게, 삽입 위치와 명확한 간격",
+    "actual": "root12px이지만 text children이 Core icon wrapper16px/600으로 렌더링. 위치 설명11px/400. Core content가 두 child를 inline-flex로 묶으므로 root space-between은 양쪽 text 배치를 분리하지 못함. 실제목차strong12px/500.",
+    "source": "ManualEditor.jsx:379의 Button custom span children. Core Button의 공용 스타일 변경을 QA가 수행하지 않음.",
+    "capture": "01-shell-1065.jpg",
+    "recheck": "실제 text slot font12px/500 수준으로 일관되고 안내는 독립 여백/행. 1280/1065/760/390에서 wrapping과 clip 없음."
+  },
+  {
+    "id": "V02",
+    "priority": "P2",
+    "title": "빈 페이지 제목 placeholder가 남색 배경에서 거의 보이지 않음",
+    "steps": "page-controls.html?empty=1, 빈 pageTitle 관찰",
+    "expected": "첫 입력 위치를 쉽게 알아볼 수 있는 placeholder 색",
+    "actual": "배경rgb(5,19,43), ::before rgba(55,56,60,.74). 합성foregroundRGB42/46.38/55.58, 대비1.3676:1. 실제typed colorwhite와 다름.",
+    "source": "manual-editor.css:31 brand-on-surface 규칙이 line35의 [data-manual-node=pageTitle][data-manual-empty=true] 일반 대체색 규칙에 덮임.",
+    "capture": "27-empty-390.jpg",
+    "recheck": "empty pageTitle placeholder가 brand surface용 foreground를 사용. 입력전/후/Undo·Readonly를 wide/390에서 확인. 글자크기 축소로 숨기지 않음."
+  },
+  {
+    "id": "V03",
+    "priority": "P2",
+    "title": "상단 + 메뉴의 첫 keyboard focus outline이 잘림",
+    "steps": "390x844, 상단 + 클릭. 첫 본문 항목에 keyboard focus가 들어간 상태 관찰",
+    "expected": "선택 항목의 포커스 경계가 네 면에서 명확",
+    "actual": "menu overflow hidden auto, rect x25/y154. 첫 item이 같은x25/y154에서 시작하며 outline2px/+2px가 menu 영역 밖으로 나가 top/left clip. 화면에는 우측과 하단만 U자형으로 보임.",
+    "source": "Manual 상단+의 Core DropdownMenu 경로와 Core focus fallback seam. QA는 sibling Core를 수정하지 않음.",
+    "capture": "13-top-insert-390.jpg",
+    "recheck": "첫/중간/마지막 menuitem의 keyboard focus 경계가 scrollbar/overflow에 잘리지 않음. longmenu/wide/390 확인."
+  },
+  {
+    "id": "V04",
+    "priority": "P2",
+    "title": "상단 + 메뉴를 스크롤하면 keyboard focus 항목이 화면 밖에 남음",
+    "steps": "390 상단+를 열어 첫 itemfocus. menu를 down0.8 scroll. Home와 Down native 입력",
+    "expected": "방향키로 선택된 item이 스크롤 영역 안에 보임",
+    "actual": "Home후focus본문 item y-17, menu y154..819. Down후 AXfocus는 제목1로 바뀌나 화면은 계속 제목3이상/절차쪽 scrolled 상태. screenshot의 currentfocus가 보이지 않음.",
+    "source": "Core DropdownMenu.jsx:643/659/676/778 focus({preventScroll:true}) 사용. 현재 source에서 scrollIntoView 참조는 확인되지 않음. read-only 조사이며 Core 코드 변경 없음.",
+    "capture": "15-dropdown-focus-home-390.jpg / 14-insert-scroll-390.jpg",
+    "recheck": "mouse scroll 이후 ArrowUp/Down/Home/End가 focus item을 visible 영역으로 이동. 문서 main을 불필요하게 scroll하지 않고 selection보존."
+  },
+  {
+    "id": "V05",
+    "priority": "P2",
+    "title": "파일 가져오기 실패가 정상 상태와 같은 작은 회색 footer text로 표시",
+    "steps": "390에서 파일→복사본 가져오기→invalid.manual.json 선택",
+    "expected": "파일을 열지 못했다는 실패가 즉시 식별되는 시각적 위계",
+    "actual": "지원하지 않는 문서 파일 형식입니다.가 footer10px/400/rgba(46,47,51,.88), 정상save-status와 동일색/크기. role=status이며 error icon/band 없음. 기존문서가 계속보여 실패를 놓치기 쉬움.",
+    "source": "ManualEditor.jsx importFile catch→setNotice, footer notice role는 saveStatus 저장실패/충돌만 alert. manual-editor.css:46/49.",
+    "capture": "25-import-error-390.jpg",
+    "recheck": "import/print/save 실패 각각 적절히 구분된 오류 표시. 긴메시지줄바꿈, 읽기위계, recovery location을 wide/390에서 확인. 성공toast를 같은 강도로 만들지 않음."
+  }
+]

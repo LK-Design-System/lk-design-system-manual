@@ -1,0 +1,207 @@
+{
+  "format": "lds-manual-document/v2",
+  "document": {
+    "schemaVersion": 2,
+    "id": "qa-procedure-outdent-document",
+    "title": "절차 단계 내어쓰기 · 합성 검증",
+    "pages": [
+      {
+        "id": "qa-outdent-empty-page",
+        "title": [
+          {
+            "type": "text",
+            "text": "빈 세 번째 단계"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "qa-outdent-empty-procedure",
+            "type": "procedure",
+            "start": 1,
+            "steps": [
+              {
+                "id": "qa-outdent-step1",
+                "title": [
+                  {
+                    "type": "text",
+                    "text": "첫 단계"
+                  }
+                ],
+                "blocks": [
+                  {
+                    "id": "qa-outdent-description1",
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "첫 설명을 유지합니다."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "qa-outdent-step2",
+                "title": [
+                  {
+                    "type": "text",
+                    "text": "둘째 단계"
+                  }
+                ],
+                "blocks": [
+                  {
+                    "id": "qa-outdent-description2",
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "둘째 설명을 유지합니다."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "qa-outdent-step3",
+                "title": [],
+                "blocks": [
+                  {
+                    "id": "qa-outdent-description3",
+                    "type": "paragraph",
+                    "content": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "qa-outdent-after-callout",
+            "type": "callout",
+            "tone": "signal",
+            "title": [
+              {
+                "type": "text",
+                "text": "다음 안내"
+              }
+            ],
+            "blocks": [
+              {
+                "id": "qa-outdent-after-body",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "내어쓰기 뒤에도 안내를 유지합니다."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "qa-outdent-middle-page",
+        "title": [
+          {
+            "type": "text",
+            "text": "내용이 있는 중간 단계"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "qa-outdent-middle-procedure",
+            "type": "procedure",
+            "start": 4,
+            "extensions": {
+              "fixture": "procedure metadata"
+            },
+            "steps": [
+              {
+                "id": "qa-outdent-middle-before",
+                "title": [
+                  {
+                    "type": "text",
+                    "text": "앞 단계"
+                  }
+                ],
+                "blocks": [
+                  {
+                    "id": "qa-outdent-before-body",
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "앞 단계입니다."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "qa-outdent-middle-target",
+                "title": [
+                  {
+                    "type": "text",
+                    "text": "확인 단계"
+                  }
+                ],
+                "blocks": [
+                  {
+                    "id": "qa-outdent-middle-body",
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "제목과 설명을 본문으로 꺼냅니다."
+                      }
+                    ]
+                  },
+                  {
+                    "id": "qa-outdent-figure",
+                    "type": "figure",
+                    "asset": "assets/qa-large.png",
+                    "alt": "합성 200px 검증 이미지",
+                    "caption": [
+                      {
+                        "type": "text",
+                        "text": "합성 그림 01"
+                      }
+                    ],
+                    "widthPreset": "compact"
+                  }
+                ],
+                "extensions": {
+                  "fixture": "step metadata"
+                }
+              },
+              {
+                "id": "qa-outdent-middle-after",
+                "title": [
+                  {
+                    "type": "text",
+                    "text": "뒤 단계"
+                  }
+                ],
+                "blocks": [
+                  {
+                    "id": "qa-outdent-next-body",
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "뒤 단계입니다."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "assets/qa-large.png": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAIAAABM5OhcAAABKUlEQVR4nO3cwQ2AMAwAsRZ1/5XLEpxQwR4gyuOUZ+YeZ9qnLv4T19sL8E3CIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSyzNPCi4WCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFonVjOVJc47juFgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWIzCDefwBcl4GikBAAAAAElFTkSuQmCC"
+  }
+}

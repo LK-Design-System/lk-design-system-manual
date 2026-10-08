@@ -1,0 +1,42 @@
+{
+  "scope": "keyboard/input independent audit and owned block replacement caret fix",
+  "source": {
+    "apps/editor/src/redesign/manual-block-selection.mjs": "137cec8ad834eca74cf2d7289a6516ce7ede54fd9b5141b28bcc7585476fa9cf",
+    "apps/editor/tests/redesign-block-replacement.test.mjs": "ff29822e7a84c8d119289d8a9681b8cd0d54c93c9d318138968d88409a18b822",
+    "apps/editor/src/redesign/manual-kernel.mjs": "3fdb5cf23defa9cc4e40ac36557fe90854075c0291967ddbbee4d12cb31a6b6e"
+  },
+  "regression": {
+    "command": "/home/jinhyuk2me/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --test apps/editor/tests/redesign-block-replacement.test.mjs apps/editor/tests/redesign-block-selection.test.mjs",
+    "new": 6,
+    "existingAffected": 22,
+    "pass": 28,
+    "fail": 0,
+    "durationMs": 99.310613
+  },
+  "reusedIndependent": {
+    "partialForwardReverseBackspaceDelete": 4,
+    "emptyCalloutToggleExitMarkedTyping": 2
+  },
+  "initialFailure": "block forward/reverse replacement incorrectly selects pageTitle immediately after key; retained in first-result.json and block-false-trace.json/block-true-trace.json",
+  "fix": "nonempty replacement selection uses inserted fragment end; empty deletion behavior retained",
+  "otherFinding": "ordinary same-page join loses right opaque extensions, one UndoRedo preserves it in history; unclear explicit lifecycle, separate model-owner improvement candidate",
+  "limitations": [
+    "actual PM and pagination transactions use synthetic geometry",
+    "native/browser/build/product not performed by this owner",
+    "OS IME/touch/200%/external clipboard/PDF not accepted"
+  ],
+  "handoff": [
+    "root",
+    "model2",
+    "UI sole native/build owner"
+  ],
+  "artifacts": [
+    "focused.mjs",
+    "first-result.json",
+    "block-false-trace.json",
+    "block-true-trace.json",
+    "fix-result.json",
+    "regression.log",
+    "ordinary-join-result.json"
+  ]
+}

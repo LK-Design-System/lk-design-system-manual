@@ -1,0 +1,532 @@
+[
+  {
+    "stage": "beforeKey",
+    "selection": {
+      "type": "manual-block",
+      "anchorId": "3c435946-1316-42ae-b998-7add360e1e51",
+      "headId": "25b1c22f-a55d-4599-b594-3cdbe3024438"
+    },
+    "field": "page",
+    "fieldId": "b70b786a-9302-4bf0-b282-e4ee516a7f5d",
+    "offset": 6,
+    "document": {
+      "schemaVersion": 2,
+      "id": "af6ec1c6-c454-405e-bdcb-772e720b1df7",
+      "title": "",
+      "pages": [
+        {
+          "id": "b70b786a-9302-4bf0-b282-e4ee516a7f5d",
+          "title": [
+            {
+              "type": "text",
+              "text": "Task",
+              "marks": [
+                {
+                  "type": "strong"
+                }
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "extensions": {
+                "opaque": {
+                  "retain": true
+                }
+              },
+              "id": "3c435946-1316-42ae-b998-7add360e1e51",
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ABCD",
+                  "marks": [
+                    {
+                      "type": "strong"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extensions": {
+            "manualPagination": {
+              "kind": "page",
+              "rootPageId": "b70b786a-9302-4bf0-b282-e4ee516a7f5d",
+              "owner": "@lk-design-system/manual-pagination",
+              "version": 1
+            }
+          },
+          "id": "93fdefbd-866a-41d0-a1eb-833ba16aeb7c",
+          "title": [
+            {
+              "type": "text",
+              "text": "Task",
+              "marks": [
+                {
+                  "type": "strong"
+                }
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "extensions": {
+                "opaque": {
+                  "retain": true
+                },
+                "manualPagination": {
+                  "kind": "block",
+                  "rootBlockId": "3c435946-1316-42ae-b998-7add360e1e51",
+                  "sourceType": "paragraph",
+                  "owner": "@lk-design-system/manual-pagination",
+                  "version": 1
+                }
+              },
+              "id": "25b1c22f-a55d-4599-b594-3cdbe3024438",
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "EFGH",
+                  "marks": [
+                    {
+                      "type": "underline"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "extensions": {
+                "opaque": {
+                  "retain": true
+                }
+              },
+              "id": "9dd92e31-3f17-42e0-a819-09199fc29304",
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "keep",
+                  "marks": [
+                    {
+                      "type": "emphasis"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stage": "afterKey",
+    "selection": {
+      "type": "text",
+      "anchor": 12,
+      "head": 12
+    },
+    "field": "paragraph",
+    "fieldId": "3ac9e540-e815-44b9-bdd2-f04833c52864",
+    "offset": 4,
+    "document": {
+      "schemaVersion": 2,
+      "id": "af6ec1c6-c454-405e-bdcb-772e720b1df7",
+      "title": "",
+      "pages": [
+        {
+          "id": "b70b786a-9302-4bf0-b282-e4ee516a7f5d",
+          "title": [
+            {
+              "type": "text",
+              "text": "Task",
+              "marks": [
+                {
+                  "type": "strong"
+                }
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "id": "3ac9e540-e815-44b9-bdd2-f04833c52864",
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "교체😀"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extensions": {
+            "manualPagination": {
+              "kind": "page",
+              "rootPageId": "b70b786a-9302-4bf0-b282-e4ee516a7f5d",
+              "owner": "@lk-design-system/manual-pagination",
+              "version": 1
+            }
+          },
+          "id": "93fdefbd-866a-41d0-a1eb-833ba16aeb7c",
+          "title": [
+            {
+              "type": "text",
+              "text": "Task",
+              "marks": [
+                {
+                  "type": "strong"
+                }
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "extensions": {
+                "opaque": {
+                  "retain": true
+                }
+              },
+              "id": "9dd92e31-3f17-42e0-a819-09199fc29304",
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "keep",
+                  "marks": [
+                    {
+                      "type": "emphasis"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stage": "afterFlow",
+    "selection": {
+      "type": "text",
+      "anchor": 12,
+      "head": 12
+    },
+    "field": "paragraph",
+    "fieldId": "3ac9e540-e815-44b9-bdd2-f04833c52864",
+    "offset": 4,
+    "document": {
+      "schemaVersion": 2,
+      "id": "af6ec1c6-c454-405e-bdcb-772e720b1df7",
+      "title": "",
+      "pages": [
+        {
+          "id": "b70b786a-9302-4bf0-b282-e4ee516a7f5d",
+          "title": [
+            {
+              "type": "text",
+              "text": "Task",
+              "marks": [
+                {
+                  "type": "strong"
+                }
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "id": "3ac9e540-e815-44b9-bdd2-f04833c52864",
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "교체😀"
+                }
+              ]
+            },
+            {
+              "extensions": {
+                "opaque": {
+                  "retain": true
+                }
+              },
+              "id": "9dd92e31-3f17-42e0-a819-09199fc29304",
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "keep",
+                  "marks": [
+                    {
+                      "type": "emphasis"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stage": "afterUndo",
+    "selection": {
+      "type": "manual-block",
+      "anchorId": "3c435946-1316-42ae-b998-7add360e1e51",
+      "headId": "25b1c22f-a55d-4599-b594-3cdbe3024438"
+    },
+    "field": "page",
+    "fieldId": "b70b786a-9302-4bf0-b282-e4ee516a7f5d",
+    "offset": 6,
+    "document": {
+      "schemaVersion": 2,
+      "id": "af6ec1c6-c454-405e-bdcb-772e720b1df7",
+      "title": "",
+      "pages": [
+        {
+          "id": "b70b786a-9302-4bf0-b282-e4ee516a7f5d",
+          "title": [
+            {
+              "type": "text",
+              "text": "Task",
+              "marks": [
+                {
+                  "type": "strong"
+                }
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "extensions": {
+                "opaque": {
+                  "retain": true
+                }
+              },
+              "id": "3c435946-1316-42ae-b998-7add360e1e51",
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ABCD",
+                  "marks": [
+                    {
+                      "type": "strong"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extensions": {
+            "manualPagination": {
+              "kind": "page",
+              "rootPageId": "b70b786a-9302-4bf0-b282-e4ee516a7f5d",
+              "owner": "@lk-design-system/manual-pagination",
+              "version": 1
+            }
+          },
+          "id": "93fdefbd-866a-41d0-a1eb-833ba16aeb7c",
+          "title": [
+            {
+              "type": "text",
+              "text": "Task",
+              "marks": [
+                {
+                  "type": "strong"
+                }
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "extensions": {
+                "opaque": {
+                  "retain": true
+                },
+                "manualPagination": {
+                  "kind": "block",
+                  "rootBlockId": "3c435946-1316-42ae-b998-7add360e1e51",
+                  "sourceType": "paragraph",
+                  "owner": "@lk-design-system/manual-pagination",
+                  "version": 1
+                }
+              },
+              "id": "25b1c22f-a55d-4599-b594-3cdbe3024438",
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "EFGH",
+                  "marks": [
+                    {
+                      "type": "underline"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "extensions": {
+                "opaque": {
+                  "retain": true
+                }
+              },
+              "id": "9dd92e31-3f17-42e0-a819-09199fc29304",
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "keep",
+                  "marks": [
+                    {
+                      "type": "emphasis"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stage": "afterRedo",
+    "selection": {
+      "type": "text",
+      "anchor": 12,
+      "head": 12
+    },
+    "field": "paragraph",
+    "fieldId": "3ac9e540-e815-44b9-bdd2-f04833c52864",
+    "offset": 4,
+    "document": {
+      "schemaVersion": 2,
+      "id": "af6ec1c6-c454-405e-bdcb-772e720b1df7",
+      "title": "",
+      "pages": [
+        {
+          "id": "b70b786a-9302-4bf0-b282-e4ee516a7f5d",
+          "title": [
+            {
+              "type": "text",
+              "text": "Task",
+              "marks": [
+                {
+                  "type": "strong"
+                }
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "id": "3ac9e540-e815-44b9-bdd2-f04833c52864",
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "교체😀"
+                }
+              ]
+            },
+            {
+              "extensions": {
+                "opaque": {
+                  "retain": true
+                }
+              },
+              "id": "9dd92e31-3f17-42e0-a819-09199fc29304",
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "keep",
+                  "marks": [
+                    {
+                      "type": "emphasis"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stage": "afterTyping",
+    "selection": {
+      "type": "text",
+      "anchor": 14,
+      "head": 14
+    },
+    "field": "paragraph",
+    "fieldId": "3ac9e540-e815-44b9-bdd2-f04833c52864",
+    "offset": 6,
+    "document": {
+      "schemaVersion": 2,
+      "id": "af6ec1c6-c454-405e-bdcb-772e720b1df7",
+      "title": "",
+      "pages": [
+        {
+          "id": "b70b786a-9302-4bf0-b282-e4ee516a7f5d",
+          "title": [
+            {
+              "type": "text",
+              "text": "Task",
+              "marks": [
+                {
+                  "type": "strong"
+                }
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "id": "3ac9e540-e815-44b9-bdd2-f04833c52864",
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "교체😀계속"
+                }
+              ]
+            },
+            {
+              "extensions": {
+                "opaque": {
+                  "retain": true
+                }
+              },
+              "id": "9dd92e31-3f17-42e0-a819-09199fc29304",
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "keep",
+                  "marks": [
+                    {
+                      "type": "emphasis"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

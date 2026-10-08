@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-07",
+  "scope": "Read-only source audit and memory/component-spec reproduction; no browser/image decoder execution",
+  "sourceSha256": [
+    {
+      "path": "apps/editor/src/redesign/document-store.mjs",
+      "sha256": "9d1a6292f0554dcc11e2e41ba118648da51dc2c28ef702389e937dceab039250"
+    },
+    {
+      "path": "apps/editor/src/redesign/ManualEditor.jsx",
+      "sha256": "5a89c8e4f345c4e6bbe5568d17feeb518d897a239eee540166aacf1d8ac30a43"
+    },
+    {
+      "path": "apps/editor/src/redesign/ManualPrint.jsx",
+      "sha256": "071d89d6d0d4f04d5fb899d43e265ad92549848f8b149a723fd989ee35e04337"
+    },
+    {
+      "path": "apps/editor/src/redesign/manual-image-request.mjs",
+      "sha256": "da8f0fbb584a285f604fb08fa708fbd2cf887e241808e374caa048f80cfab185"
+    },
+    {
+      "path": "apps/editor/src/redesign/manual-pagination-runtime.mjs",
+      "sha256": "329a2201e66314c7cab6f307b7a1708d542d7d22a9f19f74662c11a625e6c94e"
+    },
+    {
+      "path": "src/components.mjs",
+      "sha256": "85ddd69c0195eb3374016939ed436f30524d83a5fc7ead07633a2dfed9cd5b60"
+    }
+  ],
+  "checks": {
+    "invalidPNGBytesAcceptedByStructuralCodec": true,
+    "assetMapMemoryReopenExact": true,
+    "copyRenewsFigureIdKeepsAssetKey": true,
+    "croppedRenderedTagTree": [
+      "figure",
+      "svg",
+      "image"
+    ],
+    "uncroppedControlTagTree": [
+      "figure",
+      "img"
+    ],
+    "printImageQueries": "img only; 2 query sites",
+    "printMissingAssetCondition": false
+  },
+  "newFailure": {
+    "id": "cropped-raster-decode-preflight-gap",
+    "basis": "actual createManualComponents.ManualFigure output has svg/image and no img. ManualPrint waits and naturalWidth-checks img only; presence-based contentIssues does not reject existing invalid bytes. Cropped image therefore has no decode/error check in current source. A4 geometry may be measurable regardless of underlying byte validity.",
+    "nativeAccepted": false,
+    "prioritySuggestion": "P2: damaged cropped image may proceed through print preflight; keep independent of P1 body loss"
+  },
+  "otherGaps": {
+    "coverLogoIssueId": "naturalWidth issue uses closest data-print-id; logo only has ancestor data-page-id, so correction ID undefined",
+    "cropSourceDimensions": "v2 validates numeric bounds relative to declared dimensions, not actual raster dimensions",
+    "mime": "file picker checks MIME and <=20MiB, then Image.decode; codec checks declared data URL MIME/base64 length, not signature"
+  },
+  "recovery": {
+    "picker": "FileReader then Image.decode before asset map change; decode reject retains existing document/assets; catch displays error, retry via same picker",
+    "replace": "request generation/document guard and target existence; UUID asset key; update same figure ID/alt/caption/opaque metadata, remove crop; old asset map entry retained; failed command restores prior map",
+    "import": "decode→copy IDs→protected install→autosave; no upfront Image.decode; imported damaged bytes retained",
+    "authoring": "figure uses raw img or svg/image; no dedicated broken-image onError placeholder; missing key shows add-image span",
+    "a4": "waits only incomplete img; completed failed img and svg/image proceed to DOM geometry; load/error capture requests remeasure without validity diagnostic",
+    "print": "uncropped img loads/errors settle; naturalWidth0 blocks print and figure ID routes correction; cropped svg/image is outside those queries"
+  },
+  "fixtures": [
+    "/tmp/lds-manual-storage-audit-20261007/broken-cropped.manual.json",
+    "/tmp/lds-manual-storage-audit-20261007/broken-uncropped.manual.json"
+  ],
+  "command": "/home/jinhyuk2me/.local/node/bin/node /tmp/lds-manual-storage-audit-20261007/broken-image-audit.mjs",
+  "constraints": [
+    "source/UI/kernel/docs/product/server writes0",
+    "original browser/IDB writes0",
+    "no native broken-image acceptance",
+    "no full suite or repeated green"
+  ],
+  "sourceStable": true
+}

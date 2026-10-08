@@ -1,0 +1,5583 @@
+{
+  "format": "lds-manual-document/v2",
+  "document": {
+    "schemaVersion": 2,
+    "id": "qa-a4-boundary-document",
+    "title": "자동 A4 경계 편집 · 합성 검증",
+    "pages": [
+      {
+        "id": "qa-a4-boundary-text-page",
+        "title": [
+          {
+            "type": "text",
+            "text": "문단 자동 분할"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "qa-a4-boundary-long-text",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "문단 001 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 002 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 003 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 004 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 005 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 006 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 007 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 008 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "문단 009 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 010 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 011 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 012 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 013 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 014 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 015 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 016 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "문단 017 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 018 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 019 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 020 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 021 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 022 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 023 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 024 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "문단 025 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 026 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 027 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 028 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 029 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 030 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 031 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 032 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "문단 033 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 034 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 035 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 036 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 037 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 038 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 039 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 040 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "문단 041 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 042 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 043 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 044 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 045 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 046 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 047 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 048 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "문단 049 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 050 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 051 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 052 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 053 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 054 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 055 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 056 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "문단 057 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 058 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 059 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 060 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 061 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 062 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 063 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 064 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "문단 065 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 066 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 067 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 068 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 069 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 070 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 071 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 072 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "문단 073 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 074 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 075 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 076 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 077 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 078 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 079 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "문단 080 · 자동 페이지는 편집 경계가 아닙니다. ",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                "marks": [
+                  {
+                    "type": "link",
+                    "href": "https://example.invalid/a4-boundary"
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              }
+            ],
+            "extensions": {
+              "fixture": {
+                "keep": "qa-a4-boundary-long-text"
+              },
+              "manualPagination": {
+                "opaque": "preserve"
+              }
+            }
+          },
+          {
+            "id": "qa-a4-boundary-text-sentinel",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "문단 다음 본문 · 보존"
+              }
+            ],
+            "extensions": {
+              "fixture": {
+                "keep": "qa-a4-boundary-text-sentinel"
+              },
+              "manualPagination": {
+                "opaque": "preserve"
+              }
+            }
+          }
+        ],
+        "extensions": {
+          "fixture": {
+            "keep": "paragraph-page"
+          }
+        }
+      },
+      {
+        "id": "qa-a4-boundary-callout-page",
+        "title": [
+          {
+            "type": "text",
+            "text": "안내 자동 분할"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "qa-a4-boundary-callout",
+            "type": "callout",
+            "tone": "signal",
+            "title": [
+              {
+                "type": "text",
+                "text": "반복 안내 제목 · 보존"
+              }
+            ],
+            "blocks": [
+              {
+                "id": "qa-a4-boundary-callout-body",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "안내 001 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 002 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 003 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 004 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 005 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 006 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 007 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 008 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 009 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 010 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 011 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 012 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 013 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 014 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 015 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 016 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 017 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 018 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 019 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 020 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 021 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 022 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 023 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 024 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 025 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 026 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 027 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 028 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 029 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 030 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 031 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 032 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 033 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 034 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 035 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 036 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 037 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 038 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 039 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 040 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 041 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 042 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 043 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 044 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 045 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 046 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 047 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 048 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 049 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 050 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 051 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 052 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 053 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 054 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 055 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 056 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 057 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 058 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 059 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 060 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 061 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 062 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 063 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 064 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 065 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 066 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 067 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 068 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 069 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 070 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 071 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 072 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 073 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 074 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 075 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 076 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 077 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 078 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 079 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "안내 080 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  }
+                ],
+                "extensions": {
+                  "fixture": {
+                    "keep": "qa-a4-boundary-callout-body"
+                  },
+                  "manualPagination": {
+                    "opaque": "preserve"
+                  }
+                }
+              }
+            ],
+            "extensions": {
+              "fixture": {
+                "keep": "callout"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "qa-a4-boundary-toggle-page",
+        "title": [
+          {
+            "type": "text",
+            "text": "접기 자동 분할"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "qa-a4-boundary-toggle",
+            "type": "toggle",
+            "open": true,
+            "title": [
+              {
+                "type": "text",
+                "text": "반복 접기 제목 · 보존"
+              }
+            ],
+            "blocks": [
+              {
+                "id": "qa-a4-boundary-toggle-body",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "접기 001 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 002 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 003 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 004 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 005 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 006 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 007 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 008 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 009 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 010 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 011 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 012 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 013 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 014 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 015 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 016 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 017 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 018 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 019 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 020 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 021 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 022 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 023 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 024 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 025 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 026 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 027 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 028 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 029 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 030 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 031 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 032 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 033 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 034 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 035 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 036 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 037 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 038 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 039 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 040 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 041 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 042 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 043 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 044 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 045 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 046 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 047 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 048 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 049 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 050 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 051 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 052 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 053 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 054 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 055 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 056 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 057 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 058 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 059 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 060 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 061 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 062 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 063 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 064 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 065 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 066 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 067 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 068 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 069 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 070 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 071 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 072 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 073 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 074 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 075 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 076 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 077 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 078 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 079 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "접기 080 · 자동 페이지는 편집 경계가 아닙니다. ",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "한글 다, é, 👨‍👩‍👧‍👦와 🇰🇷를 한 글자씩 편집합니다. ",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/a4-boundary"
+                      },
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  }
+                ],
+                "extensions": {
+                  "fixture": {
+                    "keep": "qa-a4-boundary-toggle-body"
+                  },
+                  "manualPagination": {
+                    "opaque": "preserve"
+                  }
+                }
+              }
+            ],
+            "extensions": {
+              "fixture": {
+                "keep": "toggle"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "qa-a4-boundary-independent-page",
+        "title": [
+          {
+            "type": "text",
+            "text": "독립 페이지 제목 · 보존"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "qa-a4-boundary-independent-body",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "독립 페이지 첫 본문은 제목에 합쳐지지 않습니다.",
+                "marks": [
+                  {
+                    "type": "emphasis"
+                  }
+                ]
+              }
+            ],
+            "extensions": {
+              "fixture": {
+                "keep": "qa-a4-boundary-independent-body"
+              },
+              "manualPagination": {
+                "opaque": "preserve"
+              }
+            }
+          },
+          {
+            "id": "qa-a4-boundary-table",
+            "type": "table",
+            "label": "표 구조 보호",
+            "headers": [
+              {
+                "id": "qa-a4-boundary-header",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "열 제목 · 보존"
+                  }
+                ]
+              }
+            ],
+            "rows": [
+              [
+                {
+                  "id": "qa-a4-boundary-cell",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "셀 본문 · 보존"
+                    }
+                  ],
+                  "extensions": {
+                    "fixture": {
+                      "keep": "cell"
+                    }
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {}
+}

@@ -1,0 +1,237 @@
+{
+  "sourceBefore": "3fdb5cf23defa9cc4e40ac36557fe90854075c0291967ddbbee4d12cb31a6b6e",
+  "sourceAfter": "3fdb5cf23defa9cc4e40ac36557fe90854075c0291967ddbbee4d12cb31a6b6e",
+  "results": [
+    {
+      "key": "Backspace",
+      "before": {
+        "schemaVersion": 2,
+        "id": "1321f7cf-533e-467a-8a3d-2c7c21b4f693",
+        "title": "",
+        "pages": [
+          {
+            "id": "93fb54d1-8b19-403d-afed-45f5f3526877",
+            "title": [
+              {
+                "type": "text",
+                "text": "Task"
+              }
+            ],
+            "blocks": [
+              {
+                "id": "72350305-8f15-4848-a1b4-9e90ef801c8c",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "LEFT",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  }
+                ],
+                "extensions": {
+                  "vendor": {
+                    "left": true
+                  }
+                }
+              },
+              {
+                "id": "875e0179-8b81-41d7-b6fa-a20e2a7acf9a",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "RIGHT",
+                    "marks": [
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  }
+                ],
+                "extensions": {
+                  "vendor": {
+                    "right": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "schemaVersion": 2,
+        "id": "1321f7cf-533e-467a-8a3d-2c7c21b4f693",
+        "title": "",
+        "pages": [
+          {
+            "id": "93fb54d1-8b19-403d-afed-45f5f3526877",
+            "title": [
+              {
+                "type": "text",
+                "text": "Task"
+              }
+            ],
+            "blocks": [
+              {
+                "extensions": {
+                  "vendor": {
+                    "left": true
+                  }
+                },
+                "id": "72350305-8f15-4848-a1b4-9e90ef801c8c",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "LEFT",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "RIGHT",
+                    "marks": [
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "caret": {
+        "type": "text",
+        "anchor": 12,
+        "head": 12
+      },
+      "opaqueRightPreserved": false,
+      "oneUndoRedo": true
+    },
+    {
+      "key": "Delete",
+      "before": {
+        "schemaVersion": 2,
+        "id": "ff8b4d3b-5114-4b04-a899-c59d0157ed71",
+        "title": "",
+        "pages": [
+          {
+            "id": "d98750bc-7b54-4b04-ba0d-848709da8bf2",
+            "title": [
+              {
+                "type": "text",
+                "text": "Task"
+              }
+            ],
+            "blocks": [
+              {
+                "id": "ca3e93b5-67ce-49d0-be2a-676cc0117861",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "LEFT",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  }
+                ],
+                "extensions": {
+                  "vendor": {
+                    "left": true
+                  }
+                }
+              },
+              {
+                "id": "fe1484a3-3636-4560-82fd-7a03399382db",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "RIGHT",
+                    "marks": [
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  }
+                ],
+                "extensions": {
+                  "vendor": {
+                    "right": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "schemaVersion": 2,
+        "id": "ff8b4d3b-5114-4b04-a899-c59d0157ed71",
+        "title": "",
+        "pages": [
+          {
+            "id": "d98750bc-7b54-4b04-ba0d-848709da8bf2",
+            "title": [
+              {
+                "type": "text",
+                "text": "Task"
+              }
+            ],
+            "blocks": [
+              {
+                "extensions": {
+                  "vendor": {
+                    "left": true
+                  }
+                },
+                "id": "ca3e93b5-67ce-49d0-be2a-676cc0117861",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "LEFT",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "RIGHT",
+                    "marks": [
+                      {
+                        "type": "underline"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "caret": {
+        "type": "text",
+        "anchor": 12,
+        "head": 12
+      },
+      "opaqueRightPreserved": false,
+      "oneUndoRedo": true
+    }
+  ],
+  "contract": "v2 redesign97 allows same-container paragraph merge;139 preserves unknown metadata on formatting;183 requests explicit drop/duplicate/delete opaque lifecycle. Ordinary keyboard merge lifecycle is not separately explicit, while automatic spill hotfix stores removed right attrs as joinedManualBlock."
+}

@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-07",
+  "servedUrl": "http://127.0.0.1:44589/manual.html?ui=writing-cleanup-final",
+  "sourceSha256": {
+    "ManualEditor.jsx": "1302535822da3791880f7a0b04e2f90ef42a1fea82e6254fa1d19f9b6608dd8e",
+    "manual-editor.css": "93ffeb6e2881d58a72a49a7f59b372839b6a2aea0fc953ace709915bf93dd34a",
+    "BlockCommandMenu.jsx": "cdd5c06fe3e45cb2f36c0865351f07a53cf05a294c89360cc18ba1331fa6908e",
+    "block-command-catalog.mjs": "9d9a413d4769439db2ffbec39f9c29d0758bb8ae8813ebce84e2550023f2c413",
+    "block-command-scroll.mjs": "0cc24e2c337b5fadb22d61848657b951cdede95e6e0cad85e9356447a15ce44f",
+    "manual-kernel.mjs": "efefe5c32c59e604fae1ed5af9e904635c95a577614e9d57115bbba5f830a997"
+  },
+  "coreRuntimeTreeSha256": "347b4820789095c23fe821de946e06d271d1c1a747fe12482e8cd2ba029230fd",
+  "production": {
+    "js": "manual-DwdcZC6x.js",
+    "css": "manual-CQhRuthu.css",
+    "buildMs": 230,
+    "htmlStatus": 200,
+    "all10AssetsStatus": 200,
+    "rootHttpHashesMatchOwnerReport": true,
+    "serverPid": 19797,
+    "serverRestarted": false
+  },
+  "qa": {
+    "previousStage": "controls-zYWF1_aL.js: e752/Menu9cb; V04 pending scroll and V06 resize failed",
+    "acceptedStage": "controls-BEFxCe88.js: UI130253/Menu cdd5/CSS93ff",
+    "nativeScope": "V01-V06 and D01-D03; table parent duplication/serializer/Undo and bounds; all source/native/build/served boundaries preserved",
+    "rootPixelReview": [
+      "final-writing-cleanup-shell-1065.jpg",
+      "final-writing-cleanup-save-error-390.jpg",
+      "final-writing-cleanup-pending-scroll-390.jpg"
+    ],
+    "additionalSelectedSplitGate": "Accepted selected-split-range-evidence.json; selected callout head/tail + paragraph/todo, 4 selected, 1UndoRedo, actual11997B file; 1280x2400 both endpoints visible"
+  },
+  "notAccepted": [
+    "Reverse direction split range and held-pointer autoscroll/Escape remain separate gates.",
+    "Read-only model audit confirmed automatic-page tail Backspace then title-sync data loss (4 chars in ABCD/EFGH case); P1 hotfix not included in this product epoch.",
+    "Scalar commands target physical fragments; whole logical block and page-group contract is a separate follow-up.",
+    "OS IME/touch/200% browser zoom/external app clipboard/independent PDF/forced-colors are not claimed."
+  ],
+  "userOriginalTabOrIdbChanged": false,
+  "artifacts": [
+    {
+      "path": "final-writing-cleanup-shell-1065.jpg",
+      "bytes": 42278,
+      "sha256": "45c6a0d228e2bb0246cd2146ca8f89f61804b7886cad6e02dc2ca2c7b968877f"
+    },
+    {
+      "path": "final-writing-cleanup-resize-390.jpg",
+      "bytes": 30128,
+      "sha256": "e0e708d682a41ed40babac7789470a6ef7e31303b18563b6031a44ac7a871245"
+    },
+    {
+      "path": "final-writing-cleanup-pending-scroll-390.jpg",
+      "bytes": 30976,
+      "sha256": "7a3a2943da97bebbb22d57017569262508f2119936e24d6ed2c5a8e4b938b5e3"
+    },
+    {
+      "path": "final-writing-cleanup-settled-scroll-390.jpg",
+      "bytes": 28897,
+      "sha256": "62a08652f016e9421877ea3599319ae067128ef29fbacb3ce41b8539a4548373"
+    },
+    {
+      "path": "final-writing-cleanup-save-error-390.jpg",
+      "bytes": 30201,
+      "sha256": "553d585f4016541a31f3e802b7ec00cf086aeea1838c381287675fefed01dde7"
+    },
+    {
+      "path": "final-writing-cleanup-save-error-1280.jpg",
+      "bytes": 44094,
+      "sha256": "a835ef531d7ec87c6d1268077ede29de6a01a78a8f676c3b860c14fa4d7d9ff1"
+    },
+    {
+      "path": "final-writing-cleanup-delta-metrics.json",
+      "bytes": 1566,
+      "sha256": "5f6c205f0bf8fc1bd198482d1b9e8725f2903866a5e40de8ae4242b1e30fda58"
+    },
+    {
+      "path": "final-writing-cleanup-quota-native.json",
+      "bytes": 450,
+      "sha256": "726a909e54e49d05d1b59588ba801a0f16963ce755c4feaeb9b8a395cc917fa7"
+    },
+    {
+      "path": "writing-cleanup-first-candidate-native.json",
+      "bytes": 1167,
+      "sha256": "fdbabdd35a2aa725625e41f3aa2de7edcaaee9efbead994c9a03efbe306f2e0a"
+    },
+    {
+      "path": "writing-cleanup-first-candidate-metrics.json",
+      "bytes": 444,
+      "sha256": "46c962ff1d2cc8edb9b50bcef13e30f487b6d8f113bb3996be139037ef66edaf"
+    },
+    {
+      "path": "writing-cleanup-qa-source-bundle-sha.json",
+      "bytes": 1364,
+      "sha256": "4d23dc9516f9266c5a26d6089d12a4ccad1f56deafdd428ab0a611f613823d5f"
+    },
+    {
+      "path": "writing-cleanup-style-pixel-review.txt",
+      "bytes": 1765,
+      "sha256": "c49c98518f2445e60a997f6fd4e8ac243afb8b3c1b6e082eb46c7e001d899a52"
+    },
+    {
+      "path": "final-writing-cleanup-product-http.json",
+      "bytes": 2191,
+      "sha256": "3f3e94ff6cc55cd4753300cf8807aa25f5bdbf612fbafedfd4be9d1ab53b58ae"
+    },
+    {
+      "path": "writing-cleanup-visual-findings-before.json",
+      "bytes": 4553,
+      "sha256": "84ff2ed1ab975e34ed9f598f26b5931ce7f7fe5cc788416cb7618a487aa69714"
+    }
+  ]
+}

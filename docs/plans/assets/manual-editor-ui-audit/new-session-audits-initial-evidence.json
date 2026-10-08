@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-07",
+  "scope": "First independent checks after user-created 3 dedicated chats; source/native/production boundaries kept",
+  "artifacts": [
+    {
+      "path": "storage-independent-result.json",
+      "bytes": 10122,
+      "sha256": "3769f040e8edd8c4c2ba9344017bfdd0e9c3121e8634e6b4f9e2aca93aab910f"
+    },
+    {
+      "path": "broken-image-source-audit.json",
+      "bytes": 3962,
+      "sha256": "669c79ab22234246fa307108a05176edfd43b635056eecb4d6a1efd1bd736e4b"
+    },
+    {
+      "path": "keyboard-boundary-initial-result.json",
+      "bytes": 3520,
+      "sha256": "2bd47d2124abc2fd9111db2b19151315f0c8197f66232bb27c0e925e7da9b3e5"
+    },
+    {
+      "path": "block-replacement-forward-initial.json",
+      "bytes": 13289,
+      "sha256": "c8d8b514ea2a2d1a8348a76ee1323b0654ad8598eaad902b01bf844b411116c8"
+    },
+    {
+      "path": "block-replacement-reverse-initial.json",
+      "bytes": 13289,
+      "sha256": "64b0d48f4f9c3a3b90cffcab23ea790c9358765e49f51d203bbf06a39a5adbb6"
+    },
+    {
+      "path": "ordinary-join-metadata-initial.json",
+      "bytes": 6463,
+      "sha256": "4cb36876c9855a21c6afcb55087a52ced5b032da4bba87eb996076fe9fecc611"
+    },
+    {
+      "path": "visual-boundary-independent-review.md",
+      "bytes": 7237,
+      "sha256": "0c71e4700725f6d0a064cb258e4c4f64a47e7b6f8cf5d04b2b2e608698ce2fd6"
+    },
+    {
+      "path": "outline-menu-repro.md",
+      "bytes": 3851,
+      "sha256": "56e8712234e21413f29f8567037e10cb4b8da525f83d71d9d9ec9fd2dfb637f2"
+    },
+    {
+      "path": "outline-page-drag-caller-contract.txt",
+      "bytes": 6611,
+      "sha256": "757afbaa250436eab9eb72b88bcea1c8133ef937e0a93bd9980c7406dad77d67"
+    }
+  ],
+  "notAccepted": [
+    "P1 source57 green is not native or served",
+    "block replacement caret defect pending repair at this snapshot",
+    "ordinary metadata lifecycle design follow-up",
+    "SVG cropped image failure native not run",
+    "outline anchor native not run"
+  ]
+}

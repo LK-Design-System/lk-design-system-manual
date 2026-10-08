@@ -1,6 +1,8 @@
 # LDS Manual 에디터 실행 계획
 
-- 상태: **구현 진행 중**. 소스 결함 2건은 후속 해결 확인. 최신 빌드의 실제 사용자 흐름·OS IME 검증은 남음. 이전 UI 빌드의 주요 조작 및 그때 저장한 17쪽 문서의 독립 PDF 검수 근거 있음.
+> 2026-10-06: 다음 구현의 방향은 [편집기 재설계 제안](manual-editor-redesign.md)을 참조한다. 이 문서의 v1 계약·구현·검증은 현행 및 역사적 근거이며 v2 구현 완료를 뜻하지 않는다.
+
+- 상태: **사용 동선 개선 중, MVP 마감 전**. 폼 중심 화면의 사용성 지적을 반영해 A4 중심으로 재구성했다. 이전 UI의 합성 시나리오 11개 통과는 당시 빌드의 근거다. 새 UI의 파일 host 전체 흐름 재검증, 실제 OS IME와 제품 시범 검수는 남음. 이전 Windows UI의 17쪽 독립 PDF 근거는 해당 입력에 한해 유지.
 - 갱신: 2026-10-06 (한국 시각)
 - 문서 책임: Manual 에디터 계획 담당. 구현 착수 후 단계별 근거와 남은 결정을 이 문서에서 갱신한다.
 - 수명주기: active working plan. 구현 종료 시 확정 계약을 durable 문서로 옮기고 이 계획은 판단 이력의 보존 필요에 따라 archive 또는 삭제한다.
@@ -11,7 +13,99 @@
 
 [Tiptap 사례 대비 준비도 점검](manual-editor-readiness.md)에서 공식 템플릿·BlockNote·Docmost와 비교한 P0/P1/P2 보강 항목을 관리한다. **제목 위계·허용 중첩, 무손실 adapter, IME/history, 검증·저장 책임은 첫 구현 전의 필수 계약**이다. 일반 A4 출력 green을 편집기 준비 완료로 확대하지 않는다.
 
-## 현재 구현 근거
+## 사용성 및 화면 감사 후속
+
+[Manual 에디터 사용성 및 화면 재점검](manual-editor-ui-audit.md)에 기본 입력 재현, 전체 레이아웃,
+제안 와이어프레임, 버튼별 유지·통합·이동 판단과 29개 경계 상황을 기록했다.
+Enter·Backspace·방향키·undo focus의 기본 문제와 빈 페이지·누락 이미지·오류 창·390px 사용성 문제는 미해결이다.
+아래 직접 작성/브라우저 저장 구현 및 28개 검사 통과를 사용성 완료로 확대하지 않는다.
+다음 UI 작업은 감사의 수정 순서와 수락 기준을 우선하며, 기존 보존·인증·검토 계약은 유지한다.
+
+## 직접 작성과 브라우저 저장 후속 · 2026-10-06
+
+앞선 선택·속성 패널 개편에 이어 A4의 제목·본문·단계·표·목록·캡션에서 직접 입력하도록 연결했다.
+설정 패널은 기본으로 닫는다. Enter는 다음 문단/단계, Shift+Enter는 필드 안 줄바꿈이며 기존 PM history를 공유한다.
+활성 입력과 조합 중에는 렌더를 보류하고 저장 직전에 입력을 반영한다. 빈 문구도 초안 화면과 저장에 남기며 출력 검증은 별도로 유지한다.
+
+인증 없는 화면에서도 IndexedDB에 문서와 PNG/JPEG/WebP 이미지를 저장하고, 파일 메뉴에서 저장 문서를 다시 열 수 있다.
+브라우저 파일은 `lds-manual-browser/v1` envelope로 문서·sidecar·이미지를 묶으며 기존 Manual JSON도 열 수 있다.
+저장 위치는 화면에 ‘이 브라우저’로 표시한다. 이는 origin별 로컬 보관이며 폴더 host 인증이나 디스크 접근 권한을 제공하지 않는다.
+기존 작성 중이던 합성 예제 2쪽(블록 6개/1개)은 백업 후 가져와 저장·새로고침 복원했다.
+
+검증: 모델/history/단계 제어/파일 경계/빈 초안 projection **28/28**, 앱 build 통과.
+IAB에서 직접 본문 입력, Enter 문단 삽입, Shift+Enter, 빈 문단 저장·새로고침·재입력,
+절차 삽입, 다음 단계, 합성 JPG 삽입, 캡션 수정·undo/redo, 이미지 포함 저장·새로고침 복원을 확인했다.
+브라우저 console error는 없었다. 브라우저 인쇄 진입을 추가했으나 IAB에서는 인쇄창이 관측되지 않아 PDF 파일 생성은 미검증이다.
+파일 다운로드 실수신, 실제 OS 한글 IME, 전체 접근성, 최신 인증 host 회귀는 여전히 별도 확인 대상이다.
+아래 이전 화면의 해시와 통과 결과는 당시 근거로 보존하며 현행 전체 제품의 완료 근거로 확대하지 않는다.
+
+## 문서 중심 사용 동선 개선 · 2026-10-06
+
+사용자가 실제 화면을 보고 “직관적이지 않다”고 지적했다. 기능 검사 통과를 쓰기 쉬운 편집 제품으로 확대했던 판단을 수정한다.
+문서 전체의 데이터 필드를 펼치는 화면 대신 **페이지 목록 → A4에서 내용 선택 → 선택한 내용만 편집**하는 구조로 바꿨다.
+
+- 중앙 A4를 항상 기본으로 보여 주고 보기 배율만 화면에 맞춘다. 출력용 글자 크기·A4 renderer/CSS는 바꾸지 않는다.
+- 문서의 글·단계·그림 또는 왼쪽 목록을 선택하면 같은 Manual 경로의 Tiptap 내용이 오른쪽에 열린다.
+  페이지 추가 시 렌더와 선택 메시지의 순서가 달라도 새 페이지로 이동하도록 보정했다.
+- 페이지 추가와 내용 추가를 나누고, 이동 가능한 위치와 마지막 본문 페이지의 삭제 제한을 버튼에 반영한다.
+- 검토·출력은 별도 native dialog로 연다. 표 행·열 도구와 부가 속성은 필요할 때 펼친다.
+  그림 자산 오류를 선택하면 그림의 세부 설정을 열어 보정할 수 있다.
+- 본문 밖의 숨긴 node와 opaque 필드도 Tiptap 모델에 그대로 남는다. 두 번째 내용 저장소나 undo 이력을 만들지 않는다.
+- 인증 없는 URL은 합성 예제다. 폴더 저장/PDF 미연결을 표시하며 현재 편집 JSON을 내려받는 버튼을 제공한다.
+  private bootstrap이나 인증 API 권한을 변경하지 않았다. IAB에서 다운로드 이벤트·실제 파일 수신은 확인되지 않았다.
+
+참고 근거는 [Figma의 캔버스 선택과 오른쪽 속성 패널](https://help.figma.com/hc/en-us/articles/360039832014-Design-prototype-and-explore-layer-properties-in-the-right-sidebar),
+[Notion의 블록 작성 안내](https://www.notion.com/help/writing-and-editing-basics)다. 외부 화면을 복제하거나 새 dependency를 추가하지 않았다.
+
+LDS 적용 범위는 다음과 같다. 정식 full-surface adoption 완료를 주장하지 않는다.
+
+| 적용 항목 | 현재 범위와 남은 점검 |
+|---|---|
+| tokens/theme | 기존 Core/Theme 0.4.3의 의미 색상과 Pretendard 사용. Core token 변경 없음 |
+| layout/visual | Manual 전용 페이지 목록·A4 캔버스·선택 편집 배치. 전체 출력 스타일은 기존 renderer 소유 |
+| state/pattern/motion | 기존 dirty/validation/history/출력 gate 유지, native dialog 사용. 별도 motion은 추가하지 않음 |
+| assets/icon/brand | 기존 Theme 공식 로고 경로 유지, 새 아이콘·로고 자산 없음 |
+| content/i18n | 한국어 작업 동사와 블록 이름으로 정리. 예제는 합성 자료, 새 언어 범위 추가 없음 |
+| accessibility | public Button, native controls/dialog, 문서 내용의 Tab·Enter 선택과 좁은 화면 전환. 전체 키보드·스크린리더 감사는 미완료 |
+| component mapping | 주요 액션은 public Core Button, 출력은 기존 public Callout/Blockquote 사용. 나머지 기존 native select와 node-view 도구의 Core 매핑은 후속 |
+
+새 화면은 옆 IAB에서 본문 선택·실제 키 입력·A4 반영·undo, 페이지 추가·페이지 전환, 표 추가·행 추가·undo,
+검토 창, 760px 화면의 문서→편집→문서 복귀를 확인했다. 모델/history/단계 제어 검사 **24/24**, 앱 build와 diff 공백 검사를 통과했다.
+[workflow.test.mjs](../../apps/editor/tests/workflow.test.mjs)는 새 명칭·선택·펼침 동선에 맞췄으며 syntax 검사만 수행했다.
+아래 이전 11개 시나리오의 통과 결과를 새 UI 빌드의 통과로 승계하지 않는다. 인증된 폴더 저장·복구·자산·출력 전체 시나리오는 새 화면에서 재검증해야 한다.
+
+새 화면 산출물 해시:
+
+- `editor-UmDQooBK.js`: `1046292aed9116e0ba2e51dfbe9485fb815b876d69b3c0467cd8c4a06ee25a99`
+- `preview-D-6d5dYs.js`: `cb14401f1e6b5783f8f12cdca50817f78eb8588c4e637294fe89c6ece7e9d33d`
+
+## 최신 Linux 브라우저 검증 · 2026-10-06
+
+사용자의 에디터 작업 재개 지시로 최신 소스를 Linux에서 빌드하고 검증했다.
+환경은 Node 24.19.0, Chromium 154, Tiptap 3.31.4, Core/Theme 0.4.3,
+React/React DOM 19.2.7이다. 앱 lockfile은 변경하지 않고 승인된 dependency만 복원했다.
+
+- 편집 모델 20/20, host/launcher/validation/단계 제어 21/21 통과.
+- [브라우저 검사](../../apps/editor/tests/workflow.test.mjs)의 11개 시나리오 통과
+  (parent 포함 Node runner 12/12, skip 0, 약 39초). [명령·정확한 범위](../manual-editor-server-run.md#최신-빌드의-브라우저-저작-흐름-검사)
+- `src/crop` 오류를 선택하면 해당 그림의 속성으로 이동하도록 수정했다.
+  오류를 남긴 채 문구를 편집한 후에도 오류가 유지되며, 좌표 보정→저장→host 재시작 및 원본 bytes 보존을 확인했다.
+- 같은 UI가 생성한 3쪽 합성 PDF를 독립 검수했다. A4 594.96×841.92pt,
+  Pretendard 폰트 포함과 한글 텍스트·쪽 번호 01/03~03/03을 확인하고 전 페이지 PNG의 제목·표·절차·Callout·footer 배치를 읽었다.
+  합성 current/시각 검토 fixture는 검토 gate 연결 검사이며 실제 제품 승인으로 해석하지 않는다.
+
+검증한 빌드는 `editor-DmoKIh8R.js`, SHA-256
+`7d428bb304a17fc7cc299828aa6fd2e4ff2a0218988af16ad8e9c99f1a53f398`이다.
+`apps/editor/src/main.jsx` SHA-256은
+`b83f07f09a8fd28cc14f930e1eeaafc9ea7ae3ad1f44c46277fbcd3ab811cb48`이다.
+기존 renderer/CSS는 수정하지 않았다. 다른 빌드나 환경으로 이 근거를 자동 승계하지 않는다.
+
+남은 마감 조건은 실제 OS 한글 IME의 조합·확정·커서·undo 실입력, 모든 세부 필드의
+조작 조합과 전체 키보드 접근성 검수, 제품 owner가 정한 시범 문서의 문구·실제 화면 검수다.
+시작·재열기·충돌·자산·출력의 아래 미검증 표기는 이전 감사의 당시 기록이며,
+최신 통과 범위는 이 절과 재현 가능한 브라우저 검사로 판단한다. 원래 종료 기준을 줄이지 않는다.
+
+## 이전 구현 근거
 
 | 범위 | 현재 결과 | 남은 확인 |
 |---|---|---|

@@ -1,0 +1,68 @@
+{
+  "recordedAt": "2026-10-07",
+  "reviewThread": "01a1156f-d320-7af3-b1eb-24392cfcd0ff",
+  "candidate": {
+    "js": "controls-BLTYx5A_.js",
+    "jsBytes": 639739,
+    "jsSha256": "bef3ee177ed897a455579c72fc3cb51d052a2e07e48f48adfa9498724befc585",
+    "css": "controls-lsGzkotn.css",
+    "cssBytes": 34938,
+    "cssSha256": "69969568ea54abbbb84d3197cf6140a85c73ac210821f4b6cec9df8dc9ba44ee"
+  },
+  "source": {
+    "ManualEditor.jsx": "fb0a9a13cb805fcb0febd3a3db7503dc8901a996b2de56acc4b3f883d7ee13b7",
+    "manual-kernel.mjs": "efefe5c32c59e604fae1ed5af9e904635c95a577614e9d57115bbba5f830a997",
+    "block-command-catalog.mjs": "61a288a4e0eb2f49f3b02f7a1589006ca2d69f31e996e4d130697af0cbf6b554",
+    "block-command-menu.css": "e62d89a3d5c39e454afdc059c1e642cc44cde6ccb37b24b17d46d64114ca771e",
+    "core-manifest": "077dffd3ed91518c2945fc1e4a8ce0257fd3099e2df1c70bd35c67010ed1dc4c"
+  },
+  "scope": "Native independent QA of frozen fb0a/efef candidate; does not accept the subsequent 7b toolbar and keyboard-menu changes or product publication.",
+  "rootArtifactChecks": {
+    "pagesBefore": 3,
+    "pagesDownloaded": 4,
+    "postImportDomIdsBefore": 34,
+    "postDragDomIdsAfter": 35,
+    "missingPostImportDomIdsAfter": 0,
+    "missingPostImportDomIdsInDownload": 0,
+    "newDomObjectKinds": [
+      "page"
+    ],
+    "unchangedOriginalLeafDomHtml": 31,
+    "totalOriginalLeafDomHtml": 31,
+    "fixtureIdsAreRegeneratedOnImportAsCopy": true,
+    "downloadedDomainValidation": "pass",
+    "canonicalSourceBlockCount": 31,
+    "canonicalSourceContentsMarksMetadataPreserved": true,
+    "comparisonMethod": "Normalize fixture through PM model, compare objects with regenerated IDs omitted and canonical object key order; native post-import DOM ID baseline is checked separately."
+  },
+  "nativeReported": {
+    "crossPageMixedDrag": true,
+    "fixedA4WidthPx": 793.6875,
+    "fixedA4HeightPx": 1122.515625,
+    "selectedOriginalBlocks": 3,
+    "oneUndoRedoDomEquals": true,
+    "autosaveReopen": true,
+    "downloadCopyImport": true
+  },
+  "limits": [
+    "Native results reported by the independent QA owner; root independently reviewed returned screenshots and artifact bytes/IDs/leaf HTML.",
+    "Reverse-range direction, held-pointer Escape, OS IME, physical touch, 200% browser zoom, and independent PDF are not newly accepted."
+  ],
+  "artifacts": [
+    {
+      "path": "independent-range-flow-before.json",
+      "bytes": 20426,
+      "sha256": "dfd5d38b91e16849a0ed5d0443da61e27d143f2895c5486ce88a3f04828585c0"
+    },
+    {
+      "path": "independent-range-flow-after.json",
+      "bytes": 20934,
+      "sha256": "86fca90047012e1d6d10e75f8f19533ad117975e6af1b6028029305aec318b8a"
+    },
+    {
+      "path": "independent-range-flow-downloaded.manual.json",
+      "bytes": 11708,
+      "sha256": "b0bd0539903bc144556d0c3d586a51b152dab6d61622fbe6eafe9b8b33a139c4"
+    }
+  ]
+}

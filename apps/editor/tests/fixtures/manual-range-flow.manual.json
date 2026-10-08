@@ -1,0 +1,417 @@
+{
+  "format": "lds-manual-document/v2",
+  "document": {
+    "schemaVersion": 2,
+    "id": "qa-range-flow-document",
+    "title": "범위 이동과 A4 흐름 · 합성 검증",
+    "pages": [
+      {
+        "id": "qa-range-flow-source",
+        "title": [
+          {
+            "type": "text",
+            "text": "함께 옮길 내용"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "qa-range-flow-callout",
+            "type": "callout",
+            "tone": "signal",
+            "title": [
+              {
+                "type": "text",
+                "text": "함께 옮길 안내"
+              }
+            ],
+            "blocks": [
+              {
+                "id": "qa-range-flow-inner-first",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "안내의 첫 본문을 보존합니다."
+                  }
+                ]
+              },
+              {
+                "id": "qa-range-flow-inner-marked",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "서식과 링크 보존",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      },
+                      {
+                        "type": "underline"
+                      },
+                      {
+                        "type": "link",
+                        "href": "https://example.invalid/manual"
+                      }
+                    ]
+                  }
+                ],
+                "extensions": {
+                  "fixture": {
+                    "keep": "inner-marked"
+                  }
+                }
+              },
+              {
+                "id": "qa-range-flow-inner-last",
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "안내의 마지막 본문을 보존합니다."
+                  }
+                ]
+              }
+            ],
+            "extensions": {
+              "fixture": {
+                "keep": "callout"
+              }
+            }
+          },
+          {
+            "id": "qa-range-flow-paragraph",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "함께 옮길 본문",
+                "marks": [
+                  {
+                    "type": "emphasis"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "같은 문단의 다음 줄"
+              }
+            ],
+            "extensions": {
+              "fixture": {
+                "keep": "paragraph"
+              }
+            }
+          },
+          {
+            "id": "qa-range-flow-todo",
+            "type": "todo",
+            "checked": true,
+            "content": [
+              {
+                "type": "text",
+                "text": "함께 옮길 체크 항목"
+              }
+            ],
+            "extensions": {
+              "fixture": {
+                "keep": "todo"
+              }
+            }
+          }
+        ],
+        "extensions": {
+          "fixture": {
+            "keep": "source-page"
+          }
+        }
+      },
+      {
+        "id": "qa-range-flow-target",
+        "title": [
+          {
+            "type": "text",
+            "text": "내용을 받을 페이지"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "qa-range-flow-filler-01",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 01"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-02",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 02"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-03",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 03"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-04",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 04"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-05",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 05"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-06",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 06"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-07",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 07"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-08",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 08"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-09",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 09"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-10",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 10"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-11",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 11"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-12",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 12"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-13",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 13"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-14",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 14"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-15",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 15"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-16",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 16"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-17",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 17"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-18",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 18"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-19",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 19"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-20",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 20"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-21",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 21"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-22",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 22"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-23",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 23"
+              }
+            ]
+          },
+          {
+            "id": "qa-range-flow-filler-24",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "받는 쪽의 기존 본문 24"
+              }
+            ]
+          }
+        ],
+        "extensions": {
+          "fixture": {
+            "keep": "target-page"
+          }
+        }
+      },
+      {
+        "id": "qa-range-flow-sentinel",
+        "title": [
+          {
+            "type": "text",
+            "text": "뒤의 독립 페이지"
+          }
+        ],
+        "blocks": [
+          {
+            "id": "qa-range-flow-sentinel-body",
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "뒤의 독립 페이지와 원래 본문을 보존합니다."
+              }
+            ]
+          }
+        ],
+        "extensions": {
+          "fixture": {
+            "keep": "sentinel-page"
+          }
+        }
+      }
+    ]
+  },
+  "assets": {}
+}

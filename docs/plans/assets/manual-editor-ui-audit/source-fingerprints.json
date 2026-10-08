@@ -1,0 +1,8 @@
+{
+  "apps/editor/src/main.jsx": "32b5b0f854406361d1bb36a35c0fd028541e1910ffe84f9372fd6b948c60abf0",
+  "apps/editor/src/preview-main.jsx": "3854b67b29623b5eb042ebf0c6fe52b7adcfb24084f479acc09349547e1e7f89",
+  "apps/editor/src/ui/EditorShell.jsx": "6c4c66d1892bab868e8db29bab8d3426c3892509266c893be9a03096ad5d8f93",
+  "apps/editor/src/ui/canvas-input.mjs": "b73ddd244f4406ed5ee113cf047c7f54c2dc2106a88aefb8ce370dd2bb9f5a5b",
+  "apps/editor/src/ui/editor-shell.css": "8eb57d2abcd0c6e0bd339c5e776d58353fb2d146e3e9cd3d88986852e9316a13",
+  "apps/editor/src/ui/browser-documents.mjs": "c5997febea0d084fda79215057bf5a73715f4ae067cad27b52de957b04629e05"
+}

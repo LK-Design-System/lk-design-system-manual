@@ -1,0 +1,21 @@
+{
+  "assets": [
+    "http://127.0.0.1:44590/assets/controls-zYWF1_aL.js",
+    "http://127.0.0.1:44590/assets/jsx-runtime-Yp7cqpbS.css",
+    "http://127.0.0.1:44590/assets/controls-Da6QQbZU.css"
+  ],
+  "button": [
+    {
+      "font": "12px",
+      "text": "+ 페이지 추가",
+      "weight": "500"
+    },
+    {
+      "font": "12px",
+      "text": "+ 페이지 추가",
+      "weight": "500"
+    }
+  ],
+  "footer": "12px",
+  "overflow": false
+}

@@ -1,0 +1,349 @@
+{
+  "date": "2026-10-07",
+  "scope": "Read-only storage/file audit; exact pre-P1 actual download plus new opaque-metadata injection",
+  "sourceSha256": [
+    {
+      "name": "document-store.mjs",
+      "sha256": "9d1a6292f0554dcc11e2e41ba118648da51dc2c28ef702389e937dceab039250"
+    },
+    {
+      "name": "autosave-controller.mjs",
+      "sha256": "3f2dfdf340a2ea7ca8cd03a8514c7cfc97d441ed52f798e7015ce2a4691ca381"
+    },
+    {
+      "name": "manual-v2.mjs",
+      "sha256": "8f7f5d13c2c470592a12b8f2cee1977d6bfa3b1de9ea403600a46f7d5392931e"
+    },
+    {
+      "name": "manual-pagination-meta.mjs",
+      "sha256": "2ce848156fd8f39f8ff799591b9a6c9012a21e1bb65740febb1ebbca2988d5a6"
+    }
+  ],
+  "input": {
+    "path": "/tmp/lds-manual-visual-final-20261007/range-split-downloaded.manual.json",
+    "bytes": 11997,
+    "sha256": "dcdaea2f9269c3c2ba4a7a5a970d4d60c7bb2d658a5537d89327ca66eaf3179f",
+    "repoEvidenceBytesEqual": true,
+    "objects": 37,
+    "pages": 4,
+    "assets": 0
+  },
+  "markers": [
+    {
+      "path": "document.pages.2",
+      "id": "7d1f96c1-f80d-4f10-8e6f-a9ec12291e67",
+      "kind": "page",
+      "marker": {
+        "kind": "page",
+        "rootPageId": "qa-range-flow-target",
+        "owner": "@lk-design-system/manual-pagination",
+        "version": 1,
+        "key": "manualPagination"
+      }
+    },
+    {
+      "path": "document.pages.2.blocks.0",
+      "id": "4fbf8466-5e03-497d-96cd-b416623d2420",
+      "kind": "block",
+      "marker": {
+        "kind": "block",
+        "rootBlockId": "qa-range-flow-callout",
+        "sourceType": "callout",
+        "repeatedTitle": true,
+        "owner": "@lk-design-system/manual-pagination",
+        "version": 1,
+        "key": "manualPagination"
+      }
+    }
+  ],
+  "checks": {
+    "actualFileCodecRoundtrip": true,
+    "actualFileMemorySaveReopen": true,
+    "opaqueExtensionsCodecRoundtrip": true,
+    "copyFreshUniqueIds": true,
+    "copyKnownPaginationReferencesRemapped": true,
+    "copyOpaqueMetadataUnchanged": true,
+    "copyMemorySaveReopenFileRoundtrip": true,
+    "sourceStable": true
+  },
+  "newFailures": [],
+  "signatureGap": {
+    "syntacticallyValidWrongImageBytesAccepted": true,
+    "classification": "Existing documented validation boundary: signature/dimensions/output suitability are separate; not malformed-base64 green or actual corrupt-image rendering acceptance"
+  },
+  "memoryStatus": {
+    "mode": "normal",
+    "delayLoads": false,
+    "attempts": 2,
+    "commits": 2,
+    "activeWrites": 0,
+    "activeLoads": 0,
+    "records": [
+      {
+        "id": "qa-range-flow-document",
+        "title": "범위 이동과 A4 흐름 · 합성 검증",
+        "revision": "qa-save-1",
+        "pages": 4,
+        "assets": 0,
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 01"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 02"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 03"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 04"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 05"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 06"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 07"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 08"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 09"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 10"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 11"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 12"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 13"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 14"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 15"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 16"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 17"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 18"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 19"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 20"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 21"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 22"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 23"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 24"
+          },
+          {
+            "type": "callout",
+            "text": ""
+          },
+          {
+            "type": "callout",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "text": "함께 옮길 본문\n같은 문단의 다음 줄"
+          },
+          {
+            "type": "todo",
+            "text": "함께 옮길 체크 항목"
+          },
+          {
+            "type": "paragraph",
+            "text": "뒤의 독립 페이지와 원래 본문을 보존합니다."
+          }
+        ]
+      },
+      {
+        "id": "30545b63-835f-4411-8d52-8f3b7019bbe6",
+        "title": "범위 이동과 A4 흐름 · 합성 검증",
+        "revision": "qa-save-2",
+        "pages": 4,
+        "assets": 0,
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 01"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 02"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 03"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 04"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 05"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 06"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 07"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 08"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 09"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 10"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 11"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 12"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 13"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 14"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 15"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 16"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 17"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 18"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 19"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 20"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 21"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 22"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 23"
+          },
+          {
+            "type": "paragraph",
+            "text": "받는 쪽의 기존 본문 24"
+          },
+          {
+            "type": "callout",
+            "text": ""
+          },
+          {
+            "type": "callout",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "text": "함께 옮길 본문\n같은 문단의 다음 줄"
+          },
+          {
+            "type": "todo",
+            "text": "함께 옮길 체크 항목"
+          },
+          {
+            "type": "paragraph",
+            "text": "뒤의 독립 페이지와 원래 본문을 보존합니다."
+          }
+        ]
+      }
+    ]
+  },
+  "reusedEvidence": {
+    "autosaveBarrier": "16 prior targeted plus later A4-linked test documented; not rerun",
+    "portableStore": "11 prior tests; not rerun",
+    "qaStore": "4 current tests; not rerun",
+    "undo": "Pre-P1 native manifest reports Undo/Redo exact; not reproduced by codec",
+    "download": "11997 actual native file bytes inspected; UI request notice is not completion"
+  },
+  "notAccepted": [
+    "actual IndexedDB/native shelf",
+    "post-P1 kernel behavior",
+    "rendered image decoding or corrupt asset UI",
+    "OS quota/power-loss",
+    "OS IME/touch/200%/external clipboard/PDF"
+  ],
+  "command": "/home/jinhyuk2me/.local/node/bin/node /tmp/lds-manual-storage-audit-20261007/audit.mjs"
+}
