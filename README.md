@@ -73,14 +73,14 @@ export default function Manual() {
 
 ## 저작 제품 분리
 
-사용자가 실행하는 저작 제품의 canonical source는 `$LK_WS/authoring/lk-authoring`입니다.
+사용자가 실행하는 저작 제품의 canonical source는 `$LK_WS/authoring/lk-editor`입니다.
 LK Docs는 일반 문서 저작 제품이며 매뉴얼은 하나의 프로필입니다. 현재 동작하는 구현은
-기존 Manual 프로필이고 일반 문서 프로필과 LK Slides는 준비 단계입니다.
+기존 Manual 프로필이며 새 LK Docs의 일반 문서 기본 흐름도 구현·합성 검증했습니다. LK Slides는 준비 단계입니다.
 LDS Manual은 A4 매체·출력·토큰·작성 규율을 계속 소유합니다.
 
 현재 원 `apps/editor`는 44589 origin 전환까지 동결된 transition source입니다.
 새 구현을 이 위치에서 병행 개발하지 않습니다. 파일 형식·IDB를 이름 변경 때문에 바꾸지 않습니다.
-새 제품의 실행과 검증은 [LK Authoring](../../authoring/lk-authoring/README.md)을 따릅니다.
+새 제품의 실행과 검증은 [LK Editor](../../authoring/lk-editor/README.md)을 따릅니다.
 아래의 기존 편집기 검증·계획 기록은 추출 전 근거이며 신규 제품 구현 완료를 뜻하지 않습니다.
 
 ## 안내 문서

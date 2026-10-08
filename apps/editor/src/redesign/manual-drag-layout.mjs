@@ -1,3 +1,4 @@
+import {TextSelection} from '@tiptap/pm/state';
 import {manualPageParts,manualPageRole} from './manual-page-shape.mjs';
 import {Decoration,DecorationSet} from '@tiptap/pm/view';
 import {manualPaginationMarker} from './manual-pagination-meta.mjs';
@@ -8,7 +9,7 @@ const collections={doc:'pages',page:'blocks',cover:'blocks',coverSectionFrame:'b
 export function manualDragLayout(state){
  const paths=new Map(),targets=new Map(),attributes=new Map(),positions=new Map(),fieldDecorations=[];
  positions.set(state.doc,{pos:-1,id:state.doc.attrs.meta.id});
- state.doc.descendants((node,pos)=>{positions.set(node,{pos,id:node.attrs.id});if(node.isTextblock&&node.content.size===0)fieldDecorations.push(Decoration.node(pos,pos+node.nodeSize,{'data-manual-empty':'true'}));});
+ state.doc.descendants((node,pos)=>{positions.set(node,{pos,id:node.attrs.id});if(node.isTextblock&&node.content.size===0)fieldDecorations.push(Decoration.node(pos,pos+node.nodeSize,{'data-manual-empty':'true',...(state.selection instanceof TextSelection&&state.selection.empty&&state.selection.$from.parent===node?{'data-manual-placeholder':'true'}:{})}));});
  let rootPage=null,pageNumber=0;
  state.doc.forEach((node,pos)=>{
   if(!['page','cover'].includes(node.type.name))return;

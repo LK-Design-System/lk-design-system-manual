@@ -67,8 +67,9 @@
 | M43 | 로고 뒤·문서 정보 표 앞 빈 줄 시작에서 Backspace 무반응 | 키보드·총괄 | 완료 | 일반 본문/빈 표지 제목 경계를 실제 PM으로 구분 재현하고 빈 줄 제거·이전 블록 이동 및 문서/ID/Undo 보존 수정 배정. 원 사용자 문서·입력 조작 없음.  실제PM 재현에서 owned 빈 표지 제목 guard의 dispatch0 원인 확인·앞 text끝/로고NodeSelection으로 이동 수정. 일반빈P 제거·일반빈heading 동일ID본문변환 구분, 집중25+실제키binding3 통과. 전체 kernel은 이10줄분기외 실제2f archive byteexact 총괄/Integration독립확인. 로고·metadata·본문·ID/Undo 보존. 사용자 실제 문서의 노드 역할 확정이나 native 조작 검수라고 확대하지 않음. |
 
 | M44 | 에디터 별도 레포 및 LK Word/LK Slide 확장 구조 검토 | 구조 검토 전담·총괄 | 완료 | 공용 편집 엔진과 Manual/Word/Slide 제품 경계, 레포 전략·이전 비용을 읽기 전용 검토. 실제 분리·이전 실행은 요청 범위 밖.  읽기전용 검토 완료: 별도 저작 제품 repo 하나에 Word/Slide 앱, 공용 파일·복구·자산 서비스와 매체별 엔진 분리 권장. Manual은 Word 프로필/adapter, Slide 캔버스는 별도 개발. shared 앱 배치 제한과 새 authoring 도메인 제안/승인 필요, 실제 분리·이전 실행 없음. |
-| M45 | LK Docs·LK Slides 별도 저작 제품 레포 구성 | 구조 구현 전담·총괄 | 구현 중 | 사용자 실제 분리 승인 및 최종 제품명 확정. authoring/lk-authoring 로컬 추출, apps/docs·apps/slides와 별도 엔진 경계. 기존 파일·복구·origin 보존, Manual은 Docs 프로필. 원격/push0, 실행 전환·검증 완료는 별도 증거 필요. |
-| M46 | LK Docs를 일반 문서 편집기로 확장 | Docs 구현 전담·독립 수락·총괄 | 구현 중 | 사용자 실행 승인. 매뉴얼 필수 구조 없이 빈 일반 문서 생성→편집→저장·재열기→인쇄 흐름을 우선 완성한다. 기존 블록·파일·복구를 재사용하고 Manual은 명시적 프로필로 보존한다. 구현 담당과 독립 검토 담당 배정. |
+| M45 | LK Docs·LK Slides 별도 저작 제품 레포 구성 | 구조 구현 전담·총괄 | 구현 중 | 사용자 실제 분리 승인 및 최종 제품명 확정. authoring/lk-editor 로컬 추출, apps/docs·apps/slides와 별도 엔진 경계. 기존 파일·복구·origin 보존, Manual은 Docs 프로필. 비공개 원격 LK-Design-System/lk-editor 생성, 검증 후보 커밋. 기존44589 원앱 유지·실행 전환은 별도 단계. |
+| M46 | LK Docs를 일반 문서 편집기로 확장 | Docs 구현 전담·독립 수락·총괄 | 완료 | 첫 일반문서 흐름 구현: 명시 docs 프로필/연속 blocks와 layout, 7블록 편집·파일 codec·복구·Manual 호환. 소유 Chromium 두 문단 및 10,340자 자동4쪽 작성→저장→재열기→빈제목 인쇄 호출 통과. 일반문서 opaque Manual role 재해석·인쇄·동적ARIA 반례 수정, 독립3검사 PASS. 최신 전체1966 중1918PASS·기존동일46FAIL·2SKIP; 추가print 표적 포함17PASS. 실제 OS 저장/IME 수락·전체 범용편집기 기능 완성으로 확대하지 않음. 코드 정본 authoring/lk-editor, 기존44589 전환은 별도. |
+| M47 | 빈 줄 안내는 포커스된 줄에만 표시 | Docs 구현 전담·총괄 | 완료 | 빈 본문P의 collapsed TextSelection caret 일치 decoration과 실제 ProseMirror focus/contenteditable 조건으로 표시. 다른 빈 줄·blur·range/node선택 숨김. 양쪽 소스 동일 수정, 표적6PASS·buildPASS. 소유 브라우저44589/44591 빈P2개에서 caret이동1→1/blur0/range0 및UndoRedo 확인. 제목·단계·캡션 안내는 유지. |
 
 ## 완료 범위와 검수 제외
 
