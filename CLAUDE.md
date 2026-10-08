@@ -23,4 +23,4 @@ Before reporting authoring complete, require current copy-review coverage plus l
 
 ### 이 저장소의 현행 실행 경로
 
-output-parity는 기존 self-hosted `lk-authoring-output` runner를 사용한다. 이 label만으로 물리 호스트가 server04라고 단정하지 않는다. 기존 등록 이관은 별도 승인 사항이다. 현재 alpha는 private package이며 registry publish는 구성되어 있지 않다. 요청한 문서 한 건의 HTML/PDF 출력·레이아웃 검수는 저작 작업으로 허용하며, 전체 회귀·릴리스 검증과 구분한다.
+원격 main에는 현재 CI·Pages·패키지 발행 workflow가 없다. 다른 checkout의 미커밋 `output-parity`/`lk-authoring-output` 설정은 현행 원격 CI나 server04 등록 완료의 근거가 아니다. 새 CI/발행 경로는 server04의 승인된 저장소 전용 격리 환경을 별도로 자격검증한 뒤 구성한다. 현재 alpha는 private package이며 registry publish는 구성되어 있지 않다. 요청한 문서 한 건의 HTML/PDF 출력·레이아웃 검수는 저작 작업으로 허용하며, 전체 회귀·릴리스 검증과 구분한다.
